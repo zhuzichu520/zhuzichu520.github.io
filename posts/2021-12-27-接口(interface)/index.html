@@ -1,0 +1,376 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/><link rel="icon" href="/favicon.ico"/><title>TypeScript-接口(interface)</title><meta name="description" content="TypeScript的核心原则之一是对值所具有的结构进行类型检查。 它有时被称做“鸭式辨型法”或“结构性子类型化”"/><meta name="author" content="Anonymous"/><meta property="og:title" content="TypeScript-接口(interface) | "/><meta property="og:description" content="TypeScript的核心原则之一是对值所具有的结构进行类型检查。 它有时被称做“鸭式辨型法”或“结构性子类型化”"/><meta property="og:locale" content="en"/><meta property="og:site_name" content=""/><meta property="og:type" content="article"/><meta property="og:image" content="https://zhuzichu520.github.io/assets/images/posts/random-img.jpg"/><meta name="twitter:card" content="summary_large_image"/><meta property="article:published_time" content="2021-12-27T00:00:00.000Z"/><meta property="article:modified_time" content="2021-12-27T00:00:00.000Z"/><script type="application/ld+json">
+          {
+            "description": "TypeScript的核心原则之一是对值所具有的结构进行类型检查。 它有时被称做“鸭式辨型法”或“结构性子类型化”",
+            "author": {
+              "@type": "Person",
+              "name": "Anonymous"
+            },
+            "@type": "BlogPosting",
+            "url": "https://zhuzichu520.github.io/posts/2021-12-27-%E6%8E%A5%E5%8F%A3(interface)/",
+            "publisher": {
+              "@type": "Organization",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://zhuzichu520.github.io/assets/images/logo.png"
+              },
+              "name": "Anonymous"
+            },
+            "headline": "TypeScript-接口(interface) | ",
+            "image": ["https://zhuzichu520.github.io/assets/images/posts/random-img.jpg"],
+            "datePublished": "2021-12-27T00:00:00.000Z",
+            "dateModified": "2021-12-27T00:00:00.000Z",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://zhuzichu520.github.io/posts/2021-12-27-%E6%8E%A5%E5%8F%A3(interface)/"
+            },
+            "@context": "http://schema.org"
+          }</script><meta name="next-head-count" content="19"/><link rel="preload" href="/_next/static/css/3a355cb17a6722b98a49.css" as="style"/><link rel="stylesheet" href="/_next/static/css/3a355cb17a6722b98a49.css" data-n-g=""/><noscript data-n-css=""></noscript><link rel="preload" href="/_next/static/chunks/webpack-a249dd4c6f37ee98b7e5.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework-96b16db5c7fc4ac200b0.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons-382182cb786985f5e62d.js" as="script"/><link rel="preload" href="/_next/static/chunks/main-5497377e9e811a22156e.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-57d3e034b6d62c8a99f7.js" as="script"/><link rel="preload" href="/_next/static/chunks/113-a3ae4763872ae68ae736.js" as="script"/><link rel="preload" href="/_next/static/chunks/605-f29c82d5c4069a60f554.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/posts/%5Bslug%5D-db1ad027246368e915ec.js" as="script"/><style id="__jsx-4063398754">.navbar.jsx-4063398754 a{--tw-text-opacity:1;color:rgba(74,85,104,var(--tw-text-opacity));font-weight:600;--tw-text-opacity:1;color:rgba(113,128,150,var(--tw-text-opacity));}.navbar.jsx-4063398754 a:hover{--tw-text-opacity:1;color:rgba(26,32,44,var(--tw-text-opacity));-webkit-text-decoration:none;text-decoration:none;--tw-text-opacity:1;color:rgba(99,102,241,var(--tw-text-opacity));}</style><style id="__jsx-802940705">.content.jsx-802940705 *{overflow-wrap:break-word;}.content.jsx-802940705 p{margin-top:1.5rem;margin-bottom:1.5rem;}.content.jsx-802940705 ul{margin-top:1.5rem;margin-bottom:1.5rem;}.content.jsx-802940705 h2{margin-top:1rem;margin-bottom:1rem;font-size:1.5rem;font-weight:600;--tw-text-opacity:1;color:rgba(74,85,104,var(--tw-text-opacity));}.content.jsx-802940705 h3{margin-top:1rem;margin-bottom:1rem;font-size:1.25rem;font-weight:600;--tw-text-opacity:1;color:rgba(74,85,104,var(--tw-text-opacity));}</style></head><body><div id="__next"><div class="antialiased w-full text-gray-700 px-3 md:px-0"><div class="max-w-screen-md mx-auto"><div class="border-b border-gray-300 pb-3"><div class="flex pt-16 pb-3"><div class="w-20 h-20 bg-gray-100 rounded-md overflow-hidden shadow-lg mb-2 md:mb-4 mr-5"><img src="/assets/images/avatar.webp" loading="lazy" alt="" class="w-full h-full object-cover object-center"/></div><div><a class="font-semibold text-3xl text-gray-900 hover:no-underline" href="/">朱子楚的博客</a><div class="text-gray-500 text-base">一些个人文章</div></div></div><div><ul class="jsx-4063398754 navbar flex flex-wrap text-xl"><li class="mr-10"><a href="/">首页</a></li><li class="mr-10"><a href="/about/">关于</a></li><li class="mr-10"><a href="https://github.com/zhuzichu520">GitHub</a></li></ul></div></div><div class="text-xl py-5"><h1 class="text-center font-bold text-3xl text-gray-900">TypeScript-接口(interface)</h1><div class="text-center text-sm mb-8">2021年12月27日</div><div class="jsx-802940705 content"><div><h3>接口(interface)</h3>
+<h1>介绍</h1>
+<p>TypeScript的核心原则之一是对值所具有的<em>结构</em>进行类型检查。 它有时被称做“鸭式辨型法”或“结构性子类型化”。 在TypeScript里，接口的作用就是为这些类型命名和为你的代码或第三方代码定义契约。</p>
+<h1>接口初探</h1>
+<p>下面通过一个简单示例来观察接口是如何工作的：</p>
+<pre><code>function printLabel(labelledObj: { label: string }) {
+  console.log(labelledObj.label);
+}
+
+let myObj = { size: 10, label: "Size 10 Object" };
+printLabel(myObj);
+</code></pre>
+<p>类型检查器会查看<code>printLabel</code>的调用。 <code>printLabel</code>有一个参数，并要求这个对象参数有一个名为<code>label</code>类型为<code>string</code>的属性。 需要注意的是，我们传入的对象参数实际上会包含很多属性，但是编译器只会检查那些必需的属性是否存在，并且其类型是否匹配。 然而，有些时候TypeScript却并不会这么宽松，我们下面会稍做讲解。</p>
+<p>下面我们重写上面的例子，这次使用接口来描述：必须包含一个<code>label</code>属性且类型为<code>string</code>：</p>
+<pre><code>interface LabelledValue {
+  label: string;
+}
+
+function printLabel(labelledObj: LabelledValue) {
+  console.log(labelledObj.label);
+}
+
+let myObj = {size: 10, label: "Size 10 Object"};
+printLabel(myObj);
+</code></pre>
+<p><code>LabelledValue</code>接口就好比一个名字，用来描述上面例子里的要求。 它代表了有一个<code>label</code>属性且类型为<code>string</code>的对象。 需要注意的是，我们在这里并不能像在其它语言里一样，说传给<code>printLabel</code>的对象实现了这个接口。我们只会去关注值的外形。 只要传入的对象满足上面提到的必要条件，那么它就是被允许的。</p>
+<p>还有一点值得提的是，类型检查器不会去检查属性的顺序，只要相应的属性存在并且类型也是对的就可以。</p>
+<h1>可选属性</h1>
+<p>接口里的属性不全都是必需的。 有些是只在某些条件下存在，或者根本不存在。 可选属性在应用“option bags”模式时很常用，即给函数传入的参数对象中只有部分属性赋值了。</p>
+<p>下面是应用了“option bags”的例子：</p>
+<pre><code>interface SquareConfig {
+  color?: string;
+  width?: number;
+}
+
+function createSquare(config: SquareConfig): {color: string; area: number} {
+  let newSquare = {color: "white", area: 100};
+  if (config.color) {
+    newSquare.color = config.color;
+  }
+  if (config.width) {
+    newSquare.area = config.width * config.width;
+  }
+  return newSquare;
+}
+
+let mySquare = createSquare({color: "black"});
+</code></pre>
+<p>带有可选属性的接口与普通的接口定义差不多，只是在可选属性名字定义的后面加一个<code>?</code>符号。</p>
+<p>可选属性的好处之一是可以对可能存在的属性进行预定义，好处之二是可以捕获引用了不存在的属性时的错误。 比如，我们故意将<code>createSquare</code>里的<code>color</code>属性名拼错，就会得到一个错误提示：</p>
+<pre><code>interface SquareConfig {
+  color?: string;
+  width?: number;
+}
+
+function createSquare(config: SquareConfig): { color: string; area: number } {
+  let newSquare = {color: "white", area: 100};
+  if (config.color) {
+    // Error: Property 'clor' does not exist on type 'SquareConfig'
+    newSquare.color = config.clor;
+  }
+  if (config.width) {
+    newSquare.area = config.width * config.width;
+  }
+  return newSquare;
+}
+
+let mySquare = createSquare({color: "black"});
+</code></pre>
+<h1>只读属性</h1>
+<p>一些对象属性只能在对象刚刚创建的时候修改其值。 你可以在属性名前用<code>readonly</code>来指定只读属性:</p>
+<pre><code>interface Point {
+    readonly x: number;
+    readonly y: number;
+}
+</code></pre>
+<p>你可以通过赋值一个对象字面量来构造一个<code>Point</code>。 赋值后，<code>x</code>和<code>y</code>再也不能被改变了。</p>
+<pre><code>let p1: Point = { x: 10, y: 20 };
+p1.x = 5; // error!
+</code></pre>
+<p>TypeScript具有<code>ReadonlyArray&#x3C;T></code>类型，它与<code>Array&#x3C;T></code>相似，只是把所有可变方法去掉了，因此可以确保数组创建后再也不能被修改：</p>
+<pre><code>let a: number[] = [1, 2, 3, 4];
+let ro: ReadonlyArray&#x3C;number> = a;
+ro[0] = 12; // error!
+ro.push(5); // error!
+ro.length = 100; // error!
+a = ro; // error!
+</code></pre>
+<p>上面代码的最后一行，可以看到就算把整个<code>ReadonlyArray</code>赋值到一个普通数组也是不可以的。 但是你可以用类型断言重写：</p>
+<pre><code>a = ro as number[];
+</code></pre>
+<h2><code>readonly</code> vs <code>const</code></h2>
+<p>最简单判断该用<code>readonly</code>还是<code>const</code>的方法是看要把它做为变量使用还是做为一个属性。 做为变量使用的话用<code>const</code>，若做为属性则使用<code>readonly</code>。</p>
+<h1>额外的属性检查</h1>
+<p>我们在第一个例子里使用了接口，TypeScript让我们传入<code>{ size: number; label: string; }</code>到仅期望得到<code>{ label: string; }</code>的函数里。 我们已经学过了可选属性，并且知道他们在“option bags”模式里很有用。</p>
+<p>然而，天真地将这两者结合的话就会像在JavaScript里那样搬起石头砸自己的脚。 比如，拿<code>createSquare</code>例子来说：</p>
+<pre><code>interface SquareConfig {
+    color?: string;
+    width?: number;
+}
+
+function createSquare(config: SquareConfig): { color: string; area: number } {
+    // ...
+}
+
+let mySquare = createSquare({ colour: "red", width: 100 });
+</code></pre>
+<p>注意传入<code>createSquare</code>的参数拼写为<code>colour</code>而不是<code>color</code>。 在JavaScript里，这会默默地失败。</p>
+<p>你可能会争辩这个程序已经正确地类型化了，因为<code>width</code>属性是兼容的，不存在<code>color</code>属性，而且额外的<code>colour</code>属性是无意义的。</p>
+<p>然而，TypeScript会认为这段代码可能存在bug。 对象字面量会被特殊对待而且会经过<em>额外属性检查</em>，当将它们赋值给变量或作为参数传递的时候。 如果一个对象字面量存在任何“目标类型”不包含的属性时，你会得到一个错误。</p>
+<pre><code>// error: 'colour' not expected in type 'SquareConfig'
+let mySquare = createSquare({ colour: "red", width: 100 });
+</code></pre>
+<p>绕开这些检查非常简单。 最简便的方法是使用类型断言：</p>
+<pre><code>let mySquare = createSquare({ width: 100, opacity: 0.5 } as SquareConfig);
+</code></pre>
+<p>然而，最佳的方式是能够添加一个字符串索引签名，前提是你能够确定这个对象可能具有某些做为特殊用途使用的额外属性。 如果<code>SquareConfig</code>带有上面定义的类型的<code>color</code>和<code>width</code>属性，并且<em>还会</em>带有任意数量的其它属性，那么我们可以这样定义它：</p>
+<pre><code>interface SquareConfig {
+    color?: string;
+    width?: number;
+    [propName: string]: any;
+}
+</code></pre>
+<p>我们稍后会讲到索引签名，但在这我们要表示的是<code>SquareConfig</code>可以有任意数量的属性，并且只要它们不是<code>color</code>和<code>width</code>，那么就无所谓它们的类型是什么。</p>
+<p>还有最后一种跳过这些检查的方式，这可能会让你感到惊讶，它就是将这个对象赋值给一个另一个变量： 因为<code>squareOptions</code>不会经过额外属性检查，所以编译器不会报错。</p>
+<pre><code>let squareOptions = { colour: "red", width: 100 };
+let mySquare = createSquare(squareOptions);
+</code></pre>
+<p>要留意，在像上面一样的简单代码里，你可能不应该去绕开这些检查。 对于包含方法和内部状态的复杂对象字面量来讲，你可能需要使用这些技巧，但是大部额外属性检查错误是真正的bug。 就是说你遇到了额外类型检查出的错误，比如“option bags”，你应该去审查一下你的类型声明。 在这里，如果支持传入<code>color</code>或<code>colour</code>属性到<code>createSquare</code>，你应该修改<code>SquareConfig</code>定义来体现出这一点。</p>
+<h1>函数类型</h1>
+<p>接口能够描述JavaScript中对象拥有的各种各样的外形。 除了描述带有属性的普通对象外，接口也可以描述函数类型。</p>
+<p>为了使用接口表示函数类型，我们需要给接口定义一个调用签名。 它就像是一个只有参数列表和返回值类型的函数定义。参数列表里的每个参数都需要名字和类型。</p>
+<pre><code>interface SearchFunc {
+  (source: string, subString: string): boolean;
+}
+</code></pre>
+<p>这样定义后，我们可以像使用其它接口一样使用这个函数类型的接口。 下例展示了如何创建一个函数类型的变量，并将一个同类型的函数赋值给这个变量。</p>
+<pre><code>let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string) {
+  let result = source.search(subString);
+  return result > -1;
+}
+</code></pre>
+<p>对于函数类型的类型检查来说，函数的参数名不需要与接口里定义的名字相匹配。 比如，我们使用下面的代码重写上面的例子：</p>
+<pre><code>let mySearch: SearchFunc;
+mySearch = function(src: string, sub: string): boolean {
+  let result = src.search(sub);
+  return result > -1;
+}
+</code></pre>
+<p>函数的参数会逐个进行检查，要求对应位置上的参数类型是兼容的。 如果你不想指定类型，TypeScript的类型系统会推断出参数类型，因为函数直接赋值给了<code>SearchFunc</code>类型变量。 函数的返回值类型是通过其返回值推断出来的（此例是<code>false</code>和<code>true</code>）。 如果让这个函数返回数字或字符串，类型检查器会警告我们函数的返回值类型与<code>SearchFunc</code>接口中的定义不匹配。</p>
+<pre><code>let mySearch: SearchFunc;
+mySearch = function(src, sub) {
+    let result = src.search(sub);
+    return result > -1;
+}
+</code></pre>
+<h1>可索引的类型</h1>
+<p>与使用接口描述函数类型差不多，我们也可以描述那些能够“通过索引得到”的类型，比如<code>a[10]</code>或<code>ageMap["daniel"]</code>。 可索引类型具有一个<em>索引签名</em>，它描述了对象索引的类型，还有相应的索引返回值类型。 让我们看一个例子：</p>
+<pre><code>interface StringArray {
+  [index: number]: string;
+}
+
+let myArray: StringArray;
+myArray = ["Bob", "Fred"];
+
+let myStr: string = myArray[0];
+</code></pre>
+<p>上面例子里，我们定义了<code>StringArray</code>接口，它具有索引签名。 这个索引签名表示了当用<code>number</code>去索引<code>StringArray</code>时会得到<code>string</code>类型的返回值。</p>
+<p>共有支持两种索引签名：字符串和数字。 可以同时使用两种类型的索引，但是数字索引的返回值必须是字符串索引返回值类型的子类型。 这是因为当使用<code>number</code>来索引时，JavaScript会将它转换成<code>string</code>然后再去索引对象。 也就是说用<code>100</code>（一个<code>number</code>）去索引等同于使用<code>"100"</code>（一个<code>string</code>）去索引，因此两者需要保持一致。</p>
+<pre><code>class Animal {
+    name: string;
+}
+class Dog extends Animal {
+    breed: string;
+}
+
+// 错误：使用'string'索引，有时会得到Animal!
+interface NotOkay {
+    [x: number]: Animal;
+    [x: string]: Dog;
+}
+</code></pre>
+<p>字符串索引签名能够很好的描述<code>dictionary</code>模式，并且它们也会确保所有属性与其返回值类型相匹配。 因为字符串索引声明了<code>obj.property</code>和<code>obj["property"]</code>两种形式都可以。 下面的例子里，<code>name</code>的类型与字符串索引类型不匹配，所以类型检查器给出一个错误提示：</p>
+<pre><code>interface NumberDictionary {
+  [index: string]: number;
+  length: number;    // 可以，length是number类型
+  name: string       // 错误，`name`的类型与索引类型返回值的类型不匹配
+}
+</code></pre>
+<p>最后，你可以将索引签名设置为只读，这样就防止了给索引赋值：</p>
+<pre><code>interface ReadonlyStringArray {
+    readonly [index: number]: string;
+}
+let myArray: ReadonlyStringArray = ["Alice", "Bob"];
+myArray[2] = "Mallory"; // error!
+</code></pre>
+<p>你不能设置<code>myArray[2]</code>，因为索引签名是只读的。</p>
+<h1>类类型</h1>
+<h2>实现接口</h2>
+<p>与C#或Java里接口的基本作用一样，TypeScript也能够用它来明确的强制一个类去符合某种契约。</p>
+<pre><code>interface ClockInterface {
+    currentTime: Date;
+}
+
+class Clock implements ClockInterface {
+    currentTime: Date;
+    constructor(h: number, m: number) { }
+}
+</code></pre>
+<p>你也可以在接口中描述一个方法，在类里实现它，如同下面的<code>setTime</code>方法一样：</p>
+<pre><code>interface ClockInterface {
+    currentTime: Date;
+    setTime(d: Date);
+}
+
+class Clock implements ClockInterface {
+    currentTime: Date;
+    setTime(d: Date) {
+        this.currentTime = d;
+    }
+    constructor(h: number, m: number) { }
+}
+</code></pre>
+<p>接口描述了类的公共部分，而不是公共和私有两部分。 它不会帮你检查类是否具有某些私有成员。</p>
+<h2>类静态部分与实例部分的区别</h2>
+<p>当你操作类和接口的时候，你要知道类是具有两个类型的：静态部分的类型和实例的类型。 你会注意到，当你用构造器签名去定义一个接口并试图定义一个类去实现这个接口时会得到一个错误：</p>
+<pre><code>interface ClockConstructor {
+    new (hour: number, minute: number);
+}
+
+class Clock implements ClockConstructor {
+    currentTime: Date;
+    constructor(h: number, m: number) { }
+}
+</code></pre>
+<p>这里因为当一个类实现了一个接口时，只对其实例部分进行类型检查。 constructor存在于类的静态部分，所以不在检查的范围内。</p>
+<p>因此，我们应该直接操作类的静态部分。 看下面的例子，我们定义了两个接口，<code>ClockConstructor</code>为构造函数所用和<code>ClockInterface</code>为实例方法所用。 为了方便我们定义一个构造函数<code>createClock</code>，它用传入的类型创建实例。</p>
+<pre><code>interface ClockConstructor {
+    new (hour: number, minute: number): ClockInterface;
+}
+interface ClockInterface {
+    tick();
+}
+
+function createClock(ctor: ClockConstructor, hour: number, minute: number): ClockInterface {
+    return new ctor(hour, minute);
+}
+
+class DigitalClock implements ClockInterface {
+    constructor(h: number, m: number) { }
+    tick() {
+        console.log("beep beep");
+    }
+}
+class AnalogClock implements ClockInterface {
+    constructor(h: number, m: number) { }
+    tick() {
+        console.log("tick tock");
+    }
+}
+
+let digital = createClock(DigitalClock, 12, 17);
+let analog = createClock(AnalogClock, 7, 32);
+</code></pre>
+<p>因为<code>createClock</code>的第一个参数是<code>ClockConstructor</code>类型，在<code>createClock(AnalogClock, 7, 32)</code>里，会检查<code>AnalogClock</code>是否符合构造函数签名。</p>
+<h1>继承接口</h1>
+<p>和类一样，接口也可以相互继承。 这让我们能够从一个接口里复制成员到另一个接口里，可以更灵活地将接口分割到可重用的模块里。</p>
+<pre><code>interface Shape {
+    color: string;
+}
+
+interface Square extends Shape {
+    sideLength: number;
+}
+
+let square = &#x3C;Square>{};
+square.color = "blue";
+square.sideLength = 10;
+</code></pre>
+<p>一个接口可以继承多个接口，创建出多个接口的合成接口。</p>
+<pre><code>interface Shape {
+    color: string;
+}
+
+interface PenStroke {
+    penWidth: number;
+}
+
+interface Square extends Shape, PenStroke {
+    sideLength: number;
+}
+
+let square = &#x3C;Square>{};
+square.color = "blue";
+square.sideLength = 10;
+square.penWidth = 5.0;
+</code></pre>
+<h1>混合类型</h1>
+<p>先前我们提过，接口能够描述JavaScript里丰富的类型。 因为JavaScript其动态灵活的特点，有时你会希望一个对象可以同时具有上面提到的多种类型。</p>
+<p>一个例子就是，一个对象可以同时做为函数和对象使用，并带有额外的属性。</p>
+<pre><code>interface Counter {
+    (start: number): string;
+    interval: number;
+    reset(): void;
+}
+
+function getCounter(): Counter {
+    let counter = &#x3C;Counter>function (start: number) { };
+    counter.interval = 123;
+    counter.reset = function () { };
+    return counter;
+}
+
+let c = getCounter();
+c(10);
+c.reset();
+c.interval = 5.0;
+</code></pre>
+<p>在使用JavaScript第三方库的时候，你可能需要像上面那样去完整地定义类型。</p>
+<h1>接口继承类</h1>
+<p>当接口继承了一个类类型时，它会继承类的成员但不包括其实现。 就好像接口声明了所有类中存在的成员，但并没有提供具体实现一样。 接口同样会继承到类的private和protected成员。 这意味着当你创建了一个接口继承了一个拥有私有或受保护的成员的类时，这个接口类型只能被这个类或其子类所实现（implement）。</p>
+<p>当你有一个庞大的继承结构时这很有用，但要指出的是你的代码只在子类拥有特定属性时起作用。 这个子类除了继承至基类外与基类没有任何关系。 例：</p>
+<pre><code>class Control {
+    private state: any;
+}
+
+interface SelectableControl extends Control {
+    select(): void;
+}
+
+class Button extends Control implements SelectableControl {
+    select() { }
+}
+
+class TextBox extends Control {
+
+}
+
+// Error: Property 'state' is missing in type 'Image'.
+class Image implements SelectableControl {
+    select() { }
+}
+
+class Location {
+
+}
+</code></pre>
+<p>在上面的例子里，<code>SelectableControl</code>包含了<code>Control</code>的所有成员，包括私有成员<code>state</code>。 因为<code>state</code>是私有成员，所以只能够是<code>Control</code>的子类们才能实现<code>SelectableControl</code>接口。 因为只有<code>Control</code>的子类才能够拥有一个声明于<code>Control</code>的私有成员<code>state</code>，这对私有成员的兼容性是必需的。</p>
+<p>在<code>Control</code>类内部，是允许通过<code>SelectableControl</code>的实例来访问私有成员<code>state</code>的。 实际上，<code>SelectableControl</code>就像<code>Control</code>一样，并拥有一个<code>select</code>方法。 <code>Button</code>和<code>TextBox</code>类是<code>SelectableControl</code>的子类（因为它们都继承自<code>Control</code>并有<code>select</code>方法），但<code>Image</code>和<code>Location</code>类并不是这样的。</p></div></div></div><div class="border-t border-gray-300 text-center py-8 text-sm">© Copyright<!-- --> <!-- -->2021<!-- --> <!-- -->朱子楚的博客<!-- -->.♥<!-- --> </div></div></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"title":"TypeScript-接口(interface)","description":"TypeScript的核心原则之一是对值所具有的结构进行类型检查。 它有时被称做“鸭式辨型法”或“结构性子类型化”","date":"2021-12-27","modified_date":"2021-12-27","image":"/assets/images/posts/random-img.jpg","content":"\u003ch3\u003e接口(interface)\u003c/h3\u003e\n\u003ch1\u003e介绍\u003c/h1\u003e\n\u003cp\u003eTypeScript的核心原则之一是对值所具有的\u003cem\u003e结构\u003c/em\u003e进行类型检查。 它有时被称做“鸭式辨型法”或“结构性子类型化”。 在TypeScript里，接口的作用就是为这些类型命名和为你的代码或第三方代码定义契约。\u003c/p\u003e\n\u003ch1\u003e接口初探\u003c/h1\u003e\n\u003cp\u003e下面通过一个简单示例来观察接口是如何工作的：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003efunction printLabel(labelledObj: { label: string }) {\r\n  console.log(labelledObj.label);\r\n}\r\n\r\nlet myObj = { size: 10, label: \"Size 10 Object\" };\r\nprintLabel(myObj);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e类型检查器会查看\u003ccode\u003eprintLabel\u003c/code\u003e的调用。 \u003ccode\u003eprintLabel\u003c/code\u003e有一个参数，并要求这个对象参数有一个名为\u003ccode\u003elabel\u003c/code\u003e类型为\u003ccode\u003estring\u003c/code\u003e的属性。 需要注意的是，我们传入的对象参数实际上会包含很多属性，但是编译器只会检查那些必需的属性是否存在，并且其类型是否匹配。 然而，有些时候TypeScript却并不会这么宽松，我们下面会稍做讲解。\u003c/p\u003e\n\u003cp\u003e下面我们重写上面的例子，这次使用接口来描述：必须包含一个\u003ccode\u003elabel\u003c/code\u003e属性且类型为\u003ccode\u003estring\u003c/code\u003e：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface LabelledValue {\r\n  label: string;\r\n}\r\n\r\nfunction printLabel(labelledObj: LabelledValue) {\r\n  console.log(labelledObj.label);\r\n}\r\n\r\nlet myObj = {size: 10, label: \"Size 10 Object\"};\r\nprintLabel(myObj);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e\u003ccode\u003eLabelledValue\u003c/code\u003e接口就好比一个名字，用来描述上面例子里的要求。 它代表了有一个\u003ccode\u003elabel\u003c/code\u003e属性且类型为\u003ccode\u003estring\u003c/code\u003e的对象。 需要注意的是，我们在这里并不能像在其它语言里一样，说传给\u003ccode\u003eprintLabel\u003c/code\u003e的对象实现了这个接口。我们只会去关注值的外形。 只要传入的对象满足上面提到的必要条件，那么它就是被允许的。\u003c/p\u003e\n\u003cp\u003e还有一点值得提的是，类型检查器不会去检查属性的顺序，只要相应的属性存在并且类型也是对的就可以。\u003c/p\u003e\n\u003ch1\u003e可选属性\u003c/h1\u003e\n\u003cp\u003e接口里的属性不全都是必需的。 有些是只在某些条件下存在，或者根本不存在。 可选属性在应用“option bags”模式时很常用，即给函数传入的参数对象中只有部分属性赋值了。\u003c/p\u003e\n\u003cp\u003e下面是应用了“option bags”的例子：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface SquareConfig {\r\n  color?: string;\r\n  width?: number;\r\n}\r\n\r\nfunction createSquare(config: SquareConfig): {color: string; area: number} {\r\n  let newSquare = {color: \"white\", area: 100};\r\n  if (config.color) {\r\n    newSquare.color = config.color;\r\n  }\r\n  if (config.width) {\r\n    newSquare.area = config.width * config.width;\r\n  }\r\n  return newSquare;\r\n}\r\n\r\nlet mySquare = createSquare({color: \"black\"});\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e带有可选属性的接口与普通的接口定义差不多，只是在可选属性名字定义的后面加一个\u003ccode\u003e?\u003c/code\u003e符号。\u003c/p\u003e\n\u003cp\u003e可选属性的好处之一是可以对可能存在的属性进行预定义，好处之二是可以捕获引用了不存在的属性时的错误。 比如，我们故意将\u003ccode\u003ecreateSquare\u003c/code\u003e里的\u003ccode\u003ecolor\u003c/code\u003e属性名拼错，就会得到一个错误提示：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface SquareConfig {\r\n  color?: string;\r\n  width?: number;\r\n}\r\n\r\nfunction createSquare(config: SquareConfig): { color: string; area: number } {\r\n  let newSquare = {color: \"white\", area: 100};\r\n  if (config.color) {\r\n    // Error: Property 'clor' does not exist on type 'SquareConfig'\r\n    newSquare.color = config.clor;\r\n  }\r\n  if (config.width) {\r\n    newSquare.area = config.width * config.width;\r\n  }\r\n  return newSquare;\r\n}\r\n\r\nlet mySquare = createSquare({color: \"black\"});\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch1\u003e只读属性\u003c/h1\u003e\n\u003cp\u003e一些对象属性只能在对象刚刚创建的时候修改其值。 你可以在属性名前用\u003ccode\u003ereadonly\u003c/code\u003e来指定只读属性:\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface Point {\r\n    readonly x: number;\r\n    readonly y: number;\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e你可以通过赋值一个对象字面量来构造一个\u003ccode\u003ePoint\u003c/code\u003e。 赋值后，\u003ccode\u003ex\u003c/code\u003e和\u003ccode\u003ey\u003c/code\u003e再也不能被改变了。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003elet p1: Point = { x: 10, y: 20 };\r\np1.x = 5; // error!\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003eTypeScript具有\u003ccode\u003eReadonlyArray\u0026#x3C;T\u003e\u003c/code\u003e类型，它与\u003ccode\u003eArray\u0026#x3C;T\u003e\u003c/code\u003e相似，只是把所有可变方法去掉了，因此可以确保数组创建后再也不能被修改：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003elet a: number[] = [1, 2, 3, 4];\r\nlet ro: ReadonlyArray\u0026#x3C;number\u003e = a;\r\nro[0] = 12; // error!\r\nro.push(5); // error!\r\nro.length = 100; // error!\r\na = ro; // error!\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e上面代码的最后一行，可以看到就算把整个\u003ccode\u003eReadonlyArray\u003c/code\u003e赋值到一个普通数组也是不可以的。 但是你可以用类型断言重写：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003ea = ro as number[];\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003e\u003ccode\u003ereadonly\u003c/code\u003e vs \u003ccode\u003econst\u003c/code\u003e\u003c/h2\u003e\n\u003cp\u003e最简单判断该用\u003ccode\u003ereadonly\u003c/code\u003e还是\u003ccode\u003econst\u003c/code\u003e的方法是看要把它做为变量使用还是做为一个属性。 做为变量使用的话用\u003ccode\u003econst\u003c/code\u003e，若做为属性则使用\u003ccode\u003ereadonly\u003c/code\u003e。\u003c/p\u003e\n\u003ch1\u003e额外的属性检查\u003c/h1\u003e\n\u003cp\u003e我们在第一个例子里使用了接口，TypeScript让我们传入\u003ccode\u003e{ size: number; label: string; }\u003c/code\u003e到仅期望得到\u003ccode\u003e{ label: string; }\u003c/code\u003e的函数里。 我们已经学过了可选属性，并且知道他们在“option bags”模式里很有用。\u003c/p\u003e\n\u003cp\u003e然而，天真地将这两者结合的话就会像在JavaScript里那样搬起石头砸自己的脚。 比如，拿\u003ccode\u003ecreateSquare\u003c/code\u003e例子来说：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface SquareConfig {\r\n    color?: string;\r\n    width?: number;\r\n}\r\n\r\nfunction createSquare(config: SquareConfig): { color: string; area: number } {\r\n    // ...\r\n}\r\n\r\nlet mySquare = createSquare({ colour: \"red\", width: 100 });\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e注意传入\u003ccode\u003ecreateSquare\u003c/code\u003e的参数拼写为\u003ccode\u003ecolour\u003c/code\u003e而不是\u003ccode\u003ecolor\u003c/code\u003e。 在JavaScript里，这会默默地失败。\u003c/p\u003e\n\u003cp\u003e你可能会争辩这个程序已经正确地类型化了，因为\u003ccode\u003ewidth\u003c/code\u003e属性是兼容的，不存在\u003ccode\u003ecolor\u003c/code\u003e属性，而且额外的\u003ccode\u003ecolour\u003c/code\u003e属性是无意义的。\u003c/p\u003e\n\u003cp\u003e然而，TypeScript会认为这段代码可能存在bug。 对象字面量会被特殊对待而且会经过\u003cem\u003e额外属性检查\u003c/em\u003e，当将它们赋值给变量或作为参数传递的时候。 如果一个对象字面量存在任何“目标类型”不包含的属性时，你会得到一个错误。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e// error: 'colour' not expected in type 'SquareConfig'\r\nlet mySquare = createSquare({ colour: \"red\", width: 100 });\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e绕开这些检查非常简单。 最简便的方法是使用类型断言：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003elet mySquare = createSquare({ width: 100, opacity: 0.5 } as SquareConfig);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e然而，最佳的方式是能够添加一个字符串索引签名，前提是你能够确定这个对象可能具有某些做为特殊用途使用的额外属性。 如果\u003ccode\u003eSquareConfig\u003c/code\u003e带有上面定义的类型的\u003ccode\u003ecolor\u003c/code\u003e和\u003ccode\u003ewidth\u003c/code\u003e属性，并且\u003cem\u003e还会\u003c/em\u003e带有任意数量的其它属性，那么我们可以这样定义它：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface SquareConfig {\r\n    color?: string;\r\n    width?: number;\r\n    [propName: string]: any;\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e我们稍后会讲到索引签名，但在这我们要表示的是\u003ccode\u003eSquareConfig\u003c/code\u003e可以有任意数量的属性，并且只要它们不是\u003ccode\u003ecolor\u003c/code\u003e和\u003ccode\u003ewidth\u003c/code\u003e，那么就无所谓它们的类型是什么。\u003c/p\u003e\n\u003cp\u003e还有最后一种跳过这些检查的方式，这可能会让你感到惊讶，它就是将这个对象赋值给一个另一个变量： 因为\u003ccode\u003esquareOptions\u003c/code\u003e不会经过额外属性检查，所以编译器不会报错。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003elet squareOptions = { colour: \"red\", width: 100 };\r\nlet mySquare = createSquare(squareOptions);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e要留意，在像上面一样的简单代码里，你可能不应该去绕开这些检查。 对于包含方法和内部状态的复杂对象字面量来讲，你可能需要使用这些技巧，但是大部额外属性检查错误是真正的bug。 就是说你遇到了额外类型检查出的错误，比如“option bags”，你应该去审查一下你的类型声明。 在这里，如果支持传入\u003ccode\u003ecolor\u003c/code\u003e或\u003ccode\u003ecolour\u003c/code\u003e属性到\u003ccode\u003ecreateSquare\u003c/code\u003e，你应该修改\u003ccode\u003eSquareConfig\u003c/code\u003e定义来体现出这一点。\u003c/p\u003e\n\u003ch1\u003e函数类型\u003c/h1\u003e\n\u003cp\u003e接口能够描述JavaScript中对象拥有的各种各样的外形。 除了描述带有属性的普通对象外，接口也可以描述函数类型。\u003c/p\u003e\n\u003cp\u003e为了使用接口表示函数类型，我们需要给接口定义一个调用签名。 它就像是一个只有参数列表和返回值类型的函数定义。参数列表里的每个参数都需要名字和类型。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface SearchFunc {\r\n  (source: string, subString: string): boolean;\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e这样定义后，我们可以像使用其它接口一样使用这个函数类型的接口。 下例展示了如何创建一个函数类型的变量，并将一个同类型的函数赋值给这个变量。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003elet mySearch: SearchFunc;\r\nmySearch = function(source: string, subString: string) {\r\n  let result = source.search(subString);\r\n  return result \u003e -1;\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e对于函数类型的类型检查来说，函数的参数名不需要与接口里定义的名字相匹配。 比如，我们使用下面的代码重写上面的例子：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003elet mySearch: SearchFunc;\r\nmySearch = function(src: string, sub: string): boolean {\r\n  let result = src.search(sub);\r\n  return result \u003e -1;\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e函数的参数会逐个进行检查，要求对应位置上的参数类型是兼容的。 如果你不想指定类型，TypeScript的类型系统会推断出参数类型，因为函数直接赋值给了\u003ccode\u003eSearchFunc\u003c/code\u003e类型变量。 函数的返回值类型是通过其返回值推断出来的（此例是\u003ccode\u003efalse\u003c/code\u003e和\u003ccode\u003etrue\u003c/code\u003e）。 如果让这个函数返回数字或字符串，类型检查器会警告我们函数的返回值类型与\u003ccode\u003eSearchFunc\u003c/code\u003e接口中的定义不匹配。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003elet mySearch: SearchFunc;\r\nmySearch = function(src, sub) {\r\n    let result = src.search(sub);\r\n    return result \u003e -1;\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch1\u003e可索引的类型\u003c/h1\u003e\n\u003cp\u003e与使用接口描述函数类型差不多，我们也可以描述那些能够“通过索引得到”的类型，比如\u003ccode\u003ea[10]\u003c/code\u003e或\u003ccode\u003eageMap[\"daniel\"]\u003c/code\u003e。 可索引类型具有一个\u003cem\u003e索引签名\u003c/em\u003e，它描述了对象索引的类型，还有相应的索引返回值类型。 让我们看一个例子：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface StringArray {\r\n  [index: number]: string;\r\n}\r\n\r\nlet myArray: StringArray;\r\nmyArray = [\"Bob\", \"Fred\"];\r\n\r\nlet myStr: string = myArray[0];\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e上面例子里，我们定义了\u003ccode\u003eStringArray\u003c/code\u003e接口，它具有索引签名。 这个索引签名表示了当用\u003ccode\u003enumber\u003c/code\u003e去索引\u003ccode\u003eStringArray\u003c/code\u003e时会得到\u003ccode\u003estring\u003c/code\u003e类型的返回值。\u003c/p\u003e\n\u003cp\u003e共有支持两种索引签名：字符串和数字。 可以同时使用两种类型的索引，但是数字索引的返回值必须是字符串索引返回值类型的子类型。 这是因为当使用\u003ccode\u003enumber\u003c/code\u003e来索引时，JavaScript会将它转换成\u003ccode\u003estring\u003c/code\u003e然后再去索引对象。 也就是说用\u003ccode\u003e100\u003c/code\u003e（一个\u003ccode\u003enumber\u003c/code\u003e）去索引等同于使用\u003ccode\u003e\"100\"\u003c/code\u003e（一个\u003ccode\u003estring\u003c/code\u003e）去索引，因此两者需要保持一致。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eclass Animal {\r\n    name: string;\r\n}\r\nclass Dog extends Animal {\r\n    breed: string;\r\n}\r\n\r\n// 错误：使用'string'索引，有时会得到Animal!\r\ninterface NotOkay {\r\n    [x: number]: Animal;\r\n    [x: string]: Dog;\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e字符串索引签名能够很好的描述\u003ccode\u003edictionary\u003c/code\u003e模式，并且它们也会确保所有属性与其返回值类型相匹配。 因为字符串索引声明了\u003ccode\u003eobj.property\u003c/code\u003e和\u003ccode\u003eobj[\"property\"]\u003c/code\u003e两种形式都可以。 下面的例子里，\u003ccode\u003ename\u003c/code\u003e的类型与字符串索引类型不匹配，所以类型检查器给出一个错误提示：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface NumberDictionary {\r\n  [index: string]: number;\r\n  length: number;    // 可以，length是number类型\r\n  name: string       // 错误，`name`的类型与索引类型返回值的类型不匹配\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e最后，你可以将索引签名设置为只读，这样就防止了给索引赋值：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface ReadonlyStringArray {\r\n    readonly [index: number]: string;\r\n}\r\nlet myArray: ReadonlyStringArray = [\"Alice\", \"Bob\"];\r\nmyArray[2] = \"Mallory\"; // error!\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e你不能设置\u003ccode\u003emyArray[2]\u003c/code\u003e，因为索引签名是只读的。\u003c/p\u003e\n\u003ch1\u003e类类型\u003c/h1\u003e\n\u003ch2\u003e实现接口\u003c/h2\u003e\n\u003cp\u003e与C#或Java里接口的基本作用一样，TypeScript也能够用它来明确的强制一个类去符合某种契约。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface ClockInterface {\r\n    currentTime: Date;\r\n}\r\n\r\nclass Clock implements ClockInterface {\r\n    currentTime: Date;\r\n    constructor(h: number, m: number) { }\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e你也可以在接口中描述一个方法，在类里实现它，如同下面的\u003ccode\u003esetTime\u003c/code\u003e方法一样：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface ClockInterface {\r\n    currentTime: Date;\r\n    setTime(d: Date);\r\n}\r\n\r\nclass Clock implements ClockInterface {\r\n    currentTime: Date;\r\n    setTime(d: Date) {\r\n        this.currentTime = d;\r\n    }\r\n    constructor(h: number, m: number) { }\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e接口描述了类的公共部分，而不是公共和私有两部分。 它不会帮你检查类是否具有某些私有成员。\u003c/p\u003e\n\u003ch2\u003e类静态部分与实例部分的区别\u003c/h2\u003e\n\u003cp\u003e当你操作类和接口的时候，你要知道类是具有两个类型的：静态部分的类型和实例的类型。 你会注意到，当你用构造器签名去定义一个接口并试图定义一个类去实现这个接口时会得到一个错误：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface ClockConstructor {\r\n    new (hour: number, minute: number);\r\n}\r\n\r\nclass Clock implements ClockConstructor {\r\n    currentTime: Date;\r\n    constructor(h: number, m: number) { }\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e这里因为当一个类实现了一个接口时，只对其实例部分进行类型检查。 constructor存在于类的静态部分，所以不在检查的范围内。\u003c/p\u003e\n\u003cp\u003e因此，我们应该直接操作类的静态部分。 看下面的例子，我们定义了两个接口，\u003ccode\u003eClockConstructor\u003c/code\u003e为构造函数所用和\u003ccode\u003eClockInterface\u003c/code\u003e为实例方法所用。 为了方便我们定义一个构造函数\u003ccode\u003ecreateClock\u003c/code\u003e，它用传入的类型创建实例。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface ClockConstructor {\r\n    new (hour: number, minute: number): ClockInterface;\r\n}\r\ninterface ClockInterface {\r\n    tick();\r\n}\r\n\r\nfunction createClock(ctor: ClockConstructor, hour: number, minute: number): ClockInterface {\r\n    return new ctor(hour, minute);\r\n}\r\n\r\nclass DigitalClock implements ClockInterface {\r\n    constructor(h: number, m: number) { }\r\n    tick() {\r\n        console.log(\"beep beep\");\r\n    }\r\n}\r\nclass AnalogClock implements ClockInterface {\r\n    constructor(h: number, m: number) { }\r\n    tick() {\r\n        console.log(\"tick tock\");\r\n    }\r\n}\r\n\r\nlet digital = createClock(DigitalClock, 12, 17);\r\nlet analog = createClock(AnalogClock, 7, 32);\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e因为\u003ccode\u003ecreateClock\u003c/code\u003e的第一个参数是\u003ccode\u003eClockConstructor\u003c/code\u003e类型，在\u003ccode\u003ecreateClock(AnalogClock, 7, 32)\u003c/code\u003e里，会检查\u003ccode\u003eAnalogClock\u003c/code\u003e是否符合构造函数签名。\u003c/p\u003e\n\u003ch1\u003e继承接口\u003c/h1\u003e\n\u003cp\u003e和类一样，接口也可以相互继承。 这让我们能够从一个接口里复制成员到另一个接口里，可以更灵活地将接口分割到可重用的模块里。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface Shape {\r\n    color: string;\r\n}\r\n\r\ninterface Square extends Shape {\r\n    sideLength: number;\r\n}\r\n\r\nlet square = \u0026#x3C;Square\u003e{};\r\nsquare.color = \"blue\";\r\nsquare.sideLength = 10;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e一个接口可以继承多个接口，创建出多个接口的合成接口。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface Shape {\r\n    color: string;\r\n}\r\n\r\ninterface PenStroke {\r\n    penWidth: number;\r\n}\r\n\r\ninterface Square extends Shape, PenStroke {\r\n    sideLength: number;\r\n}\r\n\r\nlet square = \u0026#x3C;Square\u003e{};\r\nsquare.color = \"blue\";\r\nsquare.sideLength = 10;\r\nsquare.penWidth = 5.0;\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch1\u003e混合类型\u003c/h1\u003e\n\u003cp\u003e先前我们提过，接口能够描述JavaScript里丰富的类型。 因为JavaScript其动态灵活的特点，有时你会希望一个对象可以同时具有上面提到的多种类型。\u003c/p\u003e\n\u003cp\u003e一个例子就是，一个对象可以同时做为函数和对象使用，并带有额外的属性。\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003einterface Counter {\r\n    (start: number): string;\r\n    interval: number;\r\n    reset(): void;\r\n}\r\n\r\nfunction getCounter(): Counter {\r\n    let counter = \u0026#x3C;Counter\u003efunction (start: number) { };\r\n    counter.interval = 123;\r\n    counter.reset = function () { };\r\n    return counter;\r\n}\r\n\r\nlet c = getCounter();\r\nc(10);\r\nc.reset();\r\nc.interval = 5.0;\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e在使用JavaScript第三方库的时候，你可能需要像上面那样去完整地定义类型。\u003c/p\u003e\n\u003ch1\u003e接口继承类\u003c/h1\u003e\n\u003cp\u003e当接口继承了一个类类型时，它会继承类的成员但不包括其实现。 就好像接口声明了所有类中存在的成员，但并没有提供具体实现一样。 接口同样会继承到类的private和protected成员。 这意味着当你创建了一个接口继承了一个拥有私有或受保护的成员的类时，这个接口类型只能被这个类或其子类所实现（implement）。\u003c/p\u003e\n\u003cp\u003e当你有一个庞大的继承结构时这很有用，但要指出的是你的代码只在子类拥有特定属性时起作用。 这个子类除了继承至基类外与基类没有任何关系。 例：\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eclass Control {\r\n    private state: any;\r\n}\r\n\r\ninterface SelectableControl extends Control {\r\n    select(): void;\r\n}\r\n\r\nclass Button extends Control implements SelectableControl {\r\n    select() { }\r\n}\r\n\r\nclass TextBox extends Control {\r\n\r\n}\r\n\r\n// Error: Property 'state' is missing in type 'Image'.\r\nclass Image implements SelectableControl {\r\n    select() { }\r\n}\r\n\r\nclass Location {\r\n\r\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e在上面的例子里，\u003ccode\u003eSelectableControl\u003c/code\u003e包含了\u003ccode\u003eControl\u003c/code\u003e的所有成员，包括私有成员\u003ccode\u003estate\u003c/code\u003e。 因为\u003ccode\u003estate\u003c/code\u003e是私有成员，所以只能够是\u003ccode\u003eControl\u003c/code\u003e的子类们才能实现\u003ccode\u003eSelectableControl\u003c/code\u003e接口。 因为只有\u003ccode\u003eControl\u003c/code\u003e的子类才能够拥有一个声明于\u003ccode\u003eControl\u003c/code\u003e的私有成员\u003ccode\u003estate\u003c/code\u003e，这对私有成员的兼容性是必需的。\u003c/p\u003e\n\u003cp\u003e在\u003ccode\u003eControl\u003c/code\u003e类内部，是允许通过\u003ccode\u003eSelectableControl\u003c/code\u003e的实例来访问私有成员\u003ccode\u003estate\u003c/code\u003e的。 实际上，\u003ccode\u003eSelectableControl\u003c/code\u003e就像\u003ccode\u003eControl\u003c/code\u003e一样，并拥有一个\u003ccode\u003eselect\u003c/code\u003e方法。 \u003ccode\u003eButton\u003c/code\u003e和\u003ccode\u003eTextBox\u003c/code\u003e类是\u003ccode\u003eSelectableControl\u003c/code\u003e的子类（因为它们都继承自\u003ccode\u003eControl\u003c/code\u003e并有\u003ccode\u003eselect\u003c/code\u003e方法），但\u003ccode\u003eImage\u003c/code\u003e和\u003ccode\u003eLocation\u003c/code\u003e类并不是这样的。\u003c/p\u003e"},"__N_SSG":true},"page":"/posts/[slug]","query":{"slug":"2021-12-27-接口(interface)"},"buildId":"kxxAP21oB8PIk988OWp9r","isFallback":false,"gsp":true}</script><script nomodule="" src="/_next/static/chunks/polyfills-8683bd742a84c1edd48c.js"></script><script src="/_next/static/chunks/webpack-a249dd4c6f37ee98b7e5.js" async=""></script><script src="/_next/static/chunks/framework-96b16db5c7fc4ac200b0.js" async=""></script><script src="/_next/static/chunks/commons-382182cb786985f5e62d.js" async=""></script><script src="/_next/static/chunks/main-5497377e9e811a22156e.js" async=""></script><script src="/_next/static/chunks/pages/_app-57d3e034b6d62c8a99f7.js" async=""></script><script src="/_next/static/chunks/113-a3ae4763872ae68ae736.js" async=""></script><script src="/_next/static/chunks/605-f29c82d5c4069a60f554.js" async=""></script><script src="/_next/static/chunks/pages/posts/%5Bslug%5D-db1ad027246368e915ec.js" async=""></script><script src="/_next/static/kxxAP21oB8PIk988OWp9r/_buildManifest.js" async=""></script><script src="/_next/static/kxxAP21oB8PIk988OWp9r/_ssgManifest.js" async=""></script></body></html>
