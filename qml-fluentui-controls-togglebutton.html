@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- ToggleButton.qdoc -->
+  <meta name="description" content="一个自定义的切换按钮组件。">
+  <title>ToggleButton QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>ToggleButton</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">ToggleButton QML Type</h1>
+<!-- $$$ToggleButton-brief -->
+<p>一个自定义的切换按钮组件。. <a href="#details">More...</a></p>
+<!-- @@@ToggleButton -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-togglebutton-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-togglebutton.html#checked-prop" translate="no">checked</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-togglebutton.html#highlighted-prop" translate="no">highlighted</a></b> : bool</li>
+</ul>
+<!-- $$$ToggleButton-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`ToggleButton` 组件是一个具有开关功能的按钮，继承自 `<a href="qml-fluentui-controls-standardbutton.html" translate="no">StandardButton</a>`，并扩展了其功能以支持切换状态。按钮的 `highlighted` 状态基于 `checked` 属性，用于指示按钮是否被选中。该组件适用于需要切换状态的交互场景，如开关控件。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-togglebutton.html" translate="no">ToggleButton</a></span> {
+  <span class="name">text</span>: <span class="name">qsTr</span>(<span class="string">&quot;Toggle Me&quot;</span>)
+  <span class="name">checked</span>: <span class="number">true</span>
+  <span class="name">onClicked</span>: {
+      <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;Button clicked, checked state: &quot;</span> <span class="operator">+</span> <span class="name">checked</span>)
+  }
+ }
+</pre>
+<!-- @@@ToggleButton -->
+<h2>Property Documentation</h2>
+<!-- $$$checked -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="checked-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">checked</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>指示按钮是否被选中。按钮的 `highlighted` 状态基于此属性。</p>
+</div></div><!-- @@@checked -->
+<br/>
+<!-- $$$highlighted -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="highlighted-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">highlighted</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>指示按钮是否被高亮显示。此状态由 `checked` 属性控制。</p>
+</div></div><!-- @@@highlighted -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

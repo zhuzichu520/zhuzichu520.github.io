@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- AutoSuggestBox.qdoc -->
+  <meta name="description" content="提供自动建议功能的文本输入框。">
+  <title>AutoSuggestBox QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>AutoSuggestBox</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">AutoSuggestBox QML Type</h1>
+<!-- $$$AutoSuggestBox-brief -->
+<p>提供自动建议功能的文本输入框。. <a href="#details">More...</a></p>
+<!-- @@@AutoSuggestBox -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-autosuggestbox-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-autosuggestbox.html#filter-prop" translate="no">filter</a></b> : function</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-autosuggestbox.html#items-prop" translate="no">items</a></b> : array</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-autosuggestbox.html#maximumCount-prop" translate="no">maximumCount</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-autosuggestbox.html#noResultsMessage-prop" translate="no">noResultsMessage</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-autosuggestbox.html#textRole-prop" translate="no">textRole</a></b> : string</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-autosuggestbox.html#tap-signal" translate="no">tap</a></b>(var <i>data</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-autosuggestbox.html#close-method" translate="no">close</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-autosuggestbox.html#updateText-method" translate="no">updateText</a></b>(string <i>text</i>)</li>
+</ul>
+<!-- $$$AutoSuggestBox-description -->
+<h2 id="details">Detailed Description</h2>
+<p>AutoSuggestBox 是一个带有自动建议功能的文本输入框组件。用户在输入文本时，组件会根据预定义的筛选条件显示匹配的建议列表。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-autosuggestbox.html" translate="no">AutoSuggestBox</a></span> {
+     <span class="name">items</span>: [
+         {title: <span class="string">&quot;Apple&quot;</span>},
+         {title: <span class="string">&quot;Banana&quot;</span>},
+         {title: <span class="string">&quot;Cherry&quot;</span>}
+     ]
+     <span class="name">filter</span>: <span class="keyword">function</span>(item) {
+         <span class="keyword">return</span> <span class="name">item</span>.<span class="name">title</span>.<span class="name">indexOf</span>(<span class="name">control</span>.<span class="name">text</span>) <span class="operator">!==</span> -<span class="number">1</span>;
+     }
+     <span class="name">onTap</span>: <span class="keyword">function</span>(data) {
+         <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;Selected item:&quot;</span>, <span class="name">data</span>);
+     }
+ }
+</pre>
+<!-- @@@AutoSuggestBox -->
+<h2>Property Documentation</h2>
+<!-- $$$filter -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="filter-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">filter</span> : <span class="type">function</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于过滤项目的函数。默认实现根据 `title` 字段与输入文本的匹配来筛选项目。</p>
+<p>例如：</p>
+<pre class="qml" translate="no">
+ filter: function(item) {
+     return item.title.toLowerCase().indexOf(control.text.toLowerCase()) !== -1;
+ }
+</pre>
+</div></div><!-- @@@filter -->
+<br/>
+<!-- $$$items -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="items-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">items</span> : <span class="type">array</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于提供建议的项目数组。每个项目应包含文本字段 `title`，或可以根据 `<a href="qml-fluentui-controls-autosuggestbox.html#textRole-prop" translate="no">textRole</a>` 指定其他字段。</p>
+<p>例如：</p>
+<pre class="qml" translate="no">
+ items: [
+     {title: &quot;Apple&quot;},
+     {title: &quot;Banana&quot;},
+     {title: &quot;Cherry&quot;}
+ ]
+</pre>
+</div></div><!-- @@@items -->
+<br/>
+<!-- $$$maximumCount -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="maximumCount-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">maximumCount</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>下拉建议框中最多显示的项目数量。默认值为 8。</p>
+<p>例如：</p>
+<pre class="qml" translate="no">
+ maximumCount: 5
+</pre>
+</div></div><!-- @@@maximumCount -->
+<br/>
+<!-- $$$noResultsMessage -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="noResultsMessage-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">noResultsMessage</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当没有找到匹配的建议时显示的消息。默认值为 &quot;No results found&quot;。</p>
+<p>例如：</p>
+<pre class="qml" translate="no">
+ noResultsMessage: qsTr(&quot;未找到结果&quot;)
+</pre>
+</div></div><!-- @@@noResultsMessage -->
+<br/>
+<!-- $$$textRole -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="textRole-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">textRole</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于匹配的文本字段名称。默认值为 &quot;title&quot;。</p>
+<p>例如：</p>
+<pre class="qml" translate="no">
+ textRole: &quot;name&quot;
+</pre>
+</div></div><!-- @@@textRole -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$tap[overload1]$$$tapvar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="tap-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">tap</span>(<span class="type">var</span> <i>data</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当用户点击建议列表中的某项时触发。信号携带被点击的项的数据。</p>
+<p>例如：</p>
+<pre class="qml" translate="no">
+ onTap: function(data) {
+     console.log(&quot;Selected item:&quot;, data);
+ }
+</pre>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onTap</code>.</p>
+</div></div></div><!-- @@@tap -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$close[overload1]$$$close -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="close-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">close</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>关闭下拉建议框。</p>
+<p>例如：</p>
+<pre class="qml" translate="no">
+ control.close();
+</pre>
+</div></div><!-- @@@close -->
+<br/>
+<!-- $$$updateText[overload1]$$$updateTextstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="updateText-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">updateText</span>(<span class="type">string</span> <i>text</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>更新文本输入框中的文本，并且不触发自动建议。</p>
+<p>例如：</p>
+<pre class="qml" translate="no">
+ control.updateText(&quot;New Text&quot;);
+</pre>
+</div></div><!-- @@@updateText -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

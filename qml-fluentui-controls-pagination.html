@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Pagination.qdoc -->
+  <meta name="description" content="一个用于分页导航的组件。">
+  <title>Pagination QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>Pagination</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Pagination QML Type</h1>
+<!-- $$$Pagination-brief -->
+<p>一个用于分页导航的组件。. <a href="#details">More...</a></p>
+<!-- @@@Pagination -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-pagination-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-pagination.html#footer-prop" translate="no">footer</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-pagination.html#header-prop" translate="no">header</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-pagination.html#itemCount-prop" translate="no">itemCount</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-pagination.html#nextText-prop" translate="no">nextText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-pagination.html#pageButtonCount-prop" translate="no">pageButtonCount</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-pagination.html#pageCount-prop" translate="no">pageCount</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-pagination.html#pageCurrent-prop" translate="no">pageCurrent</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-pagination.html#previousText-prop" translate="no">previousText</a></b> : string</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-pagination.html#requestPage-signal" translate="no">requestPage</a></b>(int <i>page</i>, int <i>count</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-pagination.html#calcNewPage-method" translate="no">calcNewPage</a></b>(int <i>page</i>)</li>
+</ul>
+<!-- $$$Pagination-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`Pagination` 组件提供分页导航功能，可以在多个页面之间进行切换。它支持显示分页按钮、导航到特定页面以及显示上一页和下一页按钮。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-pagination.html" translate="no">Pagination</a></span> {
+ <span class="name">itemCount</span>: <span class="number">50</span>
+ <span class="name">pageCurrent</span>: <span class="number">1</span>
+ <span class="name">pageButtonCount</span>: <span class="number">5</span>
+ <span class="name">__itemPerPage</span>: <span class="number">10</span>
+ <span class="name">previousText</span>: <span class="name">qsTr</span>(<span class="string">&quot;&lt; Previous&quot;</span>)
+ <span class="name">nextText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Next &gt;&quot;</span>)
+
+ <span class="name">onRequestPage</span>: {
+ <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;Requesting page:&quot;</span>, <span class="name">page</span>, <span class="string">&quot;with items per page:&quot;</span>, <span class="name">count</span>);
+ <span class="comment">// 实际的页面请求处理</span>
+ }
+ }
+</pre>
+<!-- @@@Pagination -->
+<h2>Property Documentation</h2>
+<!-- $$$footer -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="footer-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">footer</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件的底部，可选的 QML 组件。</p>
+</div></div><!-- @@@footer -->
+<br/>
+<!-- $$$header -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="header-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">header</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件的头部，可选的 QML 组件。</p>
+</div></div><!-- @@@header -->
+<br/>
+<!-- $$$itemCount -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="itemCount-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">itemCount</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>总项目数量。</p>
+</div></div><!-- @@@itemCount -->
+<br/>
+<!-- $$$nextText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="nextText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">nextText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>下一页按钮的文本。</p>
+</div></div><!-- @@@nextText -->
+<br/>
+<!-- $$$pageButtonCount -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="pageButtonCount-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">pageButtonCount</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>显示的页码按钮的数量。</p>
+</div></div><!-- @@@pageButtonCount -->
+<br/>
+<!-- $$$pageCount -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="pageCount-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">pageCount</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>总页数，基于 `<a href="qml-fluentui-controls-pagination.html#itemCount-prop" translate="no">itemCount</a>` 和 `__itemPerPage` 计算得出。</p>
+</div></div><!-- @@@pageCount -->
+<br/>
+<!-- $$$pageCurrent -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="pageCurrent-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">pageCurrent</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当前显示的页面索引，从 1 开始。</p>
+</div></div><!-- @@@pageCurrent -->
+<br/>
+<!-- $$$previousText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="previousText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">previousText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>上一页按钮的文本。</p>
+</div></div><!-- @@@previousText -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$requestPage[overload1]$$$requestPageintint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="requestPage-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">requestPage</span>(<span class="type">int</span> <i>page</i>, <span class="type">int</span> <i>count</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>请求加载特定页面的信号，`page` 是请求的页面索引，`count` 是每页的项目数量。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onRequestPage</code>.</p>
+</div></div></div><!-- @@@requestPage -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$calcNewPage[overload1]$$$calcNewPageint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="calcNewPage-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">calcNewPage</span>(<span class="type">int</span> <i>page</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>计算并设置新的当前页面，并触发 `<a href="qml-fluentui-controls-pagination.html#requestPage-signal" translate="no">requestPage</a>` 信号。如果页面无效或已是当前页面，则不做操作。</p>
+</div></div><!-- @@@calcNewPage -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- DatePicker.qdoc -->
+  <meta name="description" content="一个用于选择日期的组件，支持年、月、日的选择。">
+  <title>DatePicker QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>DatePicker</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">DatePicker QML Type</h1>
+<!-- $$$DatePicker-brief -->
+<p>一个用于选择日期的组件，支持年、月、日的选择。. <a href="#details">More...</a></p>
+<!-- @@@DatePicker -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-datepicker-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datepicker.html#current-prop" translate="no">current</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datepicker.html#dayText-prop" translate="no">dayText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datepicker.html#endDate-prop" translate="no">endDate</a></b> : date</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datepicker.html#monthText-prop" translate="no">monthText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datepicker.html#showDay-prop" translate="no">showDay</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datepicker.html#showMonth-prop" translate="no">showMonth</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datepicker.html#showYear-prop" translate="no">showYear</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datepicker.html#startDate-prop" translate="no">startDate</a></b> : date</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datepicker.html#yearText-prop" translate="no">yearText</a></b> : string</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datepicker.html#accepted-signal" translate="no">accepted</a></b>()</li>
+</ul>
+<!-- $$$DatePicker-description -->
+<h2 id="details">Detailed Description</h2>
+<p>DatePicker 组件是一个自定义的日期选择器，允许用户从指定的时间范围内选择一个日期。该组件提供了多种属性，用于控制显示的日期范围、显示的时间单位（年、月、日），以及与本地化相关的日期格式。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-datepicker.html" translate="no">DatePicker</a></span> {
+     <span class="name">showYear</span>: <span class="number">true</span>
+     <span class="name">showMonth</span>: <span class="number">true</span>
+     <span class="name">showDay</span>: <span class="number">true</span>
+     <span class="name">startDate</span>: new <span class="name">Date</span>(<span class="number">1924</span>, <span class="number">0</span>, <span class="number">1</span>)
+     <span class="name">endDate</span>: new <span class="name">Date</span>(<span class="number">2124</span>, <span class="number">0</span>, <span class="number">1</span>)
+     <span class="name">onAccepted</span>: {
+         <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;Selected date:&quot;</span>, <span class="name">current</span>)
+     }
+ }
+</pre>
+<!-- @@@DatePicker -->
+<h2>Property Documentation</h2>
+<!-- $$$current -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="current-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">current</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当前选择的日期。</p>
+</div></div><!-- @@@current -->
+<br/>
+<!-- $$$dayText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="dayText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">dayText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>日期选择框的默认文本。</p>
+</div></div><!-- @@@dayText -->
+<br/>
+<!-- $$$endDate -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="endDate-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">endDate</span> : <span class="type">date</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>可选择的结束日期。</p>
+</div></div><!-- @@@endDate -->
+<br/>
+<!-- $$$monthText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="monthText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">monthText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>月份选择框的默认文本。</p>
+</div></div><!-- @@@monthText -->
+<br/>
+<!-- $$$showDay -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="showDay-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">showDay</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否显示日期选择框。默认值为 <code translate="no">true。</code></p>
+</div></div><!-- @@@showDay -->
+<br/>
+<!-- $$$showMonth -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="showMonth-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">showMonth</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否显示月份选择框。默认值为 <code translate="no">true。</code></p>
+</div></div><!-- @@@showMonth -->
+<br/>
+<!-- $$$showYear -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="showYear-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">showYear</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否显示年份选择框。默认值为 <code translate="no">true。</code></p>
+</div></div><!-- @@@showYear -->
+<br/>
+<!-- $$$startDate -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="startDate-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">startDate</span> : <span class="type">date</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>可选择的起始日期。</p>
+</div></div><!-- @@@startDate -->
+<br/>
+<!-- $$$yearText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="yearText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">yearText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>年份选择框的默认文本。</p>
+</div></div><!-- @@@yearText -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$accepted[overload1]$$$accepted -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="accepted-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">accepted</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当用户点击确认按钮并选择日期时发出此信号。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onAccepted</code>.</p>
+</div></div></div><!-- @@@accepted -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

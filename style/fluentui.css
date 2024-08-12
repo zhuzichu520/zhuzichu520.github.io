@@ -1,0 +1,96 @@
+code {
+    color: red;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.fluentui-ribbon {
+    width: 100%;
+    height: 40vh;
+    background-color: antiquewhite;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.fluentui-main {
+    margin-top: -35vh;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.fluentui-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+}
+
+.fluentui-content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+}
+
+.fluentui-layout.is-small-screen .fluentui-content {
+    padding: 40px 28px;
+}
+
+.fluentui-content h3 {
+    margin-top: 48px;
+}
+
+.fluentui-bird {
+    font-size: 24px;
+    opacity: 1;
+    margin: 0 24px;
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .fluentui-bird {
+        display: inline-block;
+    }
+    .mdl-layout__drawer-button {
+        display: none;
+    }
+    .mdl-layout__header-row {
+        padding-left: 24px !important;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.no-padding-top {
+    padding-top: 0;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0;
+}
+
+.primary-text {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.secondary-text {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+ul.toc {
+    border-left: solid 3px #c0ebf1;
+    padding-left: 20px;
+    line-height: 28px;
+
+    li {
+        font-size: 16px;
+        list-style: none;
+
+        a {
+            font-weight: 400;
+            color: #00bcd4;
+            text-decoration: none;
+        }
+    }
+}

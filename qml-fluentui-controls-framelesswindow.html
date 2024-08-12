@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- FramelessWindow.qdoc -->
+  <meta name="description" content="一个无边框窗口组件，具有自定义标题栏和窗口控制功能。">
+  <title>FramelessWindow QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>FramelessWindow</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">FramelessWindow QML Type</h1>
+<!-- $$$FramelessWindow-brief -->
+<p>一个无边框窗口组件，具有自定义标题栏和窗口控制功能。. <a href="#details">More...</a></p>
+<!-- @@@FramelessWindow -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-framelesswindow-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-framelesswindow.html#appBar-prop" translate="no">appBar</a></b> : Item</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-framelesswindow.html#autoDestroy-prop" translate="no">autoDestroy</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-framelesswindow.html#fitsAppBarWindows-prop" translate="no">fitsAppBarWindows</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-framelesswindow.html#fixSize-prop" translate="no">fixSize</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-framelesswindow.html#initialItem-prop" translate="no">initialItem</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-framelesswindow.html#launchMode-prop" translate="no">launchMode</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-framelesswindow.html#onCloseListener-prop" translate="no">onCloseListener</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-framelesswindow.html#topmost-prop" translate="no">topmost</a></b> : bool</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-framelesswindow.html#init-signal" translate="no">init</a></b>(var <i>argument</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-framelesswindow.html#newInit-signal" translate="no">newInit</a></b>(var <i>argument</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-framelesswindow.html#deleteLater-method" translate="no">deleteLater</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-framelesswindow.html#setHitTestVisible-method" translate="no">setHitTestVisible</a></b>(int <i>id</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-framelesswindow.html#setResult-method" translate="no">setResult</a></b>(var <i>data</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-framelesswindow.html#showMaximized-method" translate="no">showMaximized</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-framelesswindow.html#showMinimized-method" translate="no">showMinimized</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-framelesswindow.html#showNormal-method" translate="no">showNormal</a></b>()</li>
+</ul>
+<!-- $$$FramelessWindow-description -->
+<h2 id="details">Detailed Description</h2>
+<p>FramelessWindow 组件是一个自定义窗口，支持无边框显示，并提供了自定义标题栏、窗口最大化、最小化和关闭等功能。该组件适用于需要完全自定义窗口外观和行为的应用程序。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-framelesswindow.html" translate="no">FramelessWindow</a></span> {
+     <span class="name">initialItem</span>: <span class="name">someComponent</span>
+     <span class="name">appBar</span>: <span class="name">AppBar</span> {
+         <span class="name">windowTitle</span>: <span class="string">&quot;My Application&quot;</span>
+     }
+     <span class="name">onCloseListener</span>: <span class="keyword">function</span>(event) {
+         <span class="comment">// 自定义关闭事件处理逻辑</span>
+     }
+ }
+</pre>
+<!-- @@@FramelessWindow -->
+<h2>Property Documentation</h2>
+<!-- $$$appBar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="appBar-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">appBar</span> : <span class="type">Item</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>窗口的应用程序栏组件，用于显示窗口标题和控制按钮。</p>
+</div></div><!-- @@@appBar -->
+<br/>
+<!-- $$$autoDestroy -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="autoDestroy-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">autoDestroy</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>如果为 true，当窗口关闭时将自动销毁窗口实例。</p>
+</div></div><!-- @@@autoDestroy -->
+<br/>
+<!-- $$$fitsAppBarWindows -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fitsAppBarWindows-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fitsAppBarWindows</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>指示窗口是否适配应用程序栏窗口。如果为 true，窗口将适应应用程序栏的尺寸。</p>
+</div></div><!-- @@@fitsAppBarWindows -->
+<br/>
+<!-- $$$fixSize -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="fixSize-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">fixSize</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>如果为 true，窗口大小将被固定，不允许调整。</p>
+</div></div><!-- @@@fixSize -->
+<br/>
+<!-- $$$initialItem -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="initialItem-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">initialItem</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>窗口启动时显示的初始项目。</p>
+</div></div><!-- @@@initialItem -->
+<br/>
+<!-- $$$launchMode -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="launchMode-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">launchMode</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>窗口的启动模式。可以是 `WindowType.Standard` 等标准模式。</p>
+</div></div><!-- @@@launchMode -->
+<br/>
+<!-- $$$onCloseListener -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="onCloseListener-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">onCloseListener</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>处理窗口关闭事件的自定义函数。如果 `<a href="qml-fluentui-controls-framelesswindow.html#autoDestroy-prop" translate="no">autoDestroy</a>` 为 true，则调用 `<a href="qml-fluentui-controls-windowrouter.html" translate="no">WindowRouter</a>.removeWindow` 方法；否则，将窗口设置为隐藏，并取消关闭事件。</p>
+</div></div><!-- @@@onCloseListener -->
+<br/>
+<!-- $$$topmost -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="topmost-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">topmost</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>指示窗口是否应始终保持在最上层。</p>
+</div></div><!-- @@@topmost -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$init[overload1]$$$initvar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="init-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">init</span>(<span class="type">var</span> <i>argument</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>初始化信号，当窗口被初始化时发出。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onInit</code>.</p>
+</div></div></div><!-- @@@init -->
+<br/>
+<!-- $$$newInit[overload1]$$$newInitvar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="newInit-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">newInit</span>(<span class="type">var</span> <i>argument</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>新初始化信号，当窗口的新初始化发生时发出。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onNewInit</code>.</p>
+</div></div></div><!-- @@@newInit -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$deleteLater[overload1]$$$deleteLater -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="deleteLater-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">deleteLater</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>标记窗口以便稍后删除。</p>
+</div></div><!-- @@@deleteLater -->
+<br/>
+<!-- $$$setHitTestVisible[overload1]$$$setHitTestVisibleint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setHitTestVisible-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setHitTestVisible</span>(<span class="type">int</span> <i>id</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>设置指定 ID 的控件是否可见于点击测试。</p>
+</div></div><!-- @@@setHitTestVisible -->
+<br/>
+<!-- $$$setResult[overload1]$$$setResultvar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setResult-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setResult</span>(<span class="type">var</span> <i>data</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>设置窗口的结果数据。如果窗口注册了结果处理器，则调用该处理器的 `setResult` 方法。</p>
+</div></div><!-- @@@setResult -->
+<br/>
+<!-- $$$showMaximized[overload1]$$$showMaximized -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="showMaximized-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">showMaximized</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>使窗口最大化显示。</p>
+</div></div><!-- @@@showMaximized -->
+<br/>
+<!-- $$$showMinimized[overload1]$$$showMinimized -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="showMinimized-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">showMinimized</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>使窗口最小化显示。</p>
+</div></div><!-- @@@showMinimized -->
+<br/>
+<!-- $$$showNormal[overload1]$$$showNormal -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="showNormal-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">showNormal</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>恢复窗口为正常显示模式。</p>
+</div></div><!-- @@@showNormal -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

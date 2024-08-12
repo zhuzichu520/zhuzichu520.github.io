@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- ScrollablePage.qdoc -->
+  <meta name="description" content="一个支持滚动的页面组件，用于展示具有垂直滚动条的内容。">
+  <title>ScrollablePage QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>ScrollablePage</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">ScrollablePage QML Type</h1>
+<!-- $$$ScrollablePage-brief -->
+<p>一个支持滚动的页面组件，用于展示具有垂直滚动条的内容。. <a href="#details">More...</a></p>
+<!-- @@@ScrollablePage -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-scrollablepage-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-scrollablepage.html#bottomMargin-prop" translate="no">bottomMargin</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-scrollablepage.html#columnSpacing-prop" translate="no">columnSpacing</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-scrollablepage.html#leftPadding-prop" translate="no">leftPadding</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-scrollablepage.html#rightPadding-prop" translate="no">rightPadding</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-scrollablepage.html#topPadding-prop" translate="no">topPadding</a></b> : int</li>
+</ul>
+<!-- $$$ScrollablePage-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`ScrollablePage` 组件是一个容器，用于展示具有垂直滚动条的内容。它支持自定义列间距、顶部、左侧、右侧的内边距，以及底部的边距。内容区域被设置为 `Flickable` 以允许用户滚动查看超出视口的内容。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-scrollablepage.html" translate="no">ScrollablePage</a></span> {
+ <span class="name">columnSpacing</span>: <span class="number">10</span>
+ <span class="name">topPadding</span>: <span class="number">16</span>
+ <span class="name">leftPadding</span>: <span class="number">16</span>
+ <span class="name">rightPadding</span>: <span class="number">16</span>
+ <span class="name">bottomMargin</span>: <span class="number">16</span>
+ <span class="name">content</span>: <span class="name">ColumnLayout</span> {
+  <span class="comment">// 在此处添加要显示的内容</span>
+ }
+ }
+</pre>
+<!-- @@@ScrollablePage -->
+<h2>Property Documentation</h2>
+<!-- $$$bottomMargin -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="bottomMargin-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">bottomMargin</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>页面底部的边距（以像素为单位）。默认为 `24`。</p>
+</div></div><!-- @@@bottomMargin -->
+<br/>
+<!-- $$$columnSpacing -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="columnSpacing-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">columnSpacing</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列之间的间距（以像素为单位）。默认为 `0`。</p>
+</div></div><!-- @@@columnSpacing -->
+<br/>
+<!-- $$$leftPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="leftPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">leftPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>页面左侧的内边距（以像素为单位）。默认为 `24`。</p>
+</div></div><!-- @@@leftPadding -->
+<br/>
+<!-- $$$rightPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rightPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">rightPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>页面右侧的内边距（以像素为单位）。默认为 `24`。</p>
+</div></div><!-- @@@rightPadding -->
+<br/>
+<!-- $$$topPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="topPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">topPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>页面顶部的内边距（以像素为单位）。默认为 `24`。</p>
+</div></div><!-- @@@topPadding -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

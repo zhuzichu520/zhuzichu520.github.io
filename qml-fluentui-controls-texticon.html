@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- TextIcon.qdoc -->
+  <meta name="description" content="一个自定义的文本和图标组合组件，支持图标和文本的不同排列方式。">
+  <title>TextIcon QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>TextIcon</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">TextIcon QML Type</h1>
+<!-- $$$TextIcon-brief -->
+<p>一个自定义的文本和图标组合组件，支持图标和文本的不同排列方式。. <a href="#details">More...</a></p>
+<!-- @@@TextIcon -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-texticon-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-texticon.html#color-prop" translate="no">color</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-texticon.html#display-prop" translate="no">display</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-texticon.html#family-prop" translate="no">family</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-texticon.html#iconDelegate-prop" translate="no">iconDelegate</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-texticon.html#reverse-prop" translate="no">reverse</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-texticon.html#spacing-prop" translate="no">spacing</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-texticon.html#text-prop" translate="no">text</a></b> : string</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-texticon.html#onClicked-signal" translate="no">onClicked</a></b>()</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-texticon.html#setIconSource-method" translate="no">setIconSource</a></b>(string <i>source</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-texticon.html#setText-method" translate="no">setText</a></b>(string <i>text</i>)</li>
+</ul>
+<!-- $$$TextIcon-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`TextIcon` 组件将图标和文本组合在一个可自定义的布局中，支持文本在图标旁边或图标下方的显示方式。用户可以通过属性来调整图标和文本的排列顺序、间距以及显示样式。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-texticon.html" translate="no">TextIcon</a></span> {
+  <span class="name">text</span>: <span class="string">&quot;Settings&quot;</span>
+  <span class="name">icon</span>.source: <span class="string">&quot;icons/settings.svg&quot;</span>
+  <span class="name">spacing</span>: <span class="number">8</span>
+  <span class="name">display</span>: <span class="name">Button</span>.<span class="name">TextBesideIcon</span>
+  <span class="name">reverse</span>: <span class="number">false</span>
+  <span class="name">font</span>: <span class="name">Typography</span>.<span class="name">body</span>
+ }
+</pre>
+<!-- @@@TextIcon -->
+<h2>Property Documentation</h2>
+<!-- $$$color -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="color-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">color</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>图标和文本的颜色。根据组件的启用状态进行调整。</p>
+<p>默认值为 `enabled ? Theme.res.textFillColorPrimary : Theme.res.textFillColorDisabled`。</p>
+</div></div><!-- @@@color -->
+<br/>
+<!-- $$$display -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="display-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">display</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>图标和文本的显示模式。可以是以下值之一： - `Button.TextBesideIcon`：文本在图标旁边 - `Button.TextUnderIcon`：文本在图标下方 - `Button.TextOnly`：仅显示文本 - `Button.IconOnly`：仅显示图标</p>
+<p>默认值为 `Button.TextBesideIcon`。</p>
+</div></div><!-- @@@display -->
+<br/>
+<!-- $$$family -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="family-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">family</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>图标字体的名称，用于指定图标的字体族。</p>
+<p>默认值为 `FluentIcons.fontLoader.name`。</p>
+</div></div><!-- @@@family -->
+<br/>
+<!-- $$$iconDelegate -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="iconDelegate-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">iconDelegate</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>图标的自定义组件。可以用于进一步定制图标的外观。</p>
+<p>默认值为 `comp_icon`。</p>
+</div></div><!-- @@@iconDelegate -->
+<br/>
+<!-- $$$reverse -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="reverse-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">reverse</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否反转图标和文本的显示顺序。为 `true` 时，文本显示在图标下方；为 `false` 时，文本显示在图标旁边。</p>
+<p>默认值为 `false`。</p>
+</div></div><!-- @@@reverse -->
+<br/>
+<!-- $$$spacing -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="spacing-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">spacing</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>图标和文本之间的间距。</p>
+<p>默认值为 `0`。</p>
+</div></div><!-- @@@spacing -->
+<br/>
+<!-- $$$text -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="text-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">text</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>要显示的文本内容。</p>
+<p>默认值为空字符串。</p>
+</div></div><!-- @@@text -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$onClicked[overload1]$$$onClicked -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="onClicked-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">onClicked</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当图标和文本组合项被点击时发出的信号。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onOnClicked</code>.</p>
+</div></div></div><!-- @@@onClicked -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$setIconSource[overload1]$$$setIconSourcestring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setIconSource-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setIconSource</span>(<span class="type">string</span> <i>source</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>设置图标的来源。</p>
+<p><i>source</i> 图标的来源 URL 或路径。</p>
+</div></div><!-- @@@setIconSource -->
+<br/>
+<!-- $$$setText[overload1]$$$setTextstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setText-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setText</span>(<span class="type">string</span> <i>text</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>设置显示的文本内容。</p>
+<p><i>text</i> 要显示的文本。</p>
+</div></div><!-- @@@setText -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

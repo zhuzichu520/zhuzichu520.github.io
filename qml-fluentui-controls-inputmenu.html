@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- InputMenu.qdoc -->
+  <meta name="description" content="提供一个上下文菜单，用于输入操作（剪切、复制、粘贴、撤销、全选）。">
+  <title>InputMenu QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>InputMenu</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">InputMenu QML Type</h1>
+<!-- $$$InputMenu-brief -->
+<p>提供一个上下文菜单，用于输入操作（剪切、复制、粘贴、撤销、全选）。. <a href="#details">More...</a></p>
+<!-- @@@InputMenu -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-inputmenu-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-inputmenu.html#copyText-prop" translate="no">copyText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-inputmenu.html#cutText-prop" translate="no">cutText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-inputmenu.html#pasteText-prop" translate="no">pasteText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-inputmenu.html#selectAllText-prop" translate="no">selectAllText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-inputmenu.html#targetItem-prop" translate="no">targetItem</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-inputmenu.html#undoText-prop" translate="no">undoText</a></b> : string</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-inputmenu.html#close-method" translate="no">close</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-inputmenu.html#popup-method" translate="no">popup</a></b>()</li>
+</ul>
+<!-- $$$InputMenu-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`InputMenu` 组件用于在用户与输入控件交互时显示一个上下文菜单。菜单包含常用的文本操作选项，如剪切、复制、粘贴、撤销和全选。菜单的显示和隐藏取决于目标控件的状态和用户交互。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-inputmenu.html" translate="no">InputMenu</a></span> {
+ <span class="name">targetItem</span>: <span class="name">someInputField</span>
+ <span class="name">cutText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Cut&quot;</span>)
+ <span class="name">copyText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Copy&quot;</span>)
+ <span class="name">pasteText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Paste&quot;</span>)
+ <span class="name">undoText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Undo&quot;</span>)
+ <span class="name">selectAllText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Select All&quot;</span>)
+ }
+</pre>
+<!-- @@@InputMenu -->
+<h2>Property Documentation</h2>
+<!-- $$$copyText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="copyText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">copyText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>复制操作的文本。默认为 &quot;Copy&quot;。</p>
+</div></div><!-- @@@copyText -->
+<br/>
+<!-- $$$cutText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="cutText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">cutText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>剪切操作的文本。默认为 &quot;Cut&quot;。</p>
+</div></div><!-- @@@cutText -->
+<br/>
+<!-- $$$pasteText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="pasteText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">pasteText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>粘贴操作的文本。默认为 &quot;Paste&quot;。</p>
+</div></div><!-- @@@pasteText -->
+<br/>
+<!-- $$$selectAllText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectAllText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">selectAllText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>全选操作的文本。默认为 &quot;Select All&quot;。</p>
+</div></div><!-- @@@selectAllText -->
+<br/>
+<!-- $$$targetItem -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="targetItem-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">targetItem</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>目标控件，`<a href="qml-fluentui-controls-inputmenu.html" translate="no">InputMenu</a>` 将根据此控件的状态显示菜单。通常是输入框或文本编辑控件。</p>
+</div></div><!-- @@@targetItem -->
+<br/>
+<!-- $$$undoText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="undoText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">undoText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>撤销操作的文本。默认为 &quot;Undo&quot;。</p>
+</div></div><!-- @@@undoText -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$close[overload1]$$$close -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="close-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">close</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>关闭上下文菜单。如果菜单处于打开状态，则将其隐藏。</p>
+</div></div><!-- @@@close -->
+<br/>
+<!-- $$$popup[overload1]$$$popup -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="popup-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">popup</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>显示上下文菜单。如果菜单已显示，则会更新菜单的内容和状态。</p>
+</div></div><!-- @@@popup -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

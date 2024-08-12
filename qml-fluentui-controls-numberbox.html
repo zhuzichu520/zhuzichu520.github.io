@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- NumberBox.qdoc -->
+  <meta name="description" content="一个用于输入和调整数值的控件，支持小步增减和大步增减功能。">
+  <title>NumberBox QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>NumberBox</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">NumberBox QML Type</h1>
+<!-- $$$NumberBox-brief -->
+<p>一个用于输入和调整数值的控件，支持小步增减和大步增减功能。. <a href="#details">More...</a></p>
+<!-- @@@NumberBox -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-numberbox-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#activeFocus-prop" translate="no">activeFocus</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#compactPopup-prop" translate="no">compactPopup</a></b> : Item</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#enabled-prop" translate="no">enabled</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#hovered-prop" translate="no">hovered</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#largeChange-prop" translate="no">largeChange</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#max-prop" translate="no">max</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#min-prop" translate="no">min</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#placementMode-prop" translate="no">placementMode</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#precision-prop" translate="no">precision</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#smallChange-prop" translate="no">smallChange</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#trailing-prop" translate="no">trailing</a></b> : Item</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#value-prop" translate="no">value</a></b> : var</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#valueChanged-signal" translate="no">valueChanged</a></b>(var <i>newValue</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#valueInvalid-signal" translate="no">valueInvalid</a></b>(var <i>invalidValue</i>)</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-numberbox.html#valueOutOfRange-signal" translate="no">valueOutOfRange</a></b>(var <i>outOfRangeValue</i>)</li>
+</ul>
+<!-- $$$NumberBox-description -->
+<h2 id="details">Detailed Description</h2>
+<p>NumberBox 组件是一个用于输入和调整数值的控件，提供了多种操作方式，包括小步增减、大步增减和手动输入。它支持整数和浮点数的输入，并能够根据配置的最小值和最大值进行限制。</p>
+<p>该组件支持两种放置模式：Inline 和 Compact。Inline 模式下，控件会显示额外的操作按钮，而 Compact 模式下，控件会展示一个弹出式的选择框。用户可以通过键盘和鼠标滚轮来调整数值。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-numberbox.html" translate="no">NumberBox</a></span> {
+  <span class="name">placementMode</span>: <span class="name">NumberBoxType</span>.<span class="name">Inline</span>
+  <span class="name">min</span>: <span class="number">0</span>
+  <span class="name">max</span>: <span class="number">100</span>
+  <span class="name">value</span>: <span class="number">50</span>
+  <span class="name">smallChange</span>: <span class="number">0.1</span>
+  <span class="name">largeChange</span>: <span class="number">1</span>
+  <span class="name">precision</span>: <span class="number">2</span>
+ }
+</pre>
+<!-- @@@NumberBox -->
+<h2>Property Documentation</h2>
+<!-- $$$activeFocus -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="activeFocus-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">activeFocus</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>控件是否具有焦点。用于控制控件在具有焦点时的视觉效果。</p>
+</div></div><!-- @@@activeFocus -->
+<br/>
+<!-- $$$compactPopup -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="compactPopup-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">compactPopup</span> : <span class="type">Item</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在 Compact 模式下显示的弹出式组件。包括上下增减按钮和其他相关控件。</p>
+</div></div><!-- @@@compactPopup -->
+<br/>
+<!-- $$$enabled -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="enabled-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">enabled</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>控件是否可用。设置为 false 时，控件将不可交互并显示禁用状态。</p>
+</div></div><!-- @@@enabled -->
+<br/>
+<!-- $$$hovered -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="hovered-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">hovered</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>控件是否被鼠标悬停。用于控制控件在鼠标悬停时的视觉效果。</p>
+</div></div><!-- @@@hovered -->
+<br/>
+<!-- $$$largeChange -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="largeChange-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">largeChange</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>大步增减的数值。例如，按下 Page Up 或 Page Down 键时增减的量。</p>
+</div></div><!-- @@@largeChange -->
+<br/>
+<!-- $$$max -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="max-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">max</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>控件允许的最大数值。如果未设置或为 null，则没有最大限制。</p>
+</div></div><!-- @@@max -->
+<br/>
+<!-- $$$min -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="min-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">min</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>控件允许的最小数值。如果未设置或为 null，则没有最小限制。</p>
+</div></div><!-- @@@min -->
+<br/>
+<!-- $$$placementMode -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="placementMode-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">placementMode</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>控件的放置模式。可以是 NumberBoxType.Inline 或 NumberBoxType.Compact。</p>
+</div></div><!-- @@@placementMode -->
+<br/>
+<!-- $$$precision -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="precision-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">precision</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>数值的精度（小数位数）。用于格式化显示的数值。</p>
+</div></div><!-- @@@precision -->
+<br/>
+<!-- $$$smallChange -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="smallChange-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">smallChange</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>小步增减的数值。例如，点击增减按钮时每次增减的量。</p>
+</div></div><!-- @@@smallChange -->
+<br/>
+<!-- $$$trailing -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="trailing-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">trailing</span> : <span class="type">Item</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在控件右侧显示的自定义组件。在 Inline 模式下可见。</p>
+</div></div><!-- @@@trailing -->
+<br/>
+<!-- $$$value -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="value-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">value</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当前的数值。控件显示和操作的数值。</p>
+</div></div><!-- @@@value -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$valueChanged[overload1]$$$valueChangedvar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="valueChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">valueChanged</span>(<span class="type">var</span> <i>newValue</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当数值发生变化时发射的信号。传递的新值作为参数。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onValueChanged</code>.</p>
+</div></div></div><!-- @@@valueChanged -->
+<br/>
+<!-- $$$valueInvalid[overload1]$$$valueInvalidvar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="valueInvalid-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">valueInvalid</span>(<span class="type">var</span> <i>invalidValue</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当输入的数值无效时发射的信号。传递的无效值作为参数。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onValueInvalid</code>.</p>
+</div></div></div><!-- @@@valueInvalid -->
+<br/>
+<!-- $$$valueOutOfRange[overload1]$$$valueOutOfRangevar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="valueOutOfRange-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="name">valueOutOfRange</span>(<span class="type">var</span> <i>outOfRangeValue</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当输入的数值超出设置的范围（最小值或最大值）时发射的信号。传递的超出范围的值作为参数。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onValueOutOfRange</code>.</p>
+</div></div></div><!-- @@@valueOutOfRange -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

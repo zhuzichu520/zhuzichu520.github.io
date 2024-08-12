@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Tour.qdoc -->
+  <meta name="description" content="一个用于引导用户完成步骤的提示组件。">
+  <title>Tour QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>Tour</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Tour QML Type</h1>
+<!-- $$$Tour-brief -->
+<p>一个用于引导用户完成步骤的提示组件。. <a href="#details">More...</a></p>
+<!-- @@@Tour -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-tour-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-tour.html#backgroundColor-prop" translate="no">backgroundColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-tour.html#finishText-prop" translate="no">finishText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-tour.html#index-prop" translate="no">index</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-tour.html#nextText-prop" translate="no">nextText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-tour.html#previousText-prop" translate="no">previousText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-tour.html#steps-prop" translate="no">steps</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-tour.html#targetMargins-prop" translate="no">targetMargins</a></b> : int</li>
+</ul>
+<!-- $$$Tour-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`Tour` 组件是一个自定义的引导提示框，用于引导用户逐步完成任务或了解应用的不同部分。它通过展示一系列步骤，并在每个步骤中突出显示目标区域，帮助用户更好地理解应用的使用流程。组件支持自定义步骤的文本、按钮文本以及背景颜色。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-tour.html" translate="no">Tour</a></span> {
+  <span class="name">steps</span>: [
+      {
+          title: <span class="name">qsTr</span>(<span class="string">&quot;Step 1&quot;</span>),
+          description: <span class="name">qsTr</span>(<span class="string">&quot;This is the first step of the tour.&quot;</span>),
+          target: <span class="name">someItem</span>,
+          onNextListener: <span class="keyword">function</span>(tour) { <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;Step 1 Next clicked&quot;</span>) }
+      },
+      {
+          title: <span class="name">qsTr</span>(<span class="string">&quot;Step 2&quot;</span>),
+          description: <span class="name">qsTr</span>(<span class="string">&quot;This is the second step of the tour.&quot;</span>),
+          target: <span class="name">anotherItem</span>,
+          onPreviousListener: <span class="keyword">function</span>(tour) { <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;Step 2 Previous clicked&quot;</span>) }
+      }
+  ]
+  <span class="name">finishText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Complete Tour&quot;</span>)
+  <span class="name">nextText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Next&quot;</span>)
+  <span class="name">previousText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Previous&quot;</span>)
+ }
+</pre>
+<!-- @@@Tour -->
+<h2>Property Documentation</h2>
+<!-- $$$backgroundColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="backgroundColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">backgroundColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>引导提示框的背景颜色。根据应用的主题自动选择深色或浅色。</p>
+</div></div><!-- @@@backgroundColor -->
+<br/>
+<!-- $$$finishText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="finishText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">finishText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>完成所有步骤后的按钮文本。</p>
+</div></div><!-- @@@finishText -->
+<br/>
+<!-- $$$index -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="index-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">index</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当前步骤的索引，从 0 开始。</p>
+</div></div><!-- @@@index -->
+<br/>
+<!-- $$$nextText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="nextText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">nextText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>“下一步”按钮的文本。</p>
+</div></div><!-- @@@nextText -->
+<br/>
+<!-- $$$previousText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="previousText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">previousText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>“上一步”按钮的文本。</p>
+</div></div><!-- @@@previousText -->
+<br/>
+<!-- $$$steps -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="steps-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">steps</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于引导用户的步骤列表。每个步骤是一个对象，包含以下属性： - `title`: 步骤标题 - `description`: 步骤描述 - `target`: 突出显示的目标项 - `onNextListener`: 点击“下一步”按钮时触发的回调函数 - `onPreviousListener`: 点击“上一步”按钮时触发的回调函数</p>
+</div></div><!-- @@@steps -->
+<br/>
+<!-- $$$targetMargins -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="targetMargins-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">targetMargins</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>目标项周围的边距，以像素为单位。</p>
+</div></div><!-- @@@targetMargins -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

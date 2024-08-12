@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- NavigationMenu.qdoc -->
+  <meta name="description" content="一个用于展示导航菜单的组件，支持动态加载菜单项和子菜单。">
+  <title>NavigationMenu QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>NavigationMenu</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">NavigationMenu QML Type</h1>
+<!-- $$$NavigationMenu-brief -->
+<p>一个用于展示导航菜单的组件，支持动态加载菜单项和子菜单。. <a href="#details">More...</a></p>
+<!-- @@@NavigationMenu -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-navigationmenu-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationmenu.html#Instantiator-prop" translate="no">Instantiator</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationmenu.html#delegate-prop" translate="no">delegate</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationmenu.html#enabled-prop" translate="no">enabled</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationmenu.html#modelData-prop" translate="no">modelData</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationmenu.html#title-prop" translate="no">title</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationmenu.html#view-prop" translate="no">view</a></b> : var</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-navigationmenu.html#insertItem-method" translate="no">insertItem</a></b>(int <i>index</i>, MenuItem <i>item</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-navigationmenu.html#insertMenu-method" translate="no">insertMenu</a></b>(int <i>index</i>, Menu <i>menu</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-navigationmenu.html#removeItem-method" translate="no">removeItem</a></b>(MenuItem <i>item</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-navigationmenu.html#removeMenu-method" translate="no">removeMenu</a></b>(Menu <i>menu</i>)</li>
+</ul>
+<!-- $$$NavigationMenu-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`NavigationMenu` 组件是一个自定义的菜单控件，允许展示具有子菜单的导航菜单。它支持动态添加和移除菜单项及子菜单，适用于复杂的导航结构。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-navigationmenu.html" translate="no">NavigationMenu</a></span> {
+  <span class="name">modelData</span>: <span class="name">someModelData</span>
+  <span class="name">view</span>: <span class="name">someView</span>
+ }
+</pre>
+<!-- @@@NavigationMenu -->
+<h2>Property Documentation</h2>
+<!-- $$$Instantiator -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="Instantiator-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">Instantiator</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>动态加载和管理菜单项及子菜单的组件。根据 `<a href="qml-fluentui-controls-navigationmenu.html#modelData-prop" translate="no">modelData</a>` 中的内容决定加载哪个组件。</p>
+</div></div><!-- @@@Instantiator -->
+<br/>
+<!-- $$$delegate -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="delegate-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">delegate</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于创建菜单项的委托。默认为 `<a href="qml-fluentui-menuitem.html" translate="no">MenuItem</a>`，用于展示菜单项及其相关内容。</p>
+</div></div><!-- @@@delegate -->
+<br/>
+<!-- $$$enabled -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="enabled-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">enabled</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>菜单的启用状态。根据 `<a href="qml-fluentui-controls-navigationmenu.html#modelData-prop" translate="no">modelData</a>` 的 `enabled` 属性进行设置。默认为 `true`。</p>
+</div></div><!-- @@@enabled -->
+<br/>
+<!-- $$$modelData -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="modelData-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">modelData</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于填充菜单项的数据模型。该数据模型包含标题、启用状态和子项等信息。</p>
+</div></div><!-- @@@modelData -->
+<br/>
+<!-- $$$title -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="title-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">title</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>菜单的标题。根据 `<a href="qml-fluentui-controls-navigationmenu.html#modelData-prop" translate="no">modelData</a>` 的 `title` 属性进行设置。</p>
+</div></div><!-- @@@title -->
+<br/>
+<!-- $$$view -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="view-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">view</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>视图对象，通常用于与菜单项进行交互或更新菜单内容。</p>
+</div></div><!-- @@@view -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$insertItem[overload1]$$$insertItemintMenuItem -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="insertItem-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">insertItem</span>(<span class="type">int</span> <i>index</i>, <span class="type"><a href="qml-fluentui-menuitem.html" translate="no">MenuItem</a></span> <i>item</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在指定的 `index` 位置插入一个菜单项 `item`。</p>
+</div></div><!-- @@@insertItem -->
+<br/>
+<!-- $$$insertMenu[overload1]$$$insertMenuintMenu -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="insertMenu-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">insertMenu</span>(<span class="type">int</span> <i>index</i>, <span class="type"><a href="qml-fluentui-menu.html" translate="no">Menu</a></span> <i>menu</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在指定的 `index` 位置插入一个子菜单 `menu`。</p>
+</div></div><!-- @@@insertMenu -->
+<br/>
+<!-- $$$removeItem[overload1]$$$removeItemMenuItem -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="removeItem-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">removeItem</span>(<span class="type"><a href="qml-fluentui-menuitem.html" translate="no">MenuItem</a></span> <i>item</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>移除指定的菜单项 `item`。</p>
+</div></div><!-- @@@removeItem -->
+<br/>
+<!-- $$$removeMenu[overload1]$$$removeMenuMenu -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="removeMenu-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">removeMenu</span>(<span class="type"><a href="qml-fluentui-menu.html" translate="no">Menu</a></span> <i>menu</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>移除指定的子菜单 `menu`。</p>
+</div></div><!-- @@@removeMenu -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

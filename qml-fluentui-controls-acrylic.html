@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Acrylic.qdoc -->
+  <meta name="description" content="实现亚克力效果的组件，具有模糊、着色和噪声效果。">
+  <title>Acrylic QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>Acrylic</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Acrylic QML Type</h1>
+<!-- $$$Acrylic-brief -->
+<p>实现亚克力效果的组件，具有模糊、着色和噪声效果。. <a href="#details">More...</a></p>
+<!-- @@@Acrylic -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-acrylic-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-acrylic.html#blurRadius-prop" translate="no">blurRadius</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-acrylic.html#luminosity-prop" translate="no">luminosity</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-acrylic.html#noiseOpacity-prop" translate="no">noiseOpacity</a></b> : real</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-acrylic.html#target-prop" translate="no">target</a></b> : Item</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-acrylic.html#targetRect-prop" translate="no">targetRect</a></b> : rect</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-acrylic.html#tintColor-prop" translate="no">tintColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-acrylic.html#tintOpacity-prop" translate="no">tintOpacity</a></b> : real</li>
+</ul>
+<!-- $$$Acrylic-description -->
+<h2 id="details">Detailed Description</h2>
+<p>Acrylic 组件提供了一种类似亚克力材料的视觉效果，通常用于背景模糊和半透明叠加。通过控制模糊半径、着色颜色、不透明度和噪声等属性，可以在界面中创建半透明的背景效果。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-acrylic.html" translate="no">Acrylic</a></span> {
+     <span class="name">tintColor</span>: <span class="name">Qt</span>.<span class="name">rgba</span>(<span class="number">0.8</span>, <span class="number">0.8</span>, <span class="number">0.8</span>, <span class="number">1</span>)
+     <span class="name">tintOpacity</span>: <span class="number">0.5</span>
+     <span class="name">luminosity</span>: <span class="number">0.02</span>
+     <span class="name">noiseOpacity</span>: <span class="number">0.03</span>
+     <span class="name">blurRadius</span>: <span class="number">16</span>
+     <span class="name">target</span>: <span class="name">someItem</span>
+ }
+</pre>
+<!-- @@@Acrylic -->
+<h2>Property Documentation</h2>
+<!-- $$$blurRadius -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="blurRadius-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">blurRadius</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>模糊半径，控制背景的模糊程度。默认值为 32。</p>
+</div></div><!-- @@@blurRadius -->
+<br/>
+<!-- $$$luminosity -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="luminosity-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">luminosity</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>覆盖在模糊背景上的亮度值，用于调整背景的亮度。默认值为 0.01。</p>
+</div></div><!-- @@@luminosity -->
+<br/>
+<!-- $$$noiseOpacity -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="noiseOpacity-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">noiseOpacity</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>噪声图像的不透明度，默认值为 0.02。用于在背景上添加细微的噪声效果，增强亚克力材质的质感。</p>
+</div></div><!-- @@@noiseOpacity -->
+<br/>
+<!-- $$$target -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="target-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">target</span> : <span class="type">Item</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>应用于亚克力效果的目标项目。可以设置为要模糊的具体项目。</p>
+</div></div><!-- @@@target -->
+<br/>
+<!-- $$$targetRect -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="targetRect-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">targetRect</span> : <span class="type">rect</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>目标项目的矩形区域，用于指定模糊和效果的应用范围。默认值为控件的整个区域。</p>
+</div></div><!-- @@@targetRect -->
+<br/>
+<!-- $$$tintColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="tintColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">tintColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于覆盖模糊背景的着色颜色。默认值为纯白色 (Qt.rgba(1, 1, 1, 1))。</p>
+</div></div><!-- @@@tintColor -->
+<br/>
+<!-- $$$tintOpacity -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="tintOpacity-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">tintOpacity</span> : <span class="type">real</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>着色颜色的不透明度，默认值为 0.65。</p>
+</div></div><!-- @@@tintOpacity -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

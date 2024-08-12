@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- MultilineTextBox.qdoc -->
+  <meta name="description" content="一个支持多行文本输入的文本框，具有丰富的样式和交互功能。">
+  <title>MultilineTextBox QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>MultilineTextBox</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">MultilineTextBox QML Type</h1>
+<!-- $$$MultilineTextBox-brief -->
+<p>一个支持多行文本输入的文本框，具有丰富的样式和交互功能。. <a href="#details">More...</a></p>
+<!-- @@@MultilineTextBox -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-multilinetextbox-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#color-prop" translate="no">color</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#font-prop" translate="no">font</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#leading-prop" translate="no">leading</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#leftPadding-prop" translate="no">leftPadding</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#padding-prop" translate="no">padding</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#placeholderText-prop" translate="no">placeholderText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#placeholderTextColor-prop" translate="no">placeholderTextColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#pressed-prop" translate="no">pressed</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#radius-prop" translate="no">radius</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#renderType-prop" translate="no">renderType</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#rightPadding-prop" translate="no">rightPadding</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#selectedTextColor-prop" translate="no">selectedTextColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#selectionColor-prop" translate="no">selectionColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#topPadding-prop" translate="no">topPadding</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-multilinetextbox.html#trailing-prop" translate="no">trailing</a></b> : Component</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-multilinetextbox.html#popup-method" translate="no">popup</a></b>()</li>
+</ul>
+<!-- $$$MultilineTextBox-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`MultilineTextBox` 组件是一个自定义的多行文本框，支持用户输入、显示占位符文本、文本选择和上下文菜单。它允许用户进行文本编辑和格式化，同时提供不同的状态样式。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-multilinetextbox.html" translate="no">MultilineTextBox</a></span> {
+ <span class="name">placeholderText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Enter your text here...&quot;</span>)
+ <span class="name">leading</span>: <span class="name">Image</span> { <span class="name">source</span>: <span class="string">&quot;icon.png&quot;</span> }
+ <span class="name">trailing</span>: <span class="name">Button</span> { <span class="name">text</span>: <span class="name">qsTr</span>(<span class="string">&quot;Action&quot;</span>) }
+ }
+</pre>
+<!-- @@@MultilineTextBox -->
+<h2>Property Documentation</h2>
+<!-- $$$color -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="color-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">color</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件文本的颜色。如果组件禁用，则使用 `Theme.res.textFillColorDisabled`，否则使用 `Theme.res.textFillColorPrimary`。</p>
+</div></div><!-- @@@color -->
+<br/>
+<!-- $$$font -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="font-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">font</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件的字体。默认为 `Typography.body`。</p>
+</div></div><!-- @@@font -->
+<br/>
+<!-- $$$leading -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="leading-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">leading</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件的前置组件，通常是图标或其他装饰性元素。</p>
+</div></div><!-- @@@leading -->
+<br/>
+<!-- $$$leftPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="leftPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">leftPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件左侧的内边距。包括 `padding`、前置组件的宽度和左侧边距。</p>
+</div></div><!-- @@@leftPadding -->
+<br/>
+<!-- $$$padding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="padding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">padding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件内边距。默认为 6。</p>
+</div></div><!-- @@@padding -->
+<br/>
+<!-- $$$placeholderText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="placeholderText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">placeholderText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件的占位符文本。用于提示用户输入内容时显示的文本。</p>
+</div></div><!-- @@@placeholderText -->
+<br/>
+<!-- $$$placeholderTextColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="placeholderTextColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">placeholderTextColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>占位符文本的颜色。默认为 `Theme.res.textFillColorSecondary`。</p>
+</div></div><!-- @@@placeholderTextColor -->
+<br/>
+<!-- $$$pressed -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="pressed-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">pressed</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当前组件是否被按下。由 `TapHandler` 控件设置。</p>
+</div></div><!-- @@@pressed -->
+<br/>
+<!-- $$$radius -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="radius-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">radius</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件背景的圆角半径。默认为 4。</p>
+</div></div><!-- @@@radius -->
+<br/>
+<!-- $$$renderType -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="renderType-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">renderType</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>文本的渲染类型。默认为 `Theme.textRender`。</p>
+</div></div><!-- @@@renderType -->
+<br/>
+<!-- $$$rightPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rightPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">rightPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件右侧的内边距。包括 `padding`、后置组件的宽度和右侧边距。</p>
+</div></div><!-- @@@rightPadding -->
+<br/>
+<!-- $$$selectedTextColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectedTextColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">selectedTextColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>选择文本的颜色。默认为 `Colors.white`。</p>
+</div></div><!-- @@@selectedTextColor -->
+<br/>
+<!-- $$$selectionColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="selectionColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">selectionColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>选择文本的背景颜色。默认为 `Theme.primaryColor`。</p>
+</div></div><!-- @@@selectionColor -->
+<br/>
+<!-- $$$topPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="topPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">topPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件顶部的内边距。默认为 `padding + 2`。</p>
+</div></div><!-- @@@topPadding -->
+<br/>
+<!-- $$$trailing -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="trailing-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">trailing</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>组件的后置组件，通常是按钮或操作控件。</p>
+</div></div><!-- @@@trailing -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$popup[overload1]$$$popup -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="popup-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">popup</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>显示上下文菜单，用于提供额外的文本操作选项。</p>
+</div></div><!-- @@@popup -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

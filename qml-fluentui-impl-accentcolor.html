@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- AccentColor.qdoc -->
+  <meta name="description" content="管理和生成不同亮度的强调色调（Accent Color）。">
+  <title>AccentColor QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-impl-qmlmodule.html" translate="no">FluentUI.impl</a></li>
+<li>AccentColor</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">AccentColor QML Type</h1>
+<!-- $$$AccentColor-brief -->
+<p>管理和生成不同亮度的强调色调（Accent Color）。. <a href="#details">More...</a></p>
+<!-- @@@AccentColor -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.impl 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-impl-accentcolor-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-impl-accentcolor.html#dark-prop" translate="no">dark</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-impl-accentcolor.html#darker-prop" translate="no">darker</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-impl-accentcolor.html#darkest-prop" translate="no">darkest</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-impl-accentcolor.html#light-prop" translate="no">light</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-impl-accentcolor.html#lighter-prop" translate="no">lighter</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-impl-accentcolor.html#lightest-prop" translate="no">lightest</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-impl-accentcolor.html#normal-prop" translate="no">normal</a></b> : var</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">var <b><a href="qml-fluentui-impl-accentcolor.html#defaultBrushFor-method" translate="no">defaultBrushFor</a></b>()</li>
+<li class="fn" translate="no">var <b><a href="qml-fluentui-impl-accentcolor.html#secondaryBrushFor-method" translate="no">secondaryBrushFor</a></b>()</li>
+<li class="fn" translate="no">var <b><a href="qml-fluentui-impl-accentcolor.html#tertiaryBrushFor-method" translate="no">tertiaryBrushFor</a></b>()</li>
+</ul>
+<!-- $$$AccentColor-description -->
+<h2 id="details">Detailed Description</h2>
+<p>AccentColor 组件提供了管理和生成一系列颜色亮度的功能，适用于不同的主题环境（如深色模式和浅色模式）。通过 `darkest`、`darker`、`dark`、`normal`、`light`、`lighter` 和 `lightest` 函数，可以根据 `normal` 基础颜色生成一系列的颜色，供其他组件使用。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-impl-accentcolor.html" translate="no">AccentColor</a></span> {
+     <span class="name">normal</span>: <span class="string">&quot;#0078D4&quot;</span>
+     <span class="name">onCompleted</span>: {
+         <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;Lightest color:&quot;</span>, <span class="name">lightest</span>())
+         <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;Default brush for theme:&quot;</span>, <span class="name">defaultBrushFor</span>())
+     }
+ }
+</pre>
+<!-- @@@AccentColor -->
+<h2>Property Documentation</h2>
+<!-- $$$dark -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="dark-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">dark</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>深色，可以通过函数 `dark(val)` 设置或获取。如果未设置，则基于 `normal` 颜色生成一个具有 90% 不透明度的颜色。</p>
+</div></div><!-- @@@dark -->
+<br/>
+<!-- $$$darker -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="darker-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">darker</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>较深的颜色，可以通过函数 `darker(val)` 设置或获取。如果未设置，则基于 `normal` 颜色生成一个具有 80% 不透明度的颜色。</p>
+</div></div><!-- @@@darker -->
+<br/>
+<!-- $$$darkest -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="darkest-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">darkest</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>最深的颜色，可以通过函数 `darkest(val)` 设置或获取。如果未设置，则基于 `normal` 颜色生成一个具有 70% 不透明度的颜色。</p>
+</div></div><!-- @@@darkest -->
+<br/>
+<!-- $$$light -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="light-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">light</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>浅色，可以通过函数 `light(val)` 设置或获取。如果未设置，则基于 `normal` 颜色生成一个具有 90% 不透明度的颜色。</p>
+</div></div><!-- @@@light -->
+<br/>
+<!-- $$$lighter -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="lighter-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">lighter</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>较浅的颜色，可以通过函数 `lighter(val)` 设置或获取。如果未设置，则基于 `normal` 颜色生成一个具有 80% 不透明度的颜色。</p>
+</div></div><!-- @@@lighter -->
+<br/>
+<!-- $$$lightest -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="lightest-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">lightest</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>最浅的颜色，可以通过函数 `lightest(val)` 设置或获取。如果未设置，则基于 `normal` 颜色生成一个具有 70% 不透明度的颜色。</p>
+</div></div><!-- @@@lightest -->
+<br/>
+<!-- $$$normal -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="normal-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">normal</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>常规颜色，通常是强调色的基础颜色。可以通过函数 `normal(val)` 设置或获取。</p>
+</div></div><!-- @@@normal -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$defaultBrushFor[overload1]$$$defaultBrushFor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="defaultBrushFor-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">var</span> <span class="name">defaultBrushFor</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>根据当前主题（深色或浅色）返回合适的默认颜色。对于深色主题，返回 `lighter()`；对于浅色主题，返回 `dark()`。</p>
+</div></div><!-- @@@defaultBrushFor -->
+<br/>
+<!-- $$$secondaryBrushFor[overload1]$$$secondaryBrushFor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="secondaryBrushFor-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">var</span> <span class="name">secondaryBrushFor</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>返回一个透明度为 90% 的默认颜色，通常用于次要元素的背景或边框颜色。</p>
+</div></div><!-- @@@secondaryBrushFor -->
+<br/>
+<!-- $$$tertiaryBrushFor[overload1]$$$tertiaryBrushFor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="tertiaryBrushFor-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">var</span> <span class="name">tertiaryBrushFor</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>返回一个透明度为 80% 的默认颜色，通常用于三级元素的背景或边框颜色。</p>
+</div></div><!-- @@@tertiaryBrushFor -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

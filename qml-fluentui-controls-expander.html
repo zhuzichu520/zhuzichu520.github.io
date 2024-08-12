@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Expander.qdoc -->
+  <meta name="description" content="一个可展开和折叠内容的容器组件。">
+  <title>Expander QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>Expander</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Expander QML Type</h1>
+<!-- $$$Expander-brief -->
+<p>一个可展开和折叠内容的容器组件。. <a href="#details">More...</a></p>
+<!-- @@@Expander -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-expander-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-expander.html#content-prop" translate="no">content</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-expander.html#expanded-prop" translate="no">expanded</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-expander.html#header-prop" translate="no">header</a></b> : Component</li>
+</ul>
+<!-- $$$Expander-description -->
+<h2 id="details">Detailed Description</h2>
+<p>Expander 组件允许用户点击或按下特定按键来展开或折叠内容。它包含用于自定义标题、内容以及控制展开和折叠动画的属性。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-expander.html" translate="no">Expander</a></span> {
+     <span class="name">expanded</span>: <span class="number">false</span>
+     <span class="name">header</span>: <span class="name">Component</span> {
+         <span class="comment">// 在此处定义标题组件</span>
+     }
+     <span class="name">content</span>: <span class="name">Component</span> {
+         <span class="comment">// 在此处定义内容组件</span>
+     }
+ }
+</pre>
+<!-- @@@Expander -->
+<h2>Property Documentation</h2>
+<!-- $$$content -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="content-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">content</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Expander 的内容组件。该组件在 Expander 展开时可见，折叠时隐藏。</p>
+</div></div><!-- @@@content -->
+<br/>
+<!-- $$$expanded -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="expanded-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">expanded</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>指示 Expander 是否处于展开状态。如果为 true，内容会展开；否则，内容会折叠。</p>
+</div></div><!-- @@@expanded -->
+<br/>
+<!-- $$$header -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="header-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">header</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>Expander 的标题组件。该组件始终可见，用于控制 Expander 的展开或折叠状态。</p>
+</div></div><!-- @@@header -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

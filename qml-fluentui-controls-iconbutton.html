@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- IconButton.qdoc -->
+  <meta name="description" content="一个具有图标的按钮组件，支持文本和图标显示。">
+  <title>IconButton QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>IconButton</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">IconButton QML Type</h1>
+<!-- $$$IconButton-brief -->
+<p>一个具有图标的按钮组件，支持文本和图标显示。. <a href="#details">More...</a></p>
+<!-- @@@IconButton -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-iconbutton-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#FluentUI.reverse-prop" translate="no">FluentUI.reverse</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#backgroundColor-prop" translate="no">backgroundColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#bottomPadding-prop" translate="no">bottomPadding</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#display-prop" translate="no">display</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#font-prop" translate="no">font</a></b> : font</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#icon-prop" translate="no">icon</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#iconDelegate-prop" translate="no">iconDelegate</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#leftPadding-prop" translate="no">leftPadding</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#radius-prop" translate="no">radius</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#rightPadding-prop" translate="no">rightPadding</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#text-prop" translate="no">text</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-iconbutton.html#topPadding-prop" translate="no">topPadding</a></b> : int</li>
+</ul>
+<!-- $$$IconButton-description -->
+<h2 id="details">Detailed Description</h2>
+<p>IconButton 组件是一个自定义按钮，设计用于显示图标和/或文本。它具有可配置的圆角半径、背景颜色和图标颜色，支持在不同状态下的背景色和文本色变化。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-iconbutton.html" translate="no">IconButton</a></span> {
+     <span class="name">text</span>: <span class="string">&quot;Click me&quot;</span>
+     <span class="name">icon</span>: <span class="string">&quot;icon_name&quot;</span> <span class="comment">// 例如 FontAwesome 图标名称</span>
+     <span class="name">onClicked</span>: {
+         <span class="comment">// 处理点击事件</span>
+     }
+ }
+</pre>
+<!-- @@@IconButton -->
+<h2>Property Documentation</h2>
+<!-- $$$FluentUI.reverse -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="FluentUI.reverse-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">FluentUI.reverse</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否反转图标和文本的显示顺序。</p>
+</div></div><!-- @@@FluentUI.reverse -->
+<br/>
+<!-- $$$backgroundColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="backgroundColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">backgroundColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>按钮的背景颜色。根据按钮的状态自动调整： - 如果按钮禁用，颜色由 `Theme.buttonColor(control)` 决定。 - 如果按钮高亮，颜色设置为 `Theme.primaryColor`。 - 否则，颜色设置为 `Theme.uncheckedInputColor(control, true)`。</p>
+</div></div><!-- @@@backgroundColor -->
+<br/>
+<!-- $$$bottomPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="bottomPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">bottomPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>按钮内容的下边距。默认为 6 像素。</p>
+</div></div><!-- @@@bottomPadding -->
+<br/>
+<!-- $$$display -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="display-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">display</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>图标和文本的显示模式。通过 `<a href="qml-fluentui-controls-texticon.html" translate="no">TextIcon</a>` 组件进行配置。</p>
+</div></div><!-- @@@display -->
+<br/>
+<!-- $$$font -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="font-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">font</span> : <span class="type">font</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>按钮文本的字体。默认为 `Typography.body`。</p>
+</div></div><!-- @@@font -->
+<br/>
+<!-- $$$icon -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="icon-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">icon</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>按钮显示的图标名称，例如 FontAwesome 图标名称。</p>
+</div></div><!-- @@@icon -->
+<br/>
+<!-- $$$iconDelegate -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="iconDelegate-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">iconDelegate</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>图标的颜色。根据按钮的启用状态调整为： - 启用时：`Theme.res.textFillColorPrimary` - 禁用时：`Theme.res.textFillColorDisabled`</p>
+</div></div><!-- @@@iconDelegate -->
+<br/>
+<!-- $$$leftPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="leftPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">leftPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>按钮内容的左边距。默认为 6 像素。</p>
+</div></div><!-- @@@leftPadding -->
+<br/>
+<!-- $$$radius -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="radius-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">radius</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>按钮的圆角半径。默认为 4。</p>
+</div></div><!-- @@@radius -->
+<br/>
+<!-- $$$rightPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rightPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">rightPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>按钮内容的右边距。默认为 6 像素。</p>
+</div></div><!-- @@@rightPadding -->
+<br/>
+<!-- $$$text -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="text-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">text</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>按钮显示的文本内容。</p>
+</div></div><!-- @@@text -->
+<br/>
+<!-- $$$topPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="topPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">topPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>按钮内容的上边距。默认为 6 像素。</p>
+</div></div><!-- @@@topPadding -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

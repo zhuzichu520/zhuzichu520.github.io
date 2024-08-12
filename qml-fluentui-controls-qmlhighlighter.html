@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- QMLHighlighter.qdoc -->
+  <meta name="description" content="一个用于高亮显示 QML 代码的语法高亮器组件。">
+  <title>QMLHighlighter QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>QMLHighlighter</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">QMLHighlighter QML Type</h1>
+<!-- $$$QMLHighlighter-brief -->
+<p>一个用于高亮显示 QML 代码的语法高亮器组件。. <a href="#details">More...</a></p>
+<!-- @@@QMLHighlighter -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-qmlhighlighter-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-qmlhighlighter.html#commentFormat-prop" translate="no">commentFormat</a></b> : TextCharFormat</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-qmlhighlighter.html#componentFormat-prop" translate="no">componentFormat</a></b> : TextCharFormat</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-qmlhighlighter.html#keywordFormat-prop" translate="no">keywordFormat</a></b> : TextCharFormat</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-qmlhighlighter.html#numberFormat-prop" translate="no">numberFormat</a></b> : TextCharFormat</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-qmlhighlighter.html#propertyFormat-prop" translate="no">propertyFormat</a></b> : TextCharFormat</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-qmlhighlighter.html#stringFormat-prop" translate="no">stringFormat</a></b> : TextCharFormat</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-qmlhighlighter.html#onHighlightBlockChanged-method" translate="no">onHighlightBlockChanged</a></b>(string <i>text</i>)</li>
+</ul>
+<!-- $$$QMLHighlighter-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`QMLHighlighter` 组件用于在文本编辑器中高亮显示 QML 代码的不同部分，包括关键字、组件、数字、属性、字符串和注释。它使用正则表达式对代码进行分析，并应用不同的格式来突出显示各类代码元素。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-qmlhighlighter.html" translate="no">QMLHighlighter</a></span> {
+ <span class="type">TextCharFormat</span> {
+  <span class="name">id</span>: <span class="name">keywordFormat</span>
+  <span class="name">foreground</span>: <span class="string">&quot;#808000&quot;</span>
+ }
+ <span class="type">TextCharFormat</span> {
+  <span class="name">id</span>: <span class="name">componentFormat</span>
+  <span class="name">foreground</span>: <span class="string">&quot;#aa00aa&quot;</span>
+ }
+ <span class="type">TextCharFormat</span> {
+  <span class="name">id</span>: <span class="name">numberFormat</span>
+  <span class="name">foreground</span>: <span class="string">&quot;#0055af&quot;</span>
+ }
+ <span class="type">TextCharFormat</span> {
+  <span class="name">id</span>: <span class="name">propertyFormat</span>
+  <span class="name">foreground</span>: <span class="string">&quot;#800000&quot;</span>
+ }
+ <span class="type">TextCharFormat</span> {
+  <span class="name">id</span>: <span class="name">stringFormat</span>
+  <span class="name">foreground</span>: <span class="string">&quot;green&quot;</span>
+ }
+ <span class="type">TextCharFormat</span> {
+  <span class="name">id</span>: <span class="name">commentFormat</span>
+  <span class="name">foreground</span>: <span class="string">&quot;green&quot;</span>
+ }
+ }
+</pre>
+<!-- @@@QMLHighlighter -->
+<h2>Property Documentation</h2>
+<!-- $$$commentFormat -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="commentFormat-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">commentFormat</span> : <span class="type">TextCharFormat</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于高亮显示注释的文本格式。</p>
+</div></div><!-- @@@commentFormat -->
+<br/>
+<!-- $$$componentFormat -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="componentFormat-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">componentFormat</span> : <span class="type">TextCharFormat</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于高亮显示组件名的文本格式。</p>
+</div></div><!-- @@@componentFormat -->
+<br/>
+<!-- $$$keywordFormat -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="keywordFormat-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">keywordFormat</span> : <span class="type">TextCharFormat</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于高亮显示关键字的文本格式。</p>
+</div></div><!-- @@@keywordFormat -->
+<br/>
+<!-- $$$numberFormat -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="numberFormat-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">numberFormat</span> : <span class="type">TextCharFormat</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于高亮显示数字的文本格式。</p>
+</div></div><!-- @@@numberFormat -->
+<br/>
+<!-- $$$propertyFormat -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="propertyFormat-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">propertyFormat</span> : <span class="type">TextCharFormat</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于高亮显示属性名的文本格式。</p>
+</div></div><!-- @@@propertyFormat -->
+<br/>
+<!-- $$$stringFormat -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="stringFormat-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">stringFormat</span> : <span class="type">TextCharFormat</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于高亮显示字符串的文本格式。</p>
+</div></div><!-- @@@stringFormat -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$onHighlightBlockChanged[overload1]$$$onHighlightBlockChangedstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="onHighlightBlockChanged-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">onHighlightBlockChanged</span>(<span class="type">string</span> <i>text</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在文本块发生变化时调用的函数，用于更新高亮显示。</p>
+<p><i>text</i> 要高亮显示的文本块。</p>
+</div></div><!-- @@@onHighlightBlockChanged -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

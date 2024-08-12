@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- ListTile.qdoc -->
+  <meta name="description" content="显示一个具有可选前置和后置组件的列表项。">
+  <title>ListTile QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>ListTile</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">ListTile QML Type</h1>
+<!-- $$$ListTile-brief -->
+<p>显示一个具有可选前置和后置组件的列表项。. <a href="#details">More...</a></p>
+<!-- @@@ListTile -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-listtile-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-listtile.html#content-prop" translate="no">content</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-listtile.html#font-prop" translate="no">font</a></b> : font</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-listtile.html#implicitHeight-prop" translate="no">implicitHeight</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-listtile.html#implicitWidth-prop" translate="no">implicitWidth</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-listtile.html#leading-prop" translate="no">leading</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-listtile.html#leftPadding-prop" translate="no">leftPadding</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-listtile.html#radius-prop" translate="no">radius</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-listtile.html#spacing-prop" translate="no">spacing</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-listtile.html#textColor-prop" translate="no">textColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-listtile.html#trailing-prop" translate="no">trailing</a></b> : Component</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-listtile.html#focus-method" translate="no">focus</a></b>()</li>
+</ul>
+<!-- $$$ListTile-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`ListTile` 组件用于创建一个具有可选前置（leading）和后置（trailing）组件的列表项。它支持文本显示、背景样式、间距和自定义组件。适用于创建应用程序中的列表或菜单项。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-listtile.html" translate="no">ListTile</a></span> {
+ <span class="name">text</span>: <span class="name">qsTr</span>(<span class="string">&quot;Item&quot;</span>)
+ <span class="name">leading</span>: <span class="name">Image</span> { <span class="name">source</span>: <span class="string">&quot;icon.png&quot;</span> }
+ <span class="name">trailing</span>: <span class="name">Button</span> { <span class="name">text</span>: <span class="name">qsTr</span>(<span class="string">&quot;Action&quot;</span>) }
+ }
+</pre>
+<!-- @@@ListTile -->
+<h2>Property Documentation</h2>
+<!-- $$$content -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="content-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">content</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列表项的主要内容组件。默认为显示文本的 `Label` 组件。</p>
+</div></div><!-- @@@content -->
+<br/>
+<!-- $$$font -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="font-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">font</span> : <span class="type">font</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列表项文本的字体。默认为 `Typography.body`。</p>
+</div></div><!-- @@@font -->
+<br/>
+<!-- $$$implicitHeight -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="implicitHeight-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">implicitHeight</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列表项的隐式高度，基于内容和内边距计算。</p>
+</div></div><!-- @@@implicitHeight -->
+<br/>
+<!-- $$$implicitWidth -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="implicitWidth-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">implicitWidth</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列表项的隐式宽度，基于内容和内边距计算。</p>
+</div></div><!-- @@@implicitWidth -->
+<br/>
+<!-- $$$leading -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="leading-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">leading</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列表项的前置组件，通常是一个图标或图片。</p>
+</div></div><!-- @@@leading -->
+<br/>
+<!-- $$$leftPadding -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="leftPadding-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">leftPadding</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列表项内容的左侧内边距。默认为 12。</p>
+</div></div><!-- @@@leftPadding -->
+<br/>
+<!-- $$$radius -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="radius-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">radius</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列表项背景的圆角半径。默认为 4。</p>
+</div></div><!-- @@@radius -->
+<br/>
+<!-- $$$spacing -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="spacing-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">spacing</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列表项中前置和主要内容之间的间距。默认为 14。</p>
+</div></div><!-- @@@spacing -->
+<br/>
+<!-- $$$textColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="textColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">textColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列表项文本的颜色。根据 `enabled` 状态自动选择颜色。如果项处于禁用状态，则使用 `Theme.res.textFillColorDisabled`，否则使用 `Theme.res.textFillColorPrimary`。</p>
+</div></div><!-- @@@textColor -->
+<br/>
+<!-- $$$trailing -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="trailing-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">trailing</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>列表项的后置组件，通常是一个按钮或其他操作控件。</p>
+</div></div><!-- @@@trailing -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$focus[overload1]$$$focus -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="focus-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">focus</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>使列表项获得焦点。</p>
+</div></div><!-- @@@focus -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

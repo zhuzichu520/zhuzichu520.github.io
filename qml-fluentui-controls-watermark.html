@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Watermark.qdoc -->
+  <meta name="description" content="用于在应用程序的视图中绘制水印。">
+  <title>Watermark QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>Watermark</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Watermark QML Type</h1>
+<!-- $$$Watermark-brief -->
+<p>用于在应用程序的视图中绘制水印。. <a href="#details">More...</a></p>
+<!-- @@@Watermark -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-watermark-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-watermark.html#gap-prop" translate="no">gap</a></b> : point</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-watermark.html#offset-prop" translate="no">offset</a></b> : point</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-watermark.html#rotate-prop" translate="no">rotate</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-watermark.html#text-prop" translate="no">text</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-watermark.html#textColor-prop" translate="no">textColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-watermark.html#textSize-prop" translate="no">textSize</a></b> : int</li>
+</ul>
+<!-- $$$Watermark-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`Watermark` 组件允许您在应用程序的视图中绘制自定义水印。它提供了多个属性来控制水印的文本、颜色、位置、旋转角度和大小。通过使用此组件，您可以为应用程序的视图添加透明的水印效果，从而增强内容的保护或品牌识别。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-watermark.html" translate="no">Watermark</a></span> {
+  <span class="name">text</span>: <span class="name">qsTr</span>(<span class="string">&quot;Confidential&quot;</span>)
+  <span class="name">textColor</span>: <span class="string">&quot;red&quot;</span>
+  <span class="name">textSize</span>: <span class="number">30</span>
+  <span class="name">rotate</span>: <span class="number">45</span>
+  <span class="name">offset</span>: <span class="name">Qt</span>.<span class="name">point</span>(<span class="number">20</span>, <span class="number">20</span>)
+  <span class="name">gap</span>: <span class="name">Qt</span>.<span class="name">point</span>(<span class="number">10</span>, <span class="number">10</span>)
+ }
+</pre>
+<!-- @@@Watermark -->
+<h2>Property Documentation</h2>
+<!-- $$$gap -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="gap-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">gap</span> : <span class="type">point</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>水印文本的间隙。此属性定义了文本与其背景之间的距离。</p>
+</div></div><!-- @@@gap -->
+<br/>
+<!-- $$$offset -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="offset-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">offset</span> : <span class="type">point</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>水印文本的偏移量。此属性定义了水印相对于其默认位置的偏移量。</p>
+</div></div><!-- @@@offset -->
+<br/>
+<!-- $$$rotate -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rotate-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">rotate</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>水印文本的旋转角度。此属性定义了水印文本的旋转角度，以度为单位。</p>
+</div></div><!-- @@@rotate -->
+<br/>
+<!-- $$$text -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="text-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">text</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>水印文本。此属性定义了要在视图中绘制的水印内容。</p>
+</div></div><!-- @@@text -->
+<br/>
+<!-- $$$textColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="textColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">textColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>水印文本的颜色。此属性定义了水印文本的显示颜色。</p>
+</div></div><!-- @@@textColor -->
+<br/>
+<!-- $$$textSize -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="textSize-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">textSize</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>水印文本的大小。此属性定义了水印文本的字体大小。</p>
+</div></div><!-- @@@textSize -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

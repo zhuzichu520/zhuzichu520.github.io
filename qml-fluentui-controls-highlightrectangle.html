@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- HighlightRectangle.qdoc -->
+  <meta name="description" content="一个用于突出显示的矩形组件，支持动画效果。">
+  <title>HighlightRectangle QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>HighlightRectangle</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">HighlightRectangle QML Type</h1>
+<!-- $$$HighlightRectangle-brief -->
+<p>一个用于突出显示的矩形组件，支持动画效果。. <a href="#details">More...</a></p>
+<!-- @@@HighlightRectangle -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-highlightrectangle-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-highlightrectangle.html#bottomMargin-prop" translate="no">bottomMargin</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-highlightrectangle.html#endOffset-prop" translate="no">endOffset</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-highlightrectangle.html#highlight-prop" translate="no">highlight</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-highlightrectangle.html#highlightSize-prop" translate="no">highlightSize</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-highlightrectangle.html#leftMargin-prop" translate="no">leftMargin</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-highlightrectangle.html#orientation-prop" translate="no">orientation</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-highlightrectangle.html#startOffset-prop" translate="no">startOffset</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-highlightrectangle.html#target-prop" translate="no">target</a></b> : var</li>
+</ul>
+<!-- $$$HighlightRectangle-description -->
+<h2 id="details">Detailed Description</h2>
+<p>HighlightRectangle 组件用于在用户界面中突出显示某个元素。它支持垂直和水平方向的突出显示，并根据状态变化执行动画。该组件可以用于实现滑块、指示器等效果。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-highlightrectangle.html" translate="no">HighlightRectangle</a></span> {
+     <span class="name">orientation</span>: <span class="name">Qt</span>.<span class="name">Horizontal</span>
+     <span class="name">highlightSize</span>: <span class="number">20</span>
+     <span class="name">target</span>: <span class="name">someItem</span>
+     <span class="name">highlight</span>: <span class="number">true</span>
+ }
+</pre>
+<!-- @@@HighlightRectangle -->
+<h2>Property Documentation</h2>
+<!-- $$$bottomMargin -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="bottomMargin-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">bottomMargin</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>底边距，用于在突出显示时调整矩形的位置。</p>
+</div></div><!-- @@@bottomMargin -->
+<br/>
+<!-- $$$endOffset -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="endOffset-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">endOffset</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>突出显示的结束偏移量。</p>
+</div></div><!-- @@@endOffset -->
+<br/>
+<!-- $$$highlight -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="highlight-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">highlight</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否启用突出显示。启用时，矩形会根据状态变化执行动画效果。</p>
+</div></div><!-- @@@highlight -->
+<br/>
+<!-- $$$highlightSize -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="highlightSize-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">highlightSize</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>突出显示区域的大小。</p>
+</div></div><!-- @@@highlightSize -->
+<br/>
+<!-- $$$leftMargin -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="leftMargin-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">leftMargin</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>左边距，用于在突出显示时调整矩形的位置。</p>
+</div></div><!-- @@@leftMargin -->
+<br/>
+<!-- $$$orientation -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="orientation-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">orientation</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>突出显示的方向。可以是 `Qt.Vertical` 或 `Qt.Horizontal`。</p>
+</div></div><!-- @@@orientation -->
+<br/>
+<!-- $$$startOffset -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="startOffset-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">startOffset</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>突出显示的起始偏移量。</p>
+</div></div><!-- @@@startOffset -->
+<br/>
+<!-- $$$target -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="target-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">target</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>突出显示的目标项。只有当目标项具有焦点或满足其他条件时，突出显示矩形才会可见。</p>
+</div></div><!-- @@@target -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- NavigationMenuItem.qdoc -->
+  <meta name="description" content="用于展示导航菜单项的组件。">
+  <title>NavigationViewItem QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>NavigationViewItem</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">NavigationViewItem QML Type</h1>
+<!-- $$$NavigationViewItem-brief -->
+<p>用于展示导航菜单项的组件。. <a href="#details">More...</a></p>
+<!-- @@@NavigationViewItem -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-navigationviewitem-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationviewitem.html#FluentUI.trailing-prop" translate="no">FluentUI.trailing</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationviewitem.html#enabled-prop" translate="no">enabled</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationviewitem.html#modelData-prop" translate="no">modelData</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationviewitem.html#text-prop" translate="no">text</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-navigationviewitem.html#view-prop" translate="no">view</a></b> : var</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-navigationviewitem.html#onClicked-method" translate="no">onClicked</a></b>()</li>
+</ul>
+<!-- $$$NavigationViewItem-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`NavigationViewItem` 组件是一个自定义的菜单项控件，用于在导航菜单中展示单个项。它基于 `<a href="qml-fluentui-menuitem.html" translate="no">MenuItem</a>` 组件，并支持通过 `<a href="qml-fluentui-controls-navigationviewitem.html#modelData-prop" translate="no">modelData</a>` 提供标题和启用状态。还支持在菜单项的右侧显示信息徽章（`<a href="qml-fluentui-controls-infobadge.html" translate="no">InfoBadge</a>`）。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-navigationviewitem.html" translate="no">NavigationViewItem</a></span> {
+  <span class="name">modelData</span>: <span class="name">someModelData</span>
+  <span class="name">view</span>: <span class="name">someView</span>
+ }
+</pre>
+<!-- @@@NavigationViewItem -->
+<h2>Property Documentation</h2>
+<!-- $$$FluentUI.trailing -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="FluentUI.trailing-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">FluentUI.trailing</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>菜单项右侧的额外组件。默认显示信息徽章（`<a href="qml-fluentui-controls-infobadge.html" translate="no">InfoBadge</a>`）组件，依据 `<a href="qml-fluentui-controls-navigationviewitem.html#modelData-prop" translate="no">modelData</a>` 的 `infoBadge` 属性来决定显示的组件。</p>
+</div></div><!-- @@@FluentUI.trailing -->
+<br/>
+<!-- $$$enabled -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="enabled-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">enabled</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>菜单项的启用状态。根据 `<a href="qml-fluentui-controls-navigationviewitem.html#modelData-prop" translate="no">modelData</a>` 的 `enabled` 属性进行设置。</p>
+</div></div><!-- @@@enabled -->
+<br/>
+<!-- $$$modelData -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="modelData-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">modelData</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于填充菜单项的数据模型。该数据模型包含标题、启用状态、点击行为和其他相关信息。</p>
+</div></div><!-- @@@modelData -->
+<br/>
+<!-- $$$text -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="text-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">text</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>菜单项的显示文本。根据 `<a href="qml-fluentui-controls-navigationviewitem.html#modelData-prop" translate="no">modelData</a>` 的 `title` 属性进行设置。</p>
+</div></div><!-- @@@text -->
+<br/>
+<!-- $$$view -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="view-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">view</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>视图对象，通常用于处理菜单项的点击事件或更新菜单项的状态。</p>
+</div></div><!-- @@@view -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$onClicked[overload1]$$$onClicked -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="onClicked-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">onClicked</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当菜单项被点击时触发的方法。会调用 `<a href="qml-fluentui-controls-navigationviewitem.html#modelData-prop" translate="no">modelData</a>.tap()` 方法，并通知视图 `view.tap(<a href="qml-fluentui-controls-navigationviewitem.html#modelData-prop" translate="no">modelData</a>)`。</p>
+</div></div><!-- @@@onClicked -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

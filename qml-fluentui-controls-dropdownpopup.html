@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- DropDownPopup.qdoc -->
+  <meta name="description" content="一个自定义弹出窗口组件，用于在指定目标下方或上方显示内容。">
+  <title>DropDownPopup QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>DropDownPopup</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">DropDownPopup QML Type</h1>
+<!-- $$$DropDownPopup-brief -->
+<p>一个自定义弹出窗口组件，用于在指定目标下方或上方显示内容。. <a href="#details">More...</a></p>
+<!-- @@@DropDownPopup -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-dropdownpopup-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-dropdownpopup.html#animationEnabled-prop" translate="no">animationEnabled</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-dropdownpopup.html#content-prop" translate="no">content</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-dropdownpopup.html#offsetY-prop" translate="no">offsetY</a></b> : int</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-dropdownpopup.html#popup-method" translate="no">popup</a></b>(Item <i>target</i>)</li>
+</ul>
+<!-- $$$DropDownPopup-description -->
+<h2 id="details">Detailed Description</h2>
+<p>DropDownPopup 是一个自定义的弹出窗口组件，允许在指定的目标组件的上方或下方显示内容。该组件支持动画过渡效果，可以根据窗口位置智能调整显示位置。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-dropdownpopup.html" translate="no">DropDownPopup</a></span> {
+     <span class="name">content</span>: <span class="name">Component</span> {
+         <span class="comment">// 在此处定义要弹出的内容</span>
+     }
+ }
+</pre>
+<!-- @@@DropDownPopup -->
+<h2>Property Documentation</h2>
+<!-- $$$animationEnabled -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="animationEnabled-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">animationEnabled</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否启用弹出窗口的动画效果。默认值为 true。</p>
+</div></div><!-- @@@animationEnabled -->
+<br/>
+<!-- $$$content -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="content-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">content</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>弹出窗口中显示的内容组件。</p>
+</div></div><!-- @@@content -->
+<br/>
+<!-- $$$offsetY -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="offsetY-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">offsetY</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>弹出窗口与目标组件之间的垂直偏移量。默认值为 3。</p>
+</div></div><!-- @@@offsetY -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$popup[overload1]$$$popupItem -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="popup-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">popup</span>(<span class="type">Item</span> <i>target</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在指定的目标组件下方或上方弹出窗口。如果目标组件的下方有足够空间，窗口会在目标的下方弹出；否则，窗口会在目标的上方弹出。</p>
+<p><i>target</i> 要定位的目标组件。</p>
+</div></div><!-- @@@popup -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

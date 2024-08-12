@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- WindowRouter.qdoc -->
+  <meta name="description" content="管理窗口路由和导航的单例组件。">
+  <title>WindowRouter QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>WindowRouter</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">WindowRouter QML Type</h1>
+<!-- $$$WindowRouter-brief -->
+<p>管理窗口路由和导航的单例组件。. <a href="#details">More...</a></p>
+<!-- @@@WindowRouter -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-windowrouter-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-windowrouter.html#routes-prop" translate="no">routes</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-windowrouter.html#windows-prop" translate="no">windows</a></b> : var</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-windowrouter.html#addWindow-method" translate="no">addWindow</a></b>(QtObject <i>window</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-windowrouter.html#exit-method" translate="no">exit</a></b>(int <i>retCode</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-windowrouter.html#go-method" translate="no">go</a></b>(string <i>route</i>, var <i>argument</i>, QtObject <i>windowRegister</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-windowrouter.html#removeWindow-method" translate="no">removeWindow</a></b>(QtObject <i>win</i>)</li>
+</ul>
+<!-- $$$WindowRouter-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`WindowRouter` 组件是一个单例对象，用于处理应用程序的窗口路由和导航。它支持添加、移除窗口，并在窗口之间导航。此组件提供了控制窗口实例的生命周期和导航模式的功能。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ WindowRouter {
+  id: router
+  routes: {
+      &quot;home&quot;: &quot;HomePage.qml&quot;,
+      &quot;settings&quot;: &quot;SettingsPage.qml&quot;
+  }
+ }
+
+ // 添加一个窗口
+ router.addWindow(myWindow)
+
+ // 从路由中导航到目标窗口
+ router.go(&quot;home&quot;, {param1: &quot;value1&quot;})
+
+ // 设置窗口结果并退出应用程序
+ router.exit(0)
+</pre>
+<!-- @@@WindowRouter -->
+<h2>Property Documentation</h2>
+<!-- $$$routes -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="routes-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">routes</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>路由映射。此属性定义了路由名称与对应的窗口组件路径之间的映射。</p>
+</div></div><!-- @@@routes -->
+<br/>
+<!-- $$$windows -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="windows-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">windows</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>窗口列表。此属性存储当前活动的窗口实例。</p>
+</div></div><!-- @@@windows -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$addWindow[overload1]$$$addWindowQtObject -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="addWindow-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">addWindow</span>(<span class="type">QtObject</span> <i>window</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>添加窗口。此方法将一个窗口添加到窗口列表中。</p>
+<p><i>window</i> 要添加的窗口实例。</p>
+</div></div><!-- @@@addWindow -->
+<br/>
+<!-- $$$exit[overload1]$$$exitint -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="exit-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">exit</span>(<span class="type">int</span> <i>retCode</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>退出应用程序。此方法关闭所有活动窗口并退出应用程序。</p>
+<p><i>retCode</i> 退出码，用于返回给操作系统。</p>
+</div></div><!-- @@@exit -->
+<br/>
+<!-- $$$go[overload1]$$$gostringvarQtObject -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="go-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">go</span>(<span class="type">string</span> <i>route</i>, <span class="type">var</span> <i>argument</i> = {}, <span class="type">QtObject</span> <i>windowRegister</i> = undefined)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>导航到指定窗口。此方法根据路由名称创建并显示目标窗口，可以传递参数，并选择是否注册窗口。</p>
+<p><i>route</i> 路由名称，必须在 `routes` 属性中定义。 <i>argument</i> 导航参数，默认为空对象。 <i>windowRegister</i> 可选的窗口注册对象，用于在目标窗口中存储窗口引用。</p>
+</div></div><!-- @@@go -->
+<br/>
+<!-- $$$removeWindow[overload1]$$$removeWindowQtObject -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="removeWindow-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">removeWindow</span>(<span class="type">QtObject</span> <i>win</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>移除窗口。此方法将一个窗口从窗口列表中移除并删除它。</p>
+<p><i>win</i> 要移除的窗口实例。</p>
+</div></div><!-- @@@removeWindow -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

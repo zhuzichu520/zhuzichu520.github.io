@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- PageRouter.qdoc -->
+  <meta name="description" content="一个用于路由和页面导航的组件。">
+  <title>PageRouter QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>PageRouter</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">PageRouter QML Type</h1>
+<!-- $$$PageRouter-brief -->
+<p>一个用于路由和页面导航的组件。. <a href="#details">More...</a></p>
+<!-- @@@PageRouter -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-pagerouter-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-pagerouter.html#routes-prop" translate="no">routes</a></b> : var</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-pagerouter.html#sendRouter-signal" translate="no">sendRouter</a></b>(string <i>val</i>, var <i>argument</i>)</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-pagerouter.html#go-method" translate="no">go</a></b>(string <i>path</i>, var <i>argument</i>)</li>
+<li class="fn" translate="no">string <b><a href="qml-fluentui-controls-pagerouter.html#toUrl-method" translate="no">toUrl</a></b>(string <i>path</i>)</li>
+</ul>
+<!-- $$$PageRouter-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`PageRouter` 组件管理一组路径和对应的页面 URL，提供导航和路径解析功能。它允许将路径与 URL 映射，并通过信号 `<a href="qml-fluentui-controls-pagerouter.html#sendRouter-signal" translate="no">sendRouter</a>` 触发导航操作。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ PageRouter {
+ routes: {
+  &quot;home&quot;: &quot;HomePage.qml&quot;,
+  &quot;settings&quot;: { url: &quot;SettingsPage.qml&quot; }
+ }
+
+ onSendRouter: {
+  console.log(&quot;Navigating to:&quot;, val, &quot;with argument:&quot;, argument);
+  // 实际的导航逻辑处理
+ }
+
+ // 导航到 &quot;home&quot; 页面
+ control.go(&quot;home&quot;);
+ }
+</pre>
+<!-- @@@PageRouter -->
+<h2>Property Documentation</h2>
+<!-- $$$routes -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="routes-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">routes</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于路径到 URL 的映射。路径是字符串，URL 是对应页面的路径或对象。</p>
+</div></div><!-- @@@routes -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$sendRouter[overload1]$$$sendRouterstringvar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="sendRouter-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">sendRouter</span>(<span class="type">string</span> <i>val</i>, <span class="type">var</span> <i>argument</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>触发导航事件，发送路径和相关参数。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onSendRouter</code>.</p>
+</div></div></div><!-- @@@sendRouter -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$go[overload1]$$$gostringvar -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="go-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">go</span>(<span class="type">string</span> <i>path</i>, <span class="type">var</span> <i>argument</i> = {})</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>根据指定路径进行导航，`argument` 是可选的额外参数。</p>
+</div></div><!-- @@@go -->
+<br/>
+<!-- $$$toUrl[overload1]$$$toUrlstring -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="toUrl-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">string</span> <span class="name">toUrl</span>(<span class="type">string</span> <i>path</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>将路径转换为对应的 URL。如果路径未找到或 URL 类型不支持，则抛出错误。</p>
+</div></div><!-- @@@toUrl -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

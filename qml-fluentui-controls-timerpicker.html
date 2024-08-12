@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- TimePicker.qdoc -->
+  <meta name="description" content="一个自定义的时间选择器组件，允许用户选择小时和分钟，并支持 AM/PM 选项。">
+  <title>TimerPicker QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>TimerPicker</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">TimerPicker QML Type</h1>
+<!-- $$$TimerPicker-brief -->
+<p>一个自定义的时间选择器组件，允许用户选择小时和分钟，并支持 AM/PM 选项。. <a href="#details">More...</a></p>
+<!-- @@@TimerPicker -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-timerpicker-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-timerpicker.html#amText-prop" translate="no">amText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-timerpicker.html#current-prop" translate="no">current</a></b> : date</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-timerpicker.html#hourFormat-prop" translate="no">hourFormat</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-timerpicker.html#hourText-prop" translate="no">hourText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-timerpicker.html#minuteIncrement-prop" translate="no">minuteIncrement</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-timerpicker.html#minuteText-prop" translate="no">minuteText</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-timerpicker.html#pmText-prop" translate="no">pmText</a></b> : string</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-timerpicker.html#accepted-signal" translate="no">accepted</a></b>()</li>
+</ul>
+<!-- $$$TimerPicker-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`TimerPicker` 组件提供了一个带有滚轮选择的时间选择器，用户可以选择小时、分钟以及 AM 或 PM。它支持 12 小时制和 24 小时制，根据设置的 `<a href="qml-fluentui-controls-timerpicker.html#hourFormat-prop" translate="no">hourFormat</a>` 属性自动调整。组件提供了自动格式化时间和支持时区本地化的功能。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-timerpicker.html" translate="no">TimerPicker</a></span> {
+  <span class="name">hourText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Hour&quot;</span>)
+  <span class="name">minuteText</span>: <span class="name">qsTr</span>(<span class="string">&quot;Minute&quot;</span>)
+  <span class="name">pmText</span>: <span class="name">qsTr</span>(<span class="string">&quot;PM&quot;</span>)
+  <span class="name">amText</span>: <span class="name">qsTr</span>(<span class="string">&quot;AM&quot;</span>)
+  <span class="name">hourFormat</span>: <span class="name">TimePickerType</span>.<span class="name">H</span>
+  <span class="name">minuteIncrement</span>: <span class="number">1</span>
+  <span class="name">current</span>: new <span class="name">Date</span>()
+  <span class="name">onAccepted</span>: {
+      <span class="comment">// 处理时间选择</span>
+  }
+ }
+</pre>
+<!-- @@@TimerPicker -->
+<h2>Property Documentation</h2>
+<!-- $$$amText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="amText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">amText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>AM 的文本。</p>
+</div></div><!-- @@@amText -->
+<br/>
+<!-- $$$current -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="current-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">current</span> : <span class="type">date</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当前选定的时间。</p>
+</div></div><!-- @@@current -->
+<br/>
+<!-- $$$hourFormat -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="hourFormat-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">hourFormat</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>时间格式。使用 `TimePickerType.H` 代表12小时制，使用 `TimePickerType.HH` 代表24小时制。</p>
+</div></div><!-- @@@hourFormat -->
+<br/>
+<!-- $$$hourText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="hourText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">hourText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>小时的标签文本。</p>
+</div></div><!-- @@@hourText -->
+<br/>
+<!-- $$$minuteIncrement -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="minuteIncrement-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">minuteIncrement</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>分钟的增量设置（以分钟为单位）。</p>
+</div></div><!-- @@@minuteIncrement -->
+<br/>
+<!-- $$$minuteText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="minuteText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">minuteText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>分钟的标签文本。</p>
+</div></div><!-- @@@minuteText -->
+<br/>
+<!-- $$$pmText -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="pmText-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">pmText</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>PM 的文本。</p>
+</div></div><!-- @@@pmText -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$accepted[overload1]$$$accepted -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="accepted-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">accepted</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>时间选择确认信号，当用户确认选择时发出。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onAccepted</code>.</p>
+</div></div></div><!-- @@@accepted -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

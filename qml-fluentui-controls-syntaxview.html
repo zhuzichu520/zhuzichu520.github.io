@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- SyntaxView.qdoc -->
+  <meta name="description" content="一个用于展示和编辑带有语法高亮的文本的视图组件。">
+  <title>SyntaxView QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>SyntaxView</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#signals">Signals</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">SyntaxView QML Type</h1>
+<!-- $$$SyntaxView-brief -->
+<p>一个用于展示和编辑带有语法高亮的文本的视图组件。. <a href="#details">More...</a></p>
+<!-- @@@SyntaxView -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-syntaxview-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-syntaxview.html#currentLineNumber-prop" translate="no">currentLineNumber</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-syntaxview.html#highlighter-prop" translate="no">highlighter</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-syntaxview.html#rowHeight-prop" translate="no">rowHeight</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-syntaxview.html#showLineNumbers-prop" translate="no">showLineNumbers</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-syntaxview.html#text-prop" translate="no">text</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-syntaxview.html#textArea-prop" translate="no">textArea</a></b> : alias</li>
+</ul>
+<h2 id="signals">Signals</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-syntaxview.html#onHeightChanged-signal" translate="no">onHeightChanged</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-syntaxview.html#onWidthChanged-signal" translate="no">onWidthChanged</a></b>()</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-syntaxview.html#clear-method" translate="no">clear</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-controls-syntaxview.html#refresh-method" translate="no">refresh</a></b>()</li>
+</ul>
+<!-- $$$SyntaxView-description -->
+<h2 id="details">Detailed Description</h2>
+<p>`SyntaxView` 组件结合了文本编辑功能和语法高亮功能，提供了一个可滚动的文本编辑器视图。它支持显示行号、设置行高、并应用自定义的语法高亮器。该组件还支持水平和垂直滚动条。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-syntaxview.html" translate="no">SyntaxView</a></span> {
+  <span class="name">text</span>: <span class="string">&quot;function example() {\n    return true;\n}&quot;</span>
+  <span class="name">showLineNumbers</span>: <span class="number">true</span>
+  <span class="name">highlighter</span>: <span class="name">QMLHighlighter</span> {}
+ }
+</pre>
+<!-- @@@SyntaxView -->
+<h2>Property Documentation</h2>
+<!-- $$$currentLineNumber -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="currentLineNumber-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">currentLineNumber</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当前光标所在的行号。如果光标在第一行，则此属性为 `0`。默认值为 `-1`。</p>
+</div></div><!-- @@@currentLineNumber -->
+<br/>
+<!-- $$$highlighter -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="highlighter-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">highlighter</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于语法高亮的组件。指定一个自定义的 `<a href="qml-fluentui-controls-qmlhighlighter.html" translate="no">QMLHighlighter</a>` 组件以实现特定的语法高亮效果。默认值为空。</p>
+</div></div><!-- @@@highlighter -->
+<br/>
+<!-- $$$rowHeight -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rowHeight-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">rowHeight</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>行高，表示每行的垂直间距。默认为字体行间距的上限。</p>
+</div></div><!-- @@@rowHeight -->
+<br/>
+<!-- $$$showLineNumbers -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="showLineNumbers-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">showLineNumbers</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否显示行号。设置为 `true` 时，会在文本编辑器的左侧显示行号。默认值为 `true`。</p>
+</div></div><!-- @@@showLineNumbers -->
+<br/>
+<!-- $$$text -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="text-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">text</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>编辑器中的文本内容。修改此属性会更新文本区域的内容。</p>
+</div></div><!-- @@@text -->
+<br/>
+<!-- $$$textArea -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="textArea-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">textArea</span> : <span class="type">alias</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>文本区域的别名。允许访问和修改文本区域的内容。</p>
+</div></div><!-- @@@textArea -->
+<br/>
+<h2>Signal Documentation</h2>
+<!-- $$$onHeightChanged[overload1]$$$onHeightChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="onHeightChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">onHeightChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当组件高度变化时发出的信号。该信号会触发文本区域的更新。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onOnHeightChanged</code>.</p>
+</div></div></div><!-- @@@onHeightChanged -->
+<br/>
+<!-- $$$onWidthChanged[overload1]$$$onWidthChanged -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="onWidthChanged-signal">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">onWidthChanged</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当组件宽度变化时发出的信号。该信号会触发文本区域的更新。</p>
+<div class="admonition note"><p><b>Note: </b>The corresponding handler is <code translate="no">onOnWidthChanged</code>.</p>
+</div></div></div><!-- @@@onWidthChanged -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$clear[overload1]$$$clear -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="clear-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">clear</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>清空文本区域的内容和行号数据。</p>
+</div></div><!-- @@@clear -->
+<br/>
+<!-- $$$refresh[overload1]$$$refresh -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="refresh-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">refresh</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>刷新视图以应用新的文本内容和更新显示的行号。</p>
+</div></div><!-- @@@refresh -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

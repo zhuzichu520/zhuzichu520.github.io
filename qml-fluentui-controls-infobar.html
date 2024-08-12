@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- InfoBar.qdoc -->
+  <meta name="description" content="显示信息的条形组件，支持不同严重程度的信息显示和可关闭的操作。">
+  <title>InfoBar QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>InfoBar</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">InfoBar QML Type</h1>
+<!-- $$$InfoBar-brief -->
+<p>显示信息的条形组件，支持不同严重程度的信息显示和可关闭的操作。. <a href="#details">More...</a></p>
+<!-- @@@InfoBar -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-infobar-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#action-prop" translate="no">action</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#closable-prop" translate="no">closable</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#iconVisible-prop" translate="no">iconVisible</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#implicitHeight-prop" translate="no">implicitHeight</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#implicitWidth-prop" translate="no">implicitWidth</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#message-prop" translate="no">message</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#messageItem-prop" translate="no">messageItem</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#messageMaximumWidth-prop" translate="no">messageMaximumWidth</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#onClickCloseListener-prop" translate="no">onClickCloseListener</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#severity-prop" translate="no">severity</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#title-prop" translate="no">title</a></b> : string</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-infobar.html#titleItem-prop" translate="no">titleItem</a></b> : Component</li>
+</ul>
+<!-- $$$InfoBar-description -->
+<h2 id="details">Detailed Description</h2>
+<p>InfoBar 组件用于在界面上显示一条信息条，支持不同的严重程度、标题、消息、操作按钮和关闭按钮。根据不同的严重程度，信息条的背景颜色和图标会有所不同。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-infobar.html" translate="no">InfoBar</a></span> {
+     <span class="name">severity</span>: <span class="name">InfoBarType</span>.<span class="name">Warning</span>
+     <span class="name">title</span>: <span class="string">&quot;Warning&quot;</span>
+     <span class="name">message</span>: <span class="string">&quot;This is a warning message.&quot;</span>
+     <span class="name">closable</span>: <span class="number">true</span>
+     <span class="name">iconVisible</span>: <span class="number">true</span>
+     <span class="name">onClickCloseListener</span>: {
+         <span class="name">console</span>.<span class="name">log</span>(<span class="string">&quot;InfoBar closed&quot;</span>)
+     }
+ }
+</pre>
+<!-- @@@InfoBar -->
+<h2>Property Documentation</h2>
+<!-- $$$action -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="action-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">action</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>自定义操作按钮的组件。如果设置了此属性，则显示此组件作为操作按钮。</p>
+</div></div><!-- @@@action -->
+<br/>
+<!-- $$$closable -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="closable-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">closable</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否显示关闭按钮。默认为 `true`。</p>
+</div></div><!-- @@@closable -->
+<br/>
+<!-- $$$iconVisible -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="iconVisible-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">iconVisible</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否显示图标。默认为 `true`。</p>
+</div></div><!-- @@@iconVisible -->
+<br/>
+<!-- $$$implicitHeight -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="implicitHeight-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">implicitHeight</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>信息条的默认高度。根据内容动态调整。</p>
+</div></div><!-- @@@implicitHeight -->
+<br/>
+<!-- $$$implicitWidth -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="implicitWidth-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">implicitWidth</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>信息条的默认宽度。根据内容动态调整。</p>
+</div></div><!-- @@@implicitWidth -->
+<br/>
+<!-- $$$message -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="message-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">message</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>信息条的消息文本。默认为空字符串。</p>
+</div></div><!-- @@@message -->
+<br/>
+<!-- $$$messageItem -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="messageItem-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">messageItem</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>自定义消息的组件。如果设置了此属性，则使用此组件来显示消息。</p>
+</div></div><!-- @@@messageItem -->
+<br/>
+<!-- $$$messageMaximumWidth -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="messageMaximumWidth-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">messageMaximumWidth</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>消息的最大宽度。默认为 520。</p>
+</div></div><!-- @@@messageMaximumWidth -->
+<br/>
+<!-- $$$onClickCloseListener -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="onClickCloseListener-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">onClickCloseListener</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>当点击关闭按钮时调用的函数。如果设置为 `null`，点击关闭按钮会隐藏信息条。默认为 `null`。</p>
+</div></div><!-- @@@onClickCloseListener -->
+<br/>
+<!-- $$$severity -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="severity-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">severity</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>信息条的严重程度，决定背景颜色和图标。可以是以下值之一： - InfoBarType.Info: 信息 - InfoBarType.Success: 成功 - InfoBarType.Warning: 警告 - InfoBarType.Error: 错误 默认为 InfoBarType.Info。</p>
+</div></div><!-- @@@severity -->
+<br/>
+<!-- $$$title -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="title-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">title</span> : <span class="type">string</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>信息条的标题文本。默认为空字符串。</p>
+</div></div><!-- @@@title -->
+<br/>
+<!-- $$$titleItem -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="titleItem-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">titleItem</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>自定义标题的组件。如果设置了此属性，则使用此组件来显示标题。</p>
+</div></div><!-- @@@titleItem -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>

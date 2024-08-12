@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- DataGrid.qdoc -->
+  <meta name="description" content="一个基于 ListView 的数据网格组件，支持列和行的自定义布局以及动态更新。">
+  <title>DataGrid QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-controls-qmlmodule.html" translate="no">FluentUI.Controls</a></li>
+<li>DataGrid</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">DataGrid QML Type</h1>
+<!-- $$$DataGrid-brief -->
+<p>一个基于 ListView 的数据网格组件，支持列和行的自定义布局以及动态更新。. <a href="#details">More...</a></p>
+<!-- @@@DataGrid -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.Controls 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-controls-datagrid-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#add-prop" translate="no">add</a></b> : Transition</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#addDisplaced-prop" translate="no">addDisplaced</a></b> : Transition</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#columnSourceModel-prop" translate="no">columnSourceModel</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#columnWidthProvider-prop" translate="no">columnWidthProvider</a></b> : function</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#delegate-prop" translate="no">delegate</a></b> : Component</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#horizonalHeaderHeight-prop" translate="no">horizonalHeaderHeight</a></b> : int</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#horizonalHeaderVisible-prop" translate="no">horizonalHeaderVisible</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#move-prop" translate="no">move</a></b> : Transition</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#moveDisplaced-prop" translate="no">moveDisplaced</a></b> : Transition</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#remove-prop" translate="no">remove</a></b> : Transition</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#removeDisplaced-prop" translate="no">removeDisplaced</a></b> : Transition</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#rowHeightProvider-prop" translate="no">rowHeightProvider</a></b> : function</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#rowSelectedBorderColor-prop" translate="no">rowSelectedBorderColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#rowSelectedColor-prop" translate="no">rowSelectedColor</a></b> : color</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#sourceModel-prop" translate="no">sourceModel</a></b> : var</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#verticalHeaderVisible-prop" translate="no">verticalHeaderVisible</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#view-prop" translate="no">view</a></b> : Item</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-controls-datagrid.html#closeEditor-method" translate="no">closeEditor</a></b>()</li>
+</ul>
+<!-- $$$DataGrid-description -->
+<h2 id="details">Detailed Description</h2>
+<p>DataGrid 组件是一个自定义的 `ListView`，用于在网格布局中显示数据。它支持列和行的动态调整，并提供了自定义的过渡动画和编辑功能。</p>
+<p>示例用法：</p>
+<pre class="qml" translate="no">
+ <span class="type"><a href="qml-fluentui-controls-datagrid.html" translate="no">DataGrid</a></span> {
+ <span class="name">sourceModel</span>: <span class="name">myModel</span>
+ <span class="name">columnSourceModel</span>: <span class="name">myColumnModel</span>
+ <span class="name">visibleItemCount</span>: <span class="number">10</span>
+ <span class="name">autoPlayDuration</span>: <span class="number">2000</span>
+ <span class="name">autoPlay</span>: <span class="number">true</span>
+ <span class="name">orientation</span>: <span class="name">Qt</span>.<span class="name">Horizontal</span>
+ <span class="comment">// 在此处添加您的项目</span>
+ }
+</pre>
+<!-- @@@DataGrid -->
+<h2>Property Documentation</h2>
+<!-- $$$add -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="add-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">add</span> : <span class="type">Transition</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在添加新项时应用的过渡动画。</p>
+</div></div><!-- @@@add -->
+<br/>
+<!-- $$$addDisplaced -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="addDisplaced-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">addDisplaced</span> : <span class="type">Transition</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在添加新项并且位置被改变时应用的过渡动画。</p>
+</div></div><!-- @@@addDisplaced -->
+<br/>
+<!-- $$$columnSourceModel -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="columnSourceModel-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">columnSourceModel</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>数据网格的列数据模型。</p>
+</div></div><!-- @@@columnSourceModel -->
+<br/>
+<!-- $$$columnWidthProvider -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="columnWidthProvider-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">columnWidthProvider</span> : <span class="type">function</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于提供每一列的宽度的函数。接受列索引作为参数，返回对应列的宽度。</p>
+</div></div><!-- @@@columnWidthProvider -->
+<br/>
+<!-- $$$delegate -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="delegate-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">delegate</span> : <span class="type">Component</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于渲染每个单元格的组件。必须定义为 `Component` 类型。</p>
+</div></div><!-- @@@delegate -->
+<br/>
+<!-- $$$horizonalHeaderHeight -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="horizonalHeaderHeight-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">horizonalHeaderHeight</span> : <span class="type">int</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>水平标题行的高度。</p>
+</div></div><!-- @@@horizonalHeaderHeight -->
+<br/>
+<!-- $$$horizonalHeaderVisible -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="horizonalHeaderVisible-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">horizonalHeaderVisible</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否显示水平标题行。</p>
+</div></div><!-- @@@horizonalHeaderVisible -->
+<br/>
+<!-- $$$move -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="move-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">move</span> : <span class="type">Transition</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在移动项时应用的过渡动画。</p>
+</div></div><!-- @@@move -->
+<br/>
+<!-- $$$moveDisplaced -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="moveDisplaced-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">moveDisplaced</span> : <span class="type">Transition</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在移动项并且位置被改变时应用的过渡动画。</p>
+</div></div><!-- @@@moveDisplaced -->
+<br/>
+<!-- $$$remove -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="remove-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">remove</span> : <span class="type">Transition</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在移除项时应用的过渡动画。</p>
+</div></div><!-- @@@remove -->
+<br/>
+<!-- $$$removeDisplaced -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="removeDisplaced-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">removeDisplaced</span> : <span class="type">Transition</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>在移除项并且位置被改变时应用的过渡动画。</p>
+</div></div><!-- @@@removeDisplaced -->
+<br/>
+<!-- $$$rowHeightProvider -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rowHeightProvider-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">rowHeightProvider</span> : <span class="type">function</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>用于提供每一行的高度的函数。接受行索引作为参数，返回对应行的高度。</p>
+</div></div><!-- @@@rowHeightProvider -->
+<br/>
+<!-- $$$rowSelectedBorderColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rowSelectedBorderColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">rowSelectedBorderColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>选中行的边框颜色。</p>
+</div></div><!-- @@@rowSelectedBorderColor -->
+<br/>
+<!-- $$$rowSelectedColor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="rowSelectedColor-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">rowSelectedColor</span> : <span class="type">color</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>选中行的背景颜色。</p>
+</div></div><!-- @@@rowSelectedColor -->
+<br/>
+<!-- $$$sourceModel -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="sourceModel-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">sourceModel</span> : <span class="type">var</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>数据网格的行数据模型。</p>
+</div></div><!-- @@@sourceModel -->
+<br/>
+<!-- $$$verticalHeaderVisible -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="verticalHeaderVisible-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">verticalHeaderVisible</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>是否显示垂直标题列。</p>
+</div></div><!-- @@@verticalHeaderVisible -->
+<br/>
+<!-- $$$view -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="view-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">view</span> : <span class="type">Item</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>数据网格的视图项。</p>
+</div></div><!-- @@@view -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$closeEditor[overload1]$$$closeEditor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="closeEditor-method">
+<td class="tblQmlFuncNode"><p>
+<span class="name">closeEditor</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>关闭当前的编辑器，并恢复到正常显示状态。</p>
+</div></div><!-- @@@closeEditor -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>
