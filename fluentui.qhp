@@ -123,6 +123,9 @@
                     <section ref="qml-fluentui-controls-infobarmanager.html" title="InfoBarManager Type Reference">
                         <section ref="qml-fluentui-controls-infobarmanager-members.html" title="List of all members"/>
                     </section>
+                    <section ref="qml-fluentui-controls-inputbackground.html" title="InputBackground Type Reference">
+                        <section ref="qml-fluentui-controls-inputbackground-members.html" title="List of all members"/>
+                    </section>
                     <section ref="qml-fluentui-controls-inputmenu.html" title="InputMenu Type Reference">
                         <section ref="qml-fluentui-controls-inputmenu-members.html" title="List of all members"/>
                     </section>
@@ -197,6 +200,9 @@
                     </section>
                     <section ref="qml-fluentui-controls-standardbutton.html" title="StandardButton Type Reference">
                         <section ref="qml-fluentui-controls-standardbutton-members.html" title="List of all members"/>
+                    </section>
+                    <section ref="qml-fluentui-controls-starter.html" title="Starter Type Reference">
+                        <section ref="qml-fluentui-controls-starter-members.html" title="List of all members"/>
                     </section>
                     <section ref="qml-fluentui-controls-syntaxview.html" title="SyntaxView Type Reference">
                         <section ref="qml-fluentui-controls-syntaxview-members.html" title="List of all members"/>
@@ -332,12 +338,6 @@
                     </section>
                     <section ref="qml-fluentui-verticalheaderview.html" title="VerticalHeaderView Type Reference">
                         <section ref="qml-fluentui-verticalheaderview-members.html" title="List of all members"/>
-                    </section>
-                    <section ref="qml-fluentui-impl-inputbackground.html" title="InputBackground Type Reference">
-                        <section ref="qml-fluentui-impl-inputbackground-members.html" title="List of all members"/>
-                    </section>
-                    <section ref="qml-fluentui-impl-starter.html" title="Starter Type Reference">
-                        <section ref="qml-fluentui-impl-starter-members.html" title="List of all members"/>
                     </section>
                 </section>
                 <section ref="fluentui-qmlmodule.html" title="QML Types">
@@ -451,6 +451,9 @@
                     <section ref="qml-fluentui-controls-infobarmanager.html" title="InfoBarManager Type Reference">
                         <section ref="qml-fluentui-controls-infobarmanager-members.html" title="List of all members"/>
                     </section>
+                    <section ref="qml-fluentui-controls-inputbackground.html" title="InputBackground Type Reference">
+                        <section ref="qml-fluentui-controls-inputbackground-members.html" title="List of all members"/>
+                    </section>
                     <section ref="qml-fluentui-controls-inputmenu.html" title="InputMenu Type Reference">
                         <section ref="qml-fluentui-controls-inputmenu-members.html" title="List of all members"/>
                     </section>
@@ -525,6 +528,9 @@
                     </section>
                     <section ref="qml-fluentui-controls-standardbutton.html" title="StandardButton Type Reference">
                         <section ref="qml-fluentui-controls-standardbutton-members.html" title="List of all members"/>
+                    </section>
+                    <section ref="qml-fluentui-controls-starter.html" title="Starter Type Reference">
+                        <section ref="qml-fluentui-controls-starter-members.html" title="List of all members"/>
                     </section>
                     <section ref="qml-fluentui-controls-syntaxview.html" title="SyntaxView Type Reference">
                         <section ref="qml-fluentui-controls-syntaxview-members.html" title="List of all members"/>
@@ -661,12 +667,6 @@
                     <section ref="qml-fluentui-verticalheaderview.html" title="VerticalHeaderView Type Reference">
                         <section ref="qml-fluentui-verticalheaderview-members.html" title="List of all members"/>
                     </section>
-                    <section ref="qml-fluentui-impl-inputbackground.html" title="InputBackground Type Reference">
-                        <section ref="qml-fluentui-impl-inputbackground-members.html" title="List of all members"/>
-                    </section>
-                    <section ref="qml-fluentui-impl-starter.html" title="Starter Type Reference">
-                        <section ref="qml-fluentui-impl-starter-members.html" title="List of all members"/>
-                    </section>
                 </section>
             </section>
         </toc>
@@ -764,8 +764,8 @@
             <keyword name="InfoBar" id="QML.FluentUI.Controls1.InfoBar" ref="qml-fluentui-controls-infobar.html"/>
             <keyword name="InfoBarManager" id="QML.InfoBarManager" ref="qml-fluentui-controls-infobarmanager.html"/>
             <keyword name="InfoBarManager" id="QML.FluentUI.Controls1.InfoBarManager" ref="qml-fluentui-controls-infobarmanager.html"/>
-            <keyword name="InputBackground" id="QML.InputBackground" ref="qml-fluentui-impl-inputbackground.html"/>
-            <keyword name="InputBackground" id="QML.FluentUI.impl1.InputBackground" ref="qml-fluentui-impl-inputbackground.html"/>
+            <keyword name="InputBackground" id="QML.InputBackground" ref="qml-fluentui-controls-inputbackground.html"/>
+            <keyword name="InputBackground" id="QML.FluentUI.Controls1.InputBackground" ref="qml-fluentui-controls-inputbackground.html"/>
             <keyword name="InputMenu" id="QML.InputMenu" ref="qml-fluentui-controls-inputmenu.html"/>
             <keyword name="InputMenu" id="QML.FluentUI.Controls1.InputMenu" ref="qml-fluentui-controls-inputmenu.html"/>
             <keyword name="Instantiator" id="NavigationMenu::Instantiator" ref="qml-fluentui-controls-navigationmenu.html#Instantiator-prop"/>
@@ -849,8 +849,8 @@
             <keyword name="StaggeredLayout" id="QML.FluentUI.Controls1.StaggeredLayout" ref="qml-fluentui-controls-staggeredlayout.html"/>
             <keyword name="StandardButton" id="QML.StandardButton" ref="qml-fluentui-controls-standardbutton.html"/>
             <keyword name="StandardButton" id="QML.FluentUI.Controls1.StandardButton" ref="qml-fluentui-controls-standardbutton.html"/>
-            <keyword name="Starter" id="QML.Starter" ref="qml-fluentui-impl-starter.html"/>
-            <keyword name="Starter" id="QML.FluentUI.impl1.Starter" ref="qml-fluentui-impl-starter.html"/>
+            <keyword name="Starter" id="QML.Starter" ref="qml-fluentui-controls-starter.html"/>
+            <keyword name="Starter" id="QML.FluentUI.Controls1.Starter" ref="qml-fluentui-controls-starter.html"/>
             <keyword name="Switch" id="QML.Switch" ref="qml-fluentui-switch.html"/>
             <keyword name="Switch" id="QML.FluentUI1.Switch" ref="qml-fluentui-switch.html"/>
             <keyword name="SyntaxView" id="QML.SyntaxView" ref="qml-fluentui-controls-syntaxview.html"/>
@@ -907,7 +907,7 @@
             <keyword name="acrylicBackgroundColor" id="Theme::acrylicBackgroundColor" ref="qml-fluentui-controls-theme.html#acrylicBackgroundColor-prop"/>
             <keyword name="action" id="AppBar::action" ref="qml-fluentui-controls-appbar.html#action-prop"/>
             <keyword name="action" id="InfoBar::action" ref="qml-fluentui-controls-infobar.html#action-prop"/>
-            <keyword name="activeApplicationChanged" id="Starter::activeApplicationChanged" ref="qml-fluentui-impl-starter.html#activeApplicationChanged-signal"/>
+            <keyword name="activeApplicationChanged" id="Starter::activeApplicationChanged" ref="qml-fluentui-controls-starter.html#activeApplicationChanged-signal"/>
             <keyword name="activeColor" id="Theme::activeColor" ref="qml-fluentui-controls-theme.html#activeColor-prop"/>
             <keyword name="activeFocus" id="NumberBox::activeFocus" ref="qml-fluentui-controls-numberbox.html#activeFocus-prop"/>
             <keyword name="add" id="DataGrid::add" ref="qml-fluentui-controls-datagrid.html#add-prop"/>
@@ -924,7 +924,7 @@
             <keyword name="animationRunning" id="Chart::animationRunning" ref="qml-fluentui-controls-chart.html#animationRunning-prop"/>
             <keyword name="appBar" id="FramelessWindow::appBar" ref="qml-fluentui-controls-framelesswindow.html#appBar-prop"/>
             <keyword name="appBarHeight" id="NavigationView::appBarHeight" ref="qml-fluentui-controls-navigationview.html#appBarHeight-prop"/>
-            <keyword name="appId" id="Starter::appId" ref="qml-fluentui-impl-starter.html#appId-prop"/>
+            <keyword name="appId" id="Starter::appId" ref="qml-fluentui-controls-starter.html#appId-prop"/>
             <keyword name="append" id="DataGridModel::append" ref="qml-fluentui-controls-datagridmodel.html#append-method"/>
             <keyword name="appendTab" id="TabView::appendTab" ref="qml-fluentui-controls-tabview.html#appendTab-method"/>
             <keyword name="autoDestroy" id="FramelessWindow::autoDestroy" ref="qml-fluentui-controls-framelesswindow.html#autoDestroy-prop"/>
@@ -945,8 +945,8 @@
             <keyword name="bodyStrong" id="Typography::bodyStrong" ref="qml-fluentui-controls-typography.html#bodyStrong-prop"/>
             <keyword name="borderColor" id="RoundImageView::borderColor" ref="qml-fluentui-controls-roundimageview.html#borderColor-prop"/>
             <keyword name="borderWidth" id="ControlBackground::borderWidth" ref="qml-fluentui-controls-controlbackground.html#borderWidth-prop"/>
+            <keyword name="borderWidth" id="InputBackground::borderWidth" ref="qml-fluentui-controls-inputbackground.html#borderWidth-prop"/>
             <keyword name="borderWidth" id="RoundImageView::borderWidth" ref="qml-fluentui-controls-roundimageview.html#borderWidth-prop"/>
-            <keyword name="borderWidth" id="InputBackground::borderWidth" ref="qml-fluentui-impl-inputbackground.html#borderWidth-prop"/>
             <keyword name="bottomInset" id="ContentPage::bottomInset" ref="qml-fluentui-controls-contentpage.html#bottomInset-prop"/>
             <keyword name="bottomMargin" id="HighlightRectangle::bottomMargin" ref="qml-fluentui-controls-highlightrectangle.html#bottomMargin-prop"/>
             <keyword name="bottomMargin" id="ScrollablePage::bottomMargin" ref="qml-fluentui-controls-scrollablepage.html#bottomMargin-prop"/>
@@ -986,12 +986,12 @@
             <keyword name="color" id="ControlBackground::color" ref="qml-fluentui-controls-controlbackground.html#color-prop"/>
             <keyword name="color" id="Icon::color" ref="qml-fluentui-controls-icon.html#color-prop"/>
             <keyword name="color" id="InfoBadge::color" ref="qml-fluentui-controls-infobadge.html#color-prop"/>
+            <keyword name="color" id="InputBackground::color" ref="qml-fluentui-controls-inputbackground.html#color-prop"/>
             <keyword name="color" id="MultilineTextBox::color" ref="qml-fluentui-controls-multilinetextbox.html#color-prop"/>
             <keyword name="color" id="QRCode::color" ref="qml-fluentui-controls-qrcode.html#color-prop"/>
             <keyword name="color" id="Shadow::color" ref="qml-fluentui-controls-shadow.html#color-prop"/>
             <keyword name="color" id="TextBox::color" ref="qml-fluentui-controls-textbox.html#color-prop"/>
             <keyword name="color" id="TextIcon::color" ref="qml-fluentui-controls-texticon.html#color-prop"/>
-            <keyword name="color" id="InputBackground::color" ref="qml-fluentui-impl-inputbackground.html#color-prop"/>
             <keyword name="colorHandleRadius" id="ColorPicker::colorHandleRadius" ref="qml-fluentui-controls-colorpicker.html#colorHandleRadius-prop"/>
             <keyword name="columnSourceModel" id="DataGrid::columnSourceModel" ref="qml-fluentui-controls-datagrid.html#columnSourceModel-prop"/>
             <keyword name="columnSpacing" id="ScrollablePage::columnSpacing" ref="qml-fluentui-controls-scrollablepage.html#columnSpacing-prop"/>
@@ -1059,7 +1059,7 @@
             <keyword name="decrementItem" id="FlipLayout::decrementItem" ref="qml-fluentui-controls-fliplayout.html#decrementItem-prop"/>
             <keyword name="defaultBrushFor" id="AccentColor::defaultBrushFor" ref="qml-fluentui-controls-accentcolor.html#defaultBrushFor-method"/>
             <keyword name="defaultColor" id="ControlBackground::defaultColor" ref="qml-fluentui-controls-controlbackground.html#defaultColor-prop"/>
-            <keyword name="defaultColor" id="InputBackground::defaultColor" ref="qml-fluentui-impl-inputbackground.html#defaultColor-prop"/>
+            <keyword name="defaultColor" id="InputBackground::defaultColor" ref="qml-fluentui-controls-inputbackground.html#defaultColor-prop"/>
             <keyword name="delegate" id="DataGrid::delegate" ref="qml-fluentui-controls-datagrid.html#delegate-prop"/>
             <keyword name="delegate" id="NavigationMenu::delegate" ref="qml-fluentui-controls-navigationmenu.html#delegate-prop"/>
             <keyword name="delegate" id="StaggeredLayout::delegate" ref="qml-fluentui-controls-staggeredlayout.html#delegate-prop"/>
@@ -1082,7 +1082,7 @@
             <keyword name="enabled" id="PaneItemExpander::enabled" ref="qml-fluentui-controls-paneitemexpander.html#enabled-prop"/>
             <keyword name="enabled" id="SplitLayout::enabled" ref="qml-fluentui-controls-splitlayout.html#enabled-prop"/>
             <keyword name="endColor" id="ControlBackground::endColor" ref="qml-fluentui-controls-controlbackground.html#endColor-prop"/>
-            <keyword name="endColor" id="InputBackground::endColor" ref="qml-fluentui-impl-inputbackground.html#endColor-prop"/>
+            <keyword name="endColor" id="InputBackground::endColor" ref="qml-fluentui-controls-inputbackground.html#endColor-prop"/>
             <keyword name="endDate" id="DatePicker::endDate" ref="qml-fluentui-controls-datepicker.html#endDate-prop"/>
             <keyword name="endOffset" id="HighlightRectangle::endOffset" ref="qml-fluentui-controls-highlightrectangle.html#endOffset-prop"/>
             <keyword name="errorPrimaryColor" id="Colors::errorPrimaryColor" ref="qml-fluentui-controls-colors.html#errorPrimaryColor-prop"/>
@@ -1112,7 +1112,7 @@
             <keyword name="get" id="DataGridModel::get" ref="qml-fluentui-controls-datagridmodel.html#get-method"/>
             <keyword name="go" id="PageRouter::go" ref="qml-fluentui-controls-pagerouter.html#go-method"/>
             <keyword name="go" id="WindowRouter::go" ref="qml-fluentui-controls-windowrouter.html#go-method"/>
-            <keyword name="gradientHeight" id="InputBackground::gradientHeight" ref="qml-fluentui-impl-inputbackground.html#gradientHeight-prop"/>
+            <keyword name="gradientHeight" id="InputBackground::gradientHeight" ref="qml-fluentui-controls-inputbackground.html#gradientHeight-prop"/>
             <keyword name="green" id="Colors::green" ref="qml-fluentui-controls-colors.html#green-prop"/>
             <keyword name="greenText" id="ColorPicker::greenText" ref="qml-fluentui-controls-colorpicker.html#greenText-prop"/>
             <keyword name="grey" id="Colors::grey" ref="qml-fluentui-controls-colors.html#grey-prop"/>
@@ -1226,7 +1226,7 @@
             <keyword name="lightResource" id="Theme::lightResource" ref="qml-fluentui-controls-theme.html#lightResource-prop"/>
             <keyword name="lighter" id="AccentColor::lighter" ref="qml-fluentui-controls-accentcolor.html#lighter-method"/>
             <keyword name="lightest" id="AccentColor::lightest" ref="qml-fluentui-controls-accentcolor.html#lightest-method"/>
-            <keyword name="locale" id="Starter::locale" ref="qml-fluentui-impl-starter.html#locale-prop"/>
+            <keyword name="locale" id="Starter::locale" ref="qml-fluentui-controls-starter.html#locale-prop"/>
             <keyword name="logo" id="NavigationView::logo" ref="qml-fluentui-controls-navigationview.html#logo-prop"/>
             <keyword name="luminosity" id="Acrylic::luminosity" ref="qml-fluentui-controls-acrylic.html#luminosity-prop"/>
             <keyword name="magenta" id="Colors::magenta" ref="qml-fluentui-controls-colors.html#magenta-prop"/>
@@ -1270,7 +1270,7 @@
             <keyword name="onClicked" id="StandardButton::onClicked" ref="qml-fluentui-controls-standardbutton.html#onClicked-method"/>
             <keyword name="onClicked" id="TextIcon::onClicked" ref="qml-fluentui-controls-texticon.html#onClicked-signal"/>
             <keyword name="onCloseListener" id="FramelessWindow::onCloseListener" ref="qml-fluentui-controls-framelesswindow.html#onCloseListener-prop"/>
-            <keyword name="onHandleDataChanged" id="Starter::onHandleDataChanged" ref="qml-fluentui-impl-starter.html#onHandleDataChanged-method"/>
+            <keyword name="onHandleDataChanged" id="Starter::onHandleDataChanged" ref="qml-fluentui-controls-starter.html#onHandleDataChanged-method"/>
             <keyword name="onHeightChanged" id="SyntaxView::onHeightChanged" ref="qml-fluentui-controls-syntaxview.html#onHeightChanged-signal"/>
             <keyword name="onHighlightBlockChanged" id="QMLHighlighter::onHighlightBlockChanged" ref="qml-fluentui-controls-qmlhighlighter.html#onHighlightBlockChanged-method"/>
             <keyword name="onTextChanged" id="TextBox::onTextChanged" ref="qml-fluentui-controls-textbox.html#onTextChanged-signal"/>
@@ -1312,12 +1312,12 @@
             <keyword name="radius" id="ControlBackground::radius" ref="qml-fluentui-controls-controlbackground.html#radius-prop"/>
             <keyword name="radius" id="FocusItem::radius" ref="qml-fluentui-controls-focusitem.html#radius-prop"/>
             <keyword name="radius" id="IconButton::radius" ref="qml-fluentui-controls-iconbutton.html#radius-prop"/>
+            <keyword name="radius" id="InputBackground::radius" ref="qml-fluentui-controls-inputbackground.html#radius-prop"/>
             <keyword name="radius" id="ListTile::radius" ref="qml-fluentui-controls-listtile.html#radius-prop"/>
             <keyword name="radius" id="MultilineTextBox::radius" ref="qml-fluentui-controls-multilinetextbox.html#radius-prop"/>
             <keyword name="radius" id="RoundClip::radius" ref="qml-fluentui-controls-roundclip.html#radius-prop"/>
             <keyword name="radius" id="RoundImageView::radius" ref="qml-fluentui-controls-roundimageview.html#radius-prop"/>
             <keyword name="radius" id="Shadow::radius" ref="qml-fluentui-controls-shadow.html#radius-prop"/>
-            <keyword name="radius" id="InputBackground::radius" ref="qml-fluentui-impl-inputbackground.html#radius-prop"/>
             <keyword name="red" id="Colors::red" ref="qml-fluentui-controls-colors.html#red-prop"/>
             <keyword name="redText" id="ColorPicker::redText" ref="qml-fluentui-controls-colorpicker.html#redText-prop"/>
             <keyword name="refresh" id="SyntaxView::refresh" ref="qml-fluentui-controls-syntaxview.html#refresh-method"/>
@@ -1391,7 +1391,7 @@
             <keyword name="sideBarShadow" id="NavigationView::sideBarShadow" ref="qml-fluentui-controls-navigationview.html#sideBarShadow-prop"/>
             <keyword name="sideBarWidth" id="NavigationView::sideBarWidth" ref="qml-fluentui-controls-navigationview.html#sideBarWidth-prop"/>
             <keyword name="sideItemHeight" id="NavigationView::sideItemHeight" ref="qml-fluentui-controls-navigationview.html#sideItemHeight-prop"/>
-            <keyword name="singleton" id="Starter::singleton" ref="qml-fluentui-impl-starter.html#singleton-prop"/>
+            <keyword name="singleton" id="Starter::singleton" ref="qml-fluentui-controls-starter.html#singleton-prop"/>
             <keyword name="size" id="QRCode::size" ref="qml-fluentui-controls-qrcode.html#size-prop"/>
             <keyword name="size" id="RatingControl::size" ref="qml-fluentui-controls-ratingcontrol.html#size-prop"/>
             <keyword name="slowAnimationDuration" id="Theme::slowAnimationDuration" ref="qml-fluentui-controls-theme.html#slowAnimationDuration-prop"/>
@@ -1456,7 +1456,7 @@
             <keyword name="target" id="FocusItem::target" ref="qml-fluentui-controls-focusitem.html#target-prop"/>
             <keyword name="target" id="HighlightRectangle::target" ref="qml-fluentui-controls-highlightrectangle.html#target-prop"/>
             <keyword name="target" id="InfoBarManager::target" ref="qml-fluentui-controls-infobarmanager.html#target-prop"/>
-            <keyword name="target" id="InputBackground::target" ref="qml-fluentui-impl-inputbackground.html#target-prop"/>
+            <keyword name="target" id="InputBackground::target" ref="qml-fluentui-controls-inputbackground.html#target-prop"/>
             <keyword name="targetItem" id="InputMenu::targetItem" ref="qml-fluentui-controls-inputmenu.html#targetItem-prop"/>
             <keyword name="targetMargins" id="Tour::targetMargins" ref="qml-fluentui-controls-tour.html#targetMargins-prop"/>
             <keyword name="targetRect" id="Acrylic::targetRect" ref="qml-fluentui-controls-acrylic.html#targetRect-prop"/>
@@ -1519,7 +1519,7 @@
             <keyword name="type" id="Chart::type" ref="qml-fluentui-controls-chart.html#type-prop"/>
             <keyword name="uncheckedInputColor" id="Theme::uncheckedInputColor" ref="qml-fluentui-controls-theme.html#uncheckedInputColor-method"/>
             <keyword name="undoText" id="InputMenu::undoText" ref="qml-fluentui-controls-inputmenu.html#undoText-prop"/>
-            <keyword name="update" id="InputBackground::update" ref="qml-fluentui-impl-inputbackground.html#update-method"/>
+            <keyword name="update" id="InputBackground::update" ref="qml-fluentui-controls-inputbackground.html#update-method"/>
             <keyword name="updateText" id="AutoSuggestBox::updateText" ref="qml-fluentui-controls-autosuggestbox.html#updateText-method"/>
             <keyword name="value" id="NumberBox::value" ref="qml-fluentui-controls-numberbox.html#value-prop"/>
             <keyword name="value" id="RatingControl::value" ref="qml-fluentui-controls-ratingcontrol.html#value-prop"/>
@@ -1536,7 +1536,7 @@
             <keyword name="warningSecondaryColor" id="Colors::warningSecondaryColor" ref="qml-fluentui-controls-colors.html#warningSecondaryColor-prop"/>
             <keyword name="white" id="Colors::white" ref="qml-fluentui-controls-colors.html#white-prop"/>
             <keyword name="windowIcon" id="AppBar::windowIcon" ref="qml-fluentui-controls-appbar.html#windowIcon-prop"/>
-            <keyword name="windowIcon" id="Starter::windowIcon" ref="qml-fluentui-impl-starter.html#windowIcon-prop"/>
+            <keyword name="windowIcon" id="Starter::windowIcon" ref="qml-fluentui-controls-starter.html#windowIcon-prop"/>
             <keyword name="windowTitle" id="AppBar::windowTitle" ref="qml-fluentui-controls-appbar.html#windowTitle-prop"/>
             <keyword name="windows" id="WindowRouter::windows" ref="qml-fluentui-controls-windowrouter.html#windows-prop"/>
             <keyword name="withOpacity" id="Colors::withOpacity" ref="qml-fluentui-controls-colors.html#withOpacity-method"/>
@@ -1630,6 +1630,8 @@
             <file>qml-fluentui-controls-infobar.html</file>
             <file>qml-fluentui-controls-infobarmanager-members.html</file>
             <file>qml-fluentui-controls-infobarmanager.html</file>
+            <file>qml-fluentui-controls-inputbackground-members.html</file>
+            <file>qml-fluentui-controls-inputbackground.html</file>
             <file>qml-fluentui-controls-inputmenu-members.html</file>
             <file>qml-fluentui-controls-inputmenu.html</file>
             <file>qml-fluentui-controls-listtile-members.html</file>
@@ -1680,6 +1682,8 @@
             <file>qml-fluentui-controls-staggeredlayout.html</file>
             <file>qml-fluentui-controls-standardbutton-members.html</file>
             <file>qml-fluentui-controls-standardbutton.html</file>
+            <file>qml-fluentui-controls-starter-members.html</file>
+            <file>qml-fluentui-controls-starter.html</file>
             <file>qml-fluentui-controls-syntaxview-members.html</file>
             <file>qml-fluentui-controls-syntaxview.html</file>
             <file>qml-fluentui-controls-tabview-members.html</file>
@@ -1718,10 +1722,6 @@
             <file>qml-fluentui-groupbox.html</file>
             <file>qml-fluentui-horizontalheaderview-members.html</file>
             <file>qml-fluentui-horizontalheaderview.html</file>
-            <file>qml-fluentui-impl-inputbackground-members.html</file>
-            <file>qml-fluentui-impl-inputbackground.html</file>
-            <file>qml-fluentui-impl-starter-members.html</file>
-            <file>qml-fluentui-impl-starter.html</file>
             <file>qml-fluentui-label-members.html</file>
             <file>qml-fluentui-label.html</file>
             <file>qml-fluentui-menu-members.html</file>
