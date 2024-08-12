@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<!-- Tools.qdoc -->
+  <meta name="description" content="一个提供系统工具和实用功能的单例组件。">
+  <title>Tools QML Type | FluentUI Reference Documentation</title>
+<!-- begin headerstyles -->
+  <link rel="stylesheet" type="text/css" href="style/material.light_blue-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="style/base.css">
+  <link rel="stylesheet" type="text/css" href="style/fluentui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- end headerstyles -->
+  <script defer type="text/javascript" src="style/material.min.js"></script>
+</head>
+<!-- begin postheader -->
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+  <div class="fluentui-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--scroll">
+      <div class="mdl-layout__header-row">
+        <img src="images/favicon.png" alt="Logo" style="height:40px; margin-right:10px;">
+        <span class="mdl-layout-title pointer"               onclick="location.href='/'">FluentUI</span>
+      </div>
+    </header>
+    <div class="fluentui-ribbon mdl-color--primary"></div>
+    <main class="fluentui-main mdl-layout__content">
+      <div class= fluentui-container mdl-grid>
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="fluentui-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col pt32">
+          <a name="top"></a>
+          <div class="container">
+            <ul class="navigationbar">
+<!-- end postheader -->
+<li><a href="index.html" translate="no">FluentUI Reference Documentation</a></li>
+<li><a href="fluentui-impl-qmlmodule.html" translate="no">FluentUI.impl</a></li>
+<li>Tools</li>
+<li id="buildversion">FluentUI 1.0</li>
+<!-- begin postpostheader -->
+            </ul>
+<!-- end postpostheader -->
+<div class="sidebar">
+<div class="toc">
+<h3 id="toc">Contents</h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#methods">Methods</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title" translate="no">Tools QML Type</h1>
+<!-- $$$Tools-brief -->
+<p>一个提供系统工具和实用功能的单例组件。. <a href="#details">More...</a></p>
+<!-- @@@Tools -->
+<div class="table"><table class="alignedsummary" translate="no">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import FluentUI.impl 1.0</td></tr></table></div><ul>
+<li><a href="qml-fluentui-impl-tools-members.html">List of all members, including inherited members</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn" translate="no"><b><a href="qml-fluentui-impl-tools.html#systemDark-prop" translate="no">systemDark</a></b> : bool</li>
+<li class="fn" translate="no"><b><a href="qml-fluentui-impl-tools.html#windowIcon-prop" translate="no">windowIcon</a></b> : QUrl</li>
+</ul>
+<h2 id="methods">Methods</h2>
+<ul>
+<li class="fn" translate="no">QImage <b><a href="qml-fluentui-impl-tools.html#captureDesktop-method" translate="no">captureDesktop</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-impl-tools.html#clipText-method" translate="no">clipText</a></b>(const QString &amp;<i>text</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-impl-tools.html#deleteLater-method" translate="no">deleteLater</a></b>(QObject *<i>object</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-fluentui-impl-tools.html#isUrl-method" translate="no">isUrl</a></b>(const QString &amp;<i>url</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-fluentui-impl-tools.html#isWindows11OrGreater-method" translate="no">isWindows11OrGreater</a></b>()</li>
+<li class="fn" translate="no">QString <b><a href="qml-fluentui-impl-tools.html#readFile-method" translate="no">readFile</a></b>(const QString &amp;<i>fileName</i>)</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-impl-tools.html#restoreOverrideCursor-method" translate="no">restoreOverrideCursor</a></b>()</li>
+<li class="fn" translate="no">void <b><a href="qml-fluentui-impl-tools.html#setOverrideCursor-method" translate="no">setOverrideCursor</a></b>(Qt::CursorShape <i>shape</i>)</li>
+<li class="fn" translate="no">QColor <b><a href="qml-fluentui-impl-tools.html#withOpacity-method" translate="no">withOpacity</a></b>(const QColor &amp;<i>color</i>, qreal <i>alpha</i>)</li>
+<li class="fn" translate="no">bool <b><a href="qml-fluentui-impl-tools.html#writeFile-method" translate="no">writeFile</a></b>(const QString &amp;<i>fileName</i>, const QString &amp;<i>content</i>)</li>
+</ul>
+<!-- $$$Tools-description -->
+<h2 id="details">Detailed Description</h2>
+<p>Tools 组件提供了一些常用的系统工具和实用功能，支持跨平台操作。该组件以单例模式存在，可用于处理窗口图标、文件读写、剪贴板操作等。</p>
+<!-- @@@Tools -->
+<h2>Property Documentation</h2>
+<!-- $$$systemDark -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="systemDark-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">systemDark</span> : <span class="type">bool</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>获取系统是否处于暗色模式。</p>
+</div></div><!-- @@@systemDark -->
+<br/>
+<!-- $$$windowIcon -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="windowIcon-prop">
+<td class="tblQmlPropNode"><p>
+<span class="name">windowIcon</span> : <span class="type">QUrl</span></p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>设置或获取窗口图标的 URL。</p>
+</div></div><!-- @@@windowIcon -->
+<br/>
+<h2>Method Documentation</h2>
+<!-- $$$captureDesktop[overload1]$$$captureDesktop -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="captureDesktop-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">QImage</span> <span class="name">captureDesktop</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"></div></div><!-- @@@captureDesktop -->
+<br/>
+<!-- $$$clipText[overload1]$$$clipTextconstQString& -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="clipText-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">clipText</span>(const <span class="type">QString</span> &amp;<i>text</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>将给定的文本复制到剪贴板。 <i>text</i> 要复制的文本</p>
+</div></div><!-- @@@clipText -->
+<br/>
+<!-- $$$deleteLater[overload1]$$$deleteLaterQObject* -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="deleteLater-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">deleteLater</span>(<span class="type">QObject</span> *<i>object</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>安排对象在稍后删除。 <i>object</i> 要删除的对象</p>
+</div></div><!-- @@@deleteLater -->
+<br/>
+<!-- $$$isUrl[overload1]$$$isUrlconstQString& -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isUrl-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">isUrl</span>(const <span class="type">QString</span> &amp;<i>url</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>检查给定的字符串是否为有效的 URL。 <i>url</i> 要检查的字符串 Returns 如果字符串是有效的 URL，则返回 true，否则返回 false。</p>
+</div></div><!-- @@@isUrl -->
+<br/>
+<!-- $$$isWindows11OrGreater[overload1]$$$isWindows11OrGreater -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="isWindows11OrGreater-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">isWindows11OrGreater</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>检查当前操作系统是否为 Windows 11 或更高版本。 Returns 如果系统为 Windows 11 或更高版本，则返回 true，否则返回 false。</p>
+</div></div><!-- @@@isWindows11OrGreater -->
+<br/>
+<!-- $$$readFile[overload1]$$$readFileconstQString& -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="readFile-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">QString</span> <span class="name">readFile</span>(const <span class="type">QString</span> &amp;<i>fileName</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>读取指定文件的内容。 <i>fileName</i> 要读取的文件的路径 Returns 文件内容作为字符串返回</p>
+</div></div><!-- @@@readFile -->
+<br/>
+<!-- $$$restoreOverrideCursor[overload1]$$$restoreOverrideCursor -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="restoreOverrideCursor-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">restoreOverrideCursor</span>()</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>恢复之前的鼠标光标形状。</p>
+</div></div><!-- @@@restoreOverrideCursor -->
+<br/>
+<!-- $$$setOverrideCursor[overload1]$$$setOverrideCursorQt::CursorShape -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="setOverrideCursor-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">void</span> <span class="name">setOverrideCursor</span>(<span class="type">Qt::CursorShape</span> <i>shape</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>设置临时的鼠标光标形状。 <i>shape</i> 要设置的鼠标光标形状</p>
+</div></div><!-- @@@setOverrideCursor -->
+<br/>
+<!-- $$$withOpacity[overload1]$$$withOpacityconstQColor&qreal -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="withOpacity-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">QColor</span> <span class="name">withOpacity</span>(const <span class="type">QColor</span> &amp;<i>color</i>, <span class="type">qreal</span> <i>alpha</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>返回给定颜色的透明度版本。 <i>color</i> 要调整的颜色 <i>alpha</i> 透明度值，范围为 0.0 到 1.0 Returns 具有新透明度的颜色</p>
+</div></div><!-- @@@withOpacity -->
+<br/>
+<!-- $$$writeFile[overload1]$$$writeFileconstQString&constQString& -->
+<div class="qmlitem"><div class="qmlproto" translate="no">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="writeFile-method">
+<td class="tblQmlFuncNode"><p>
+<span class="type">bool</span> <span class="name">writeFile</span>(const <span class="type">QString</span> &amp;<i>fileName</i>, const <span class="type">QString</span> &amp;<i>content</i>)</p></td></tr>
+</table></div></div>
+<div class="qmldoc"><p>将指定内容写入文件。 <i>fileName</i> 要写入的文件的路径 <i>content</i> 要写入的内容 Returns 如果写入成功，则返回 true，否则返回 false。</p>
+</div></div><!-- @@@writeFile -->
+<br/>
+<!-- begin footer -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+<!-- end footer -->
+</body>
+</html>
