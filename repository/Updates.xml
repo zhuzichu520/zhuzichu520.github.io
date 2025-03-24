@@ -1,0 +1,21 @@
+<Updates>
+ <ApplicationName>{AnyApplication}</ApplicationName>
+ <ApplicationVersion>1.0.0</ApplicationVersion>
+ <Checksum>true</Checksum>
+ <PackageUpdate>
+  <Name>com.zhuzichu</Name>
+  <DisplayName>FluentUI Gallery</DisplayName>
+  <Description>FluentUI Gallery showcases FluentUI components.</Description>
+  <Version>1.0.0</Version>
+  <ReleaseDate>2025-03-22</ReleaseDate>
+  <Default>true</Default>
+  <Script>installscript.qs</Script>
+  <UpdateFile CompressedSize="2445387" OS="Any" UncompressedSize="6771240"/>
+  <DownloadableArchives>content.7z</DownloadableArchives>
+  <UserInterfaces>FinishForm.ui</UserInterfaces>
+  <Translations>zh.qm,en.qm</Translations>
+  <SHA1>772849a0deea7d66b6ff144483d67d9b0a374192</SHA1>
+ </PackageUpdate>
+ <SHA1>2bd0602814d1bf2b596f2457bca2c4b23df3e7a0</SHA1>
+ <MetadataName>2025-03-24-2109_meta.7z</MetadataName>
+</Updates>
